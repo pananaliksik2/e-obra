@@ -190,8 +190,11 @@ document.getElementById('download-pdf').addEventListener('click', function() {
     
     // Create clean full text without glossary spans
     // rawChapterContent is already available in the global scope
-    const cleanFullText = rawChapterContent.replace(/\n\n/g, "<br><br>");
+    const cleanFullText = rawChapterContent.split('\n\n').map(p => `<p class="mb-4">${p}</p>`).join('');
     
+    // Scroll to top to prevent browsers from clipping the top of the document during print
+    window.scrollTo(0, 0);
+
     // Temporarily swap content for printing
     contentDiv.innerHTML = `<div class="reader-page-content">${cleanFullText}</div>`;
     
@@ -201,7 +204,7 @@ document.getElementById('download-pdf').addEventListener('click', function() {
         // Restore paged content after printing
         contentDiv.innerHTML = originalContent;
         setupGlossaryEvents(); // Re-bind glossary events
-    }, 100);
+    }, 250);
 });
 
 document.getElementById('next-chapter-btn').addEventListener('click', () => {

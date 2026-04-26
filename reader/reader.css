@@ -40,6 +40,13 @@
         margin: 1in;
     }
 
+    /* Force full height for printing */
+    html, body {
+        height: auto !important;
+        overflow: visible !important;
+        background-color: white !important;
+    }
+
     /* Hide all UI elements */
     #header-placeholder, 
     #footer-placeholder, 
@@ -60,17 +67,18 @@
 
     /* Reset container styles for printing */
     body {
-        background-color: white !important;
         padding: 0 !important;
         margin: 0 !important;
         font-family: "Times New Roman", Times, serif !important;
     }
     
-    .container {
+    main.container {
         max-width: 100% !important;
         width: 100% !important;
         margin: 0 !important;
         padding: 0 !important;
+        display: block !important;
+        overflow: visible !important;
     }
 
     .neu-container {
@@ -79,6 +87,12 @@
         background: transparent !important;
         padding: 0 !important;
         margin: 0 !important;
+        overflow: visible !important;
+    }
+
+    .chapter-content-neu {
+        overflow: visible !important;
+        height: auto !important;
     }
 
     /* Remove glossary highlighting */
@@ -97,6 +111,7 @@
         line-height: 1.5 !important;
         color: black !important;
         text-align: justify !important;
+        display: block !important;
     }
 
     .chapter-title-neu {
