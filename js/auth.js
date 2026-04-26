@@ -27,48 +27,44 @@ function stopSessionMonitor() {
 
 // Global Auth Listener
 auth.onAuthStateChanged((user) => {
-    const path = window.location.pathname.toLowerCase();
-    const baseUrlPath = new URL(window.BASE_URL).pathname.toLowerCase();
+    // Normalize paths for comparison (remove trailing slashes and lowercase)
+    const normalizePath = (p) => p.replace(/\/+$/, '').toLowerCase() || '/';
     
-    // Check if we are on the landing page
-    const isLoginPage = path === baseUrlPath || 
-                        path === baseUrlPath + 'index.html' || 
-                        path.endsWith('/index.html') && path.split('/').length <= (baseUrlPath.split('/').length + 1);
+    const currentPath = normalizePath(window.location.pathname);
+    const baseUrlPath = normalizePath(new URL(window.BASE_URL).pathname);
     
+    // The landing page is the base URL path or the base URL path + index.html
+    const isLoginPage = currentPath === baseUrlPath || 
+                        currentPath === normalizePath(baseUrlPath + '/index.html');
+    
+    console.log("Auth State Changed. User:", user ? user.email : "None");
+    console.log("Path:", currentPath, "Base:", baseUrlPath, "isLoginPage:", isLoginPage);
+
     if (user) {
-        console.log("User is authenticated:", user.email);
-        
         // Update Profile Info in UI
         const updateProfileUI = () => {
             const nameEl = document.getElementById('user-name-nav');
             const photoEl = document.getElementById('user-photo-nav');
             const welcomeNameEl = document.getElementById('user-display-name');
 
-            if (nameEl) {
-                nameEl.innerText = user.displayName;
-                nameEl.classList.remove('d-none');
-            }
+            if (nameEl) nameEl.innerText = user.displayName;
             if (photoEl && user.photoURL) {
                 photoEl.src = user.photoURL;
                 photoEl.style.display = 'block';
-                photoEl.classList.remove('d-none');
             }
-            if (welcomeNameEl) {
-                welcomeNameEl.innerText = user.displayName.split(' ')[0];
-            }
+            if (welcomeNameEl) welcomeNameEl.innerText = user.displayName.split(' ')[0];
 
-            if (!nameEl || !photoEl) {
-                setTimeout(updateProfileUI, 500);
-            }
+            if (!nameEl || !photoEl) setTimeout(updateProfileUI, 500);
         };
         updateProfileUI();
 
         if (isLoginPage) {
+            console.log("Redirecting to dashboard...");
             window.location.href = window.BASE_URL + 'dashboard/';
         }
     } else {
-        console.log("User is not authenticated");
         if (!isLoginPage) {
+            console.log("Protected page detected, redirecting to home...");
             window.location.href = window.BASE_URL;
         }
     }
@@ -77,11 +73,11 @@ auth.onAuthStateChanged((user) => {
 // Force auth check on back-button navigation
 window.addEventListener('pageshow', (event) => {
     if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
-        // Force refresh or re-check auth
         firebase.auth().onAuthStateChanged((user) => {
-            const currentPath = window.location.pathname.toLowerCase();
-            const baseUrlPath = new URL(window.BASE_URL).pathname.toLowerCase();
-            const isOnLoginPage = currentPath === baseUrlPath || currentPath === baseUrlPath + 'index.html';
+            const normalizePath = (p) => p.replace(/\/+$/, '').toLowerCase() || '/';
+            const currentPath = normalizePath(window.location.pathname);
+            const baseUrlPath = normalizePath(new URL(window.BASE_URL).pathname);
+            const isOnLoginPage = currentPath === baseUrlPath || currentPath === normalizePath(baseUrlPath + '/index.html');
             
             if (!user && !isOnLoginPage) {
                 window.location.href = window.BASE_URL;
