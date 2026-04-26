@@ -37,18 +37,18 @@ function highlightGlossaryWords(text) {
 
 async function loadChapter(num) {
     currentChapterNum = parseInt(num);
-    
+
     try {
         const response = await fetch(window.BASE_URL + 'data/chapters.json');
         const chapters = await response.json();
-        
+
         const chapter = chapters.find(c => parseInt(c.chapter_number) === currentChapterNum);
 
         if (chapter) {
             // Fetch glossary after finding the internal ID if needed, 
             // but our glossary uses chapter_number as chapter_id usually in the SQL export logic
             await fetchGlossary(chapter.chapter_number);
-            
+
             currentChapterId = chapter.id;
             rawChapterContent = chapter.content;
             document.getElementById('chapter-title').innerText = `Kabanata ${chapter.chapter_number}: ${chapter.title}`;
@@ -184,24 +184,36 @@ function hideTooltip() {
 }
 
 // PDF Export - (Modified for Static Site: export full chapter text)
-document.getElementById('download-pdf').addEventListener('click', function() {
+document.getElementById('download-pdf').addEventListener('click', function () {
     const contentDiv = document.getElementById('chapter-content');
     const originalContent = contentDiv.innerHTML;
-    
+
     // Create clean full text without glossary spans
     // rawChapterContent is already available in the global scope
     const cleanFullText = rawChapterContent.split('\n\n').map(p => `<p class="mb-4">${p}</p>`).join('');
-    
+
     // Scroll to top to prevent browsers from clipping the top of the document during print
     window.scrollTo(0, 0);
 
     // Temporarily swap content for printing
     contentDiv.innerHTML = `<div class="reader-page-content">${cleanFullText}</div>`;
-    
+
     // Use a small timeout to ensure the DOM has updated before the print dialog opens
     setTimeout(() => {
+        // Set dynamic filename via document.title
+        const originalTitle = document.title;
+        const now = new Date();
+        const dd = String(now.getDate()).padStart(2, '0');
+        const mm = String(now.getMonth() + 1).padStart(2, '0');
+        const yy = String(now.getFullYear()).slice(-2);
+        const dateStr = `${dd}-${mm}-${yy}`; // Using dashes because slashes are illegal in filenames
+
+        document.title = `Kabanata ${currentChapterNum}_E-Obra_${dateStr}`;
+
         window.print();
-        // Restore paged content after printing
+
+        // Restore state
+        document.title = originalTitle;
         contentDiv.innerHTML = originalContent;
         setupGlossaryEvents(); // Re-bind glossary events
     }, 250);
