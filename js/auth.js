@@ -27,9 +27,13 @@ function stopSessionMonitor() {
 
 // Global Auth Listener
 auth.onAuthStateChanged((user) => {
-    const path = window.location.pathname;
-    // Check if we are on the landing page (root index.html)
-    const isLoginPage = path.endsWith('/E-Obra/') || path.endsWith('/index.html') || path === '/' || path.endsWith('/E-Obra/index.html');
+    const path = window.location.pathname.toLowerCase();
+    const baseUrlPath = new URL(window.BASE_URL).pathname.toLowerCase();
+    
+    // Check if we are on the landing page
+    const isLoginPage = path === baseUrlPath || 
+                        path === baseUrlPath + 'index.html' || 
+                        path.endsWith('/index.html') && path.split('/').length <= (baseUrlPath.split('/').length + 1);
     
     if (user) {
         console.log("User is authenticated:", user.email);
@@ -75,7 +79,11 @@ window.addEventListener('pageshow', (event) => {
     if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
         // Force refresh or re-check auth
         firebase.auth().onAuthStateChanged((user) => {
-            if (!user && !window.location.pathname.endsWith('index.html') && window.location.pathname !== '/') {
+            const currentPath = window.location.pathname.toLowerCase();
+            const baseUrlPath = new URL(window.BASE_URL).pathname.toLowerCase();
+            const isOnLoginPage = currentPath === baseUrlPath || currentPath === baseUrlPath + 'index.html';
+            
+            if (!user && !isOnLoginPage) {
                 window.location.href = window.BASE_URL;
             }
         });
