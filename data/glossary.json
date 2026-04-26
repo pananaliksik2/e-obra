@@ -1,0 +1,931 @@
+[
+    {
+        "id": 16,
+        "chapter_id": 62,
+        "word": "Balete",
+        "definition": "Malaking punongkahoy (genus Ficus) na may maraming baging at kilalá sa mga alamat bílang tahanan ng mga lamanlupa.",
+        "modern_context": null
+    },
+    {
+        "id": 17,
+        "chapter_id": 62,
+        "word": "Sumalunga",
+        "definition": "Pagsalungat sa kilos, daloy, o puwersa (tulad agos, hangin, pababang daan, at paghihirap).",
+        "modern_context": null
+    },
+    {
+        "id": 18,
+        "chapter_id": 62,
+        "word": "Ingkong",
+        "definition": "Amá o amain ng magulang ng sinuman.",
+        "modern_context": null
+    },
+    {
+        "id": 19,
+        "chapter_id": 62,
+        "word": "Malumbay",
+        "definition": "Matinding kalungkutan (tulad ng nararamdaman dahil sa kasawian).",
+        "modern_context": null
+    },
+    {
+        "id": 20,
+        "chapter_id": 62,
+        "word": "Pagtangis",
+        "definition": "Malakas na pag-iyak kung nagdadalamhati.",
+        "modern_context": null
+    },
+    {
+        "id": 21,
+        "chapter_id": 62,
+        "word": "Bulalas",
+        "definition": "Anumang biglang pagsasalita o pag-iingay (lalo na dahil sa matinding damdámin).",
+        "modern_context": null
+    },
+    {
+        "id": 22,
+        "chapter_id": 62,
+        "word": "Isinusuplong",
+        "definition": "kilos ng paglalantad o pagpapaalam ng isang maling gawain, lihim, o kasalanan sa isang nakatataas o may kapangyarihan",
+        "modern_context": null
+    },
+    {
+        "id": 23,
+        "chapter_id": 62,
+        "word": "Kanser",
+        "definition": "Ito ay anumang matinding problema sa lipunan—tulad ng korapsyon o kawalan ng katarungan—na unti-unting sumisira sa bayan.",
+        "modern_context": null
+    },
+    {
+        "id": 24,
+        "chapter_id": 62,
+        "word": "Paglibak",
+        "definition": "Pagpuna sa kapuwa upang maliitin at insultuhin.",
+        "modern_context": null
+    },
+    {
+        "id": 25,
+        "chapter_id": 62,
+        "word": "Saklot",
+        "definition": "Pagsunggab sa isang bagay na ibig agawin o kunin.",
+        "modern_context": null
+    },
+    {
+        "id": 26,
+        "chapter_id": 62,
+        "word": "Sakate",
+        "definition": "damo na ginagamit bilang pagkain ng mga hayop, lalo na para sa mga kabayo, kalabaw, o baka.",
+        "modern_context": null
+    },
+    {
+        "id": 27,
+        "chapter_id": 62,
+        "word": "Polvorista",
+        "definition": "ang deposito ng mga pulbura at paputok.",
+        "modern_context": null
+    },
+    {
+        "id": 28,
+        "chapter_id": 62,
+        "word": "Lunday",
+        "definition": "Maliit na bangka para sa isang tao lámang.",
+        "modern_context": null
+    },
+    {
+        "id": 29,
+        "chapter_id": 62,
+        "word": "Sapantaha",
+        "definition": "Hula, hinala, o palagay na walang sapat ebidensya.",
+        "modern_context": null
+    },
+    {
+        "id": 30,
+        "chapter_id": 62,
+        "word": "Oidor",
+        "definition": "Isang makapangyarihang hukom o mataas na opisyal sa korte noong panahon ng Espanyol.",
+        "modern_context": null
+    },
+    {
+        "id": 31,
+        "chapter_id": 62,
+        "word": "Lebita",
+        "definition": "Isang pormal na suot ng mga prominenteng lalaki noon.",
+        "modern_context": null
+    },
+    {
+        "id": 32,
+        "chapter_id": 62,
+        "word": "kuwidaw",
+        "definition": "nagpapahiwatig ng babala o pag-iingat",
+        "modern_context": null
+    },
+    {
+        "id": 33,
+        "chapter_id": 62,
+        "word": "Ilog Beata",
+        "definition": "makasaysayang ilog sa Pandacan na naging tagpuan ng pag-iibigan nina Balagtas at Selya.",
+        "modern_context": null
+    },
+    {
+        "id": 34,
+        "chapter_id": 62,
+        "word": "Tamasahin",
+        "definition": "Pagdanas ng kasiyahan o pakinabang na dulot ng kasaganaan, ginhawa, o yaman.",
+        "modern_context": null
+    },
+    {
+        "id": 35,
+        "chapter_id": 62,
+        "word": "tikin",
+        "definition": "Isang mahabang kawayan na pangtulak ng bangka sa mababaw na lugar.",
+        "modern_context": null
+    },
+    {
+        "id": 36,
+        "chapter_id": 62,
+        "word": "Napakapanglaw",
+        "definition": "masidhi o matinding paglalarawan ng kalungkutan, katahimikan, o kadiliman.",
+        "modern_context": null
+    },
+    {
+        "id": 37,
+        "chapter_id": 62,
+        "word": "basyong",
+        "definition": "Isang bakanteng lalagyan o basyong kinalabasan ng isang bagay (tulad ng bala o bote).",
+        "modern_context": null
+    },
+    {
+        "id": 38,
+        "chapter_id": 62,
+        "word": "nagbunsod",
+        "definition": "nagtulak o nag-udyok.",
+        "modern_context": null
+    },
+    {
+        "id": 39,
+        "chapter_id": 62,
+        "word": "pagmunian",
+        "definition": "pag-iisip, pagninilay, o pagsusuri sa isang bagay bago gumawa ng desisyon.",
+        "modern_context": null
+    },
+    {
+        "id": 40,
+        "chapter_id": 62,
+        "word": "said",
+        "definition": "ang punto kung saan wala na talagang natitira; sagad na sagad na.",
+        "modern_context": null
+    },
+    {
+        "id": 41,
+        "chapter_id": 62,
+        "word": "manangis",
+        "definition": "Umiiyak nang matindi.",
+        "modern_context": null
+    },
+    {
+        "id": 42,
+        "chapter_id": 62,
+        "word": "uyam",
+        "definition": "Pangungutya o sarkasmo.",
+        "modern_context": null
+    },
+    {
+        "id": 43,
+        "chapter_id": 62,
+        "word": "Heswita",
+        "definition": "Isang orden ng mga paring Katoliko.",
+        "modern_context": null
+    },
+    {
+        "id": 44,
+        "chapter_id": 62,
+        "word": "pinapaikpik",
+        "definition": "pag-ipit, o pagpapaigting sa isang bagay para maging mas siksik o tahimik.",
+        "modern_context": null
+    },
+    {
+        "id": 45,
+        "chapter_id": 62,
+        "word": "karabinero",
+        "definition": "Kawal o guwardiyang tagabantay",
+        "modern_context": null
+    },
+    {
+        "id": 46,
+        "chapter_id": 62,
+        "word": "pumupusyaw",
+        "definition": "paglabo o pagkawala ng tindi ng kulay.",
+        "modern_context": null
+    },
+    {
+        "id": 47,
+        "chapter_id": 62,
+        "word": "falua",
+        "definition": "isang mabilis na bangkang pang-patrolya ng mga awtoridad.",
+        "modern_context": null
+    },
+    {
+        "id": 48,
+        "chapter_id": 62,
+        "word": "kapasete",
+        "definition": "matigas na sumbrero na suot ng mga sundalo o guwardiya sibil bilang proteksyon sa ulo.",
+        "modern_context": null
+    },
+    {
+        "id": 49,
+        "chapter_id": 62,
+        "word": "bayoneta",
+        "definition": "mahabang patalim o kutsilyo na ikinakabit sa dulo ng nguso ng baril",
+        "modern_context": null
+    },
+    {
+        "id": 50,
+        "chapter_id": 62,
+        "word": "Pipit",
+        "definition": "Isang napakaliit na ibon; ginagamit na metapora para sa taong walang laban o madaling apihin.",
+        "modern_context": null
+    },
+    {
+        "id": 51,
+        "chapter_id": 62,
+        "word": "tsisis",
+        "definition": "Tunog ng pagsutsot ng mainit na bagay sa tubig.",
+        "modern_context": null
+    },
+    {
+        "id": 52,
+        "chapter_id": 62,
+        "word": "Nilagpakan",
+        "definition": "pagbagsak o pagtama ng isang bagay",
+        "modern_context": null
+    },
+    {
+        "id": 53,
+        "chapter_id": 62,
+        "word": "punglo",
+        "definition": "Bala ng baril",
+        "modern_context": null
+    },
+    {
+        "id": 139,
+        "chapter_id": 63,
+        "word": "saserdote",
+        "definition": "Lumang tawag sa pari, karaniwang sa Bibliya.",
+        "modern_context": "Ginamit ito upang ilarawan ang katungkulan ni Padre Damaso bilang isang pari."
+    },
+    {
+        "id": 140,
+        "chapter_id": 63,
+        "word": "napoot",
+        "definition": "labis na nagalit o nagkaroon ng matinding galit",
+        "modern_context": "Tumutukoy sa galit ni Padre Damaso sa mga taong kumokontra sa kaniyang nais."
+    },
+    {
+        "id": 141,
+        "chapter_id": 63,
+        "word": "disgustilyo",
+        "definition": "mga hinanakit o maliliit na sama ng loob",
+        "modern_context": "Ang mga maliliit na tampo ni Maria Clara noong siya ay bata pa."
+    },
+    {
+        "id": 142,
+        "chapter_id": 63,
+        "word": "pelus",
+        "definition": "Telang mabalahibo na yarì sa seda, nylon, rayon, atbp. na pawang masinsin ang pagkakahábi at may makapal na rabáw.",
+        "modern_context": "Inilalarawan ang marangyang lalagyan ng mga alahas ni Maria Clara."
+    },
+    {
+        "id": 143,
+        "chapter_id": 63,
+        "word": "mongha",
+        "definition": "Babaeng naninirahan sa kumbento upang iukol ang kaniyang búhay sa pagsamba at pagdalangin sa Diyos.",
+        "modern_context": "Ito ang piniling landas ni Maria Clara matapos mabalitang patay na si Ibarra."
+    },
+    {
+        "id": 144,
+        "chapter_id": 63,
+        "word": "daing",
+        "definition": "Pagpapahayag ng lungkot, sakít, hindi kasiyahan, samâ-ng-loob, at katulad na damdámin.",
+        "modern_context": "Ang mga hiling at panalangin sa loob ng kumbento."
+    },
+    {
+        "id": 145,
+        "chapter_id": 63,
+        "word": "esposa",
+        "definition": "Asawang babae.",
+        "modern_context": "Ginamit ni Padre Damaso upang ilarawan ang magiging buhay ni Maria Clara kung magpapakasal."
+    },
+    {
+        "id": 146,
+        "chapter_id": 63,
+        "word": "binubusabos",
+        "definition": "inaapi, pinapahirapan, o minamaliit",
+        "modern_context": "Ang kinatatakutang tadhana ni Padre Damaso para sa mga magiging anak ni Maria Clara."
+    },
+    {
+        "id": 147,
+        "chapter_id": 63,
+        "word": "napaigtad",
+        "definition": "Biglang napakilos o napatayo dahil sa gulat",
+        "modern_context": "Ang reaksyon ni Maria Clara nang gulatin siya ni Padre Damaso."
+    },
+    {
+        "id": 148,
+        "chapter_id": 63,
+        "word": "estutseng",
+        "definition": "kahon ng alahas, lalagyan ng mamahaling bagay.",
+        "modern_context": "Ang mga lalagyan ng regalong pangkasal na hindi pinapansin ni Maria Clara."
+    },
+    {
+        "id": 149,
+        "chapter_id": 63,
+        "word": "bulalas",
+        "definition": "Anumang biglang pagsasalita o pag-iingay (lalo na dahil sa matinding damdámin).",
+        "modern_context": "Ang biglang sigaw o pahayag ni Padre Damaso sa gitna ng pag-uusap."
+    },
+    {
+        "id": 150,
+        "chapter_id": 63,
+        "word": "ligalig",
+        "definition": "Magulo ang isipan kayâ hindi mapirme.",
+        "modern_context": "Inilalarawan ang nararamdaman ni Maria Clara dahil sa kaniyang mga problema."
+    },
+    {
+        "id": 151,
+        "chapter_id": 63,
+        "word": "sawiin",
+        "definition": "biguin o sirain ang inaasam na kaligayahan",
+        "modern_context": "Ang pakiusap ni Maria Clara sa kaniyang ninong."
+    },
+    {
+        "id": 152,
+        "chapter_id": 63,
+        "word": "manyikang sahing",
+        "definition": "simpleng manikang gawa sa abo o uling",
+        "modern_context": "Isang alaala ng pagkabata ni Maria Clara."
+    },
+    {
+        "id": 153,
+        "chapter_id": 63,
+        "word": "tigmak",
+        "definition": "Lubhang basâ ng anumang likido, lalo na kung tubig-ulan, páwis, o dugo.",
+        "modern_context": "Inilalarawan ang mga matang basang-basa sa luha."
+    },
+    {
+        "id": 154,
+        "chapter_id": 63,
+        "word": "kapritso",
+        "definition": "Paggawa o paghingi ng anuman nang walang kadahilanan o batayan kundi para sa sariling kiya.",
+        "modern_context": "Ang mga hiling ni Maria Clara na laging sinusunod ni Padre Damaso."
+    },
+    {
+        "id": 155,
+        "chapter_id": 63,
+        "word": "seda",
+        "definition": "Pino at makintab na hiblang mula sa pugad ng isang uri ng uod.",
+        "modern_context": "Isa sa mga mamahaling tela na bahagi ng mga regalo para sa kasal."
+    },
+    {
+        "id": 156,
+        "chapter_id": 64,
+        "word": "Libis",
+        "definition": "Makitid na kapatagang nasa pagitan ng isang bundok at iba pang mataas na lupa.",
+        "modern_context": "Ang lokasyon ng dampa nina Basilio sa kagubatan."
+    },
+    {
+        "id": 157,
+        "chapter_id": 64,
+        "word": "Ingkong",
+        "definition": "Magalang na pagtawag sa lolo o isang matandang lalaki.",
+        "modern_context": "Ang matandang kumupkop kay Basilio matapos siyang sugatan."
+    },
+    {
+        "id": 158,
+        "chapter_id": 64,
+        "word": "Tumitimo",
+        "definition": "tumusok, tumagos, bumaon, o nagmarka",
+        "modern_context": "Inilalarawan ang malalim na tingin ni Basilio dahil sa hapis."
+    },
+    {
+        "id": 159,
+        "chapter_id": 64,
+        "word": "Hawas",
+        "definition": "Anyo ng mukha na mahaba at patulis ang baba (hugis itlog).",
+        "modern_context": "Ang anyo ng mukha ni Basilio na namana niya sa kaniyang ina."
+    },
+    {
+        "id": 160,
+        "chapter_id": 64,
+        "word": "Dayap",
+        "definition": "Isang uri ng sitrus; ginagamit na pampabango o sangkap.",
+        "modern_context": "Ginamit bilang bahagi ng panggamot sa sugat ni Basilio."
+    },
+    {
+        "id": 161,
+        "chapter_id": 64,
+        "word": "Dampa",
+        "definition": "maliit na tahanang tinitirhan ng mga maralita.",
+        "modern_context": "Ang payak na tahanan sa gitna ng gubat."
+    },
+    {
+        "id": 162,
+        "chapter_id": 64,
+        "word": "Pikô",
+        "definition": "Laro na may batóng initsa sa ginuhitang lapag.",
+        "modern_context": "Ang larong nais laruin ng mga bata kasama si Basilio."
+    },
+    {
+        "id": 163,
+        "chapter_id": 64,
+        "word": "Magaralgal",
+        "definition": "Nanginginig o garalgal na boses, karaniwang dahil sa pagpipigil ng iyak.",
+        "modern_context": "Ang tinig ng mga bata habang nagpapaalam."
+    },
+    {
+        "id": 164,
+        "chapter_id": 64,
+        "word": "Hapis",
+        "definition": "Matinding dusa, lungkot, o pait na nararanasan ng kalooban.",
+        "modern_context": "Ang nararamdaman ni Basilio sa pagkawala ng kaniyang pamilya."
+    },
+    {
+        "id": 165,
+        "chapter_id": 64,
+        "word": "Sinawata",
+        "definition": "Pinigil, sinaway, o hinadlangan ang isang kilos o pangyayari.",
+        "modern_context": "Ang pagpigil ni Basilio sa kaniyang sariling panginginig."
+    },
+    {
+        "id": 166,
+        "chapter_id": 64,
+        "word": "Sawimpalad",
+        "definition": "nasa masamang kalagayan o nagdurusa; taong bigo o nakaranas ng malaking trahedya.",
+        "modern_context": "Tumutukoy sa kalagayan ni Basilio at ng kaniyang ina."
+    },
+    {
+        "id": 167,
+        "chapter_id": 64,
+        "word": "Kasibulan",
+        "definition": "Panahon ng kabataan o kasariwaan.",
+        "modern_context": "Ang anyo ng babaeng nakita ni Sisa sa bintana."
+    },
+    {
+        "id": 168,
+        "chapter_id": 64,
+        "word": "Lipos",
+        "definition": "pagiging puno ng espasyo o sisidlan",
+        "modern_context": "Lipos ng takot na tumakbo si Sisa nang makita ang sundalo."
+    },
+    {
+        "id": 169,
+        "chapter_id": 64,
+        "word": "Nangangaligkig",
+        "definition": "matinding panginginig ng buong katawan sanhi ng labis na ginaw.",
+        "modern_context": "Ang nararamdaman ng mga tao sa San Diego dahil sa hanging Hilaga."
+    },
+    {
+        "id": 170,
+        "chapter_id": 64,
+        "word": "Binalisunsong",
+        "definition": "ginawa o ititnupi sa hugis balisunsong o apa",
+        "modern_context": "Ginamit ni Basilio ang dahon ng saging upang kumuha ng tubig."
+    },
+    {
+        "id": 171,
+        "chapter_id": 64,
+        "word": "Rebentador",
+        "definition": "uri ng paputok na may malakas na pagsabog",
+        "modern_context": "Ang hiling ng batang lalaki para sa Pasko."
+    },
+    {
+        "id": 172,
+        "chapter_id": 64,
+        "word": "Nochebuena",
+        "definition": "gabi ng bisperas ng Pasko",
+        "modern_context": "Ang gabi kung kailan naganap ang huling pagkikita nina Basilio at Sisa."
+    },
+    {
+        "id": 173,
+        "chapter_id": 64,
+        "word": "Entresuwelo",
+        "definition": "maliit o mababang silid/palapag",
+        "modern_context": "Dito nag-uusap sina Kapitan Basilio at Don Filipo."
+    },
+    {
+        "id": 174,
+        "chapter_id": 64,
+        "word": "Kompete",
+        "definition": "uri ng paputok na pumapailanlang sa itaas bago sumabog; kwitis",
+        "modern_context": "Bahagi ng tradisyunal na pagdiriwang ng Pasko."
+    },
+    {
+        "id": 175,
+        "chapter_id": 64,
+        "word": "Palara",
+        "definition": "manipis, makintab, at metalikong papel na ginagamit pambalot o pandekorasyon",
+        "modern_context": "Dekorasyon para sa Pasko."
+    },
+    {
+        "id": 176,
+        "chapter_id": 64,
+        "word": "Sukal",
+        "definition": "Mga dumi o damong hindi kailangan; maaari ring tumukoy sa gulo ng nararamdaman.",
+        "modern_context": "Ang mga balakid sa pagtakbo nina Basilio sa gubat."
+    },
+    {
+        "id": 177,
+        "chapter_id": 64,
+        "word": "Palumpong",
+        "definition": "Lupon ng maliliit na puno o halaman na tumutubong magkakasama.",
+        "modern_context": "Mga halaman sa loob ng mahiwagang gubat."
+    },
+    {
+        "id": 178,
+        "chapter_id": 64,
+        "word": "Dawag",
+        "definition": "matinik at malakahoy na halamang-baging",
+        "modern_context": "Mga balakid sa kagubatan."
+    },
+    {
+        "id": 179,
+        "chapter_id": 64,
+        "word": "Nilawag",
+        "definition": "Niliwanagan o nilakbay nang may dalang ilaw upang makita ang dinadaanan.",
+        "modern_context": "Ang mga bahagi ng gubat na natatamaan ng sinag ng buwan."
+    },
+    {
+        "id": 180,
+        "chapter_id": 64,
+        "word": "Tumutugaygay",
+        "definition": "Nagmamasid o sumusubaybay nang masusi sa bawat kilos.",
+        "modern_context": "Ang pagbabantay ni Basilio sa kaniyang ina."
+    },
+    {
+        "id": 181,
+        "chapter_id": 64,
+        "word": "Balete",
+        "definition": "malaking punongkahoy na may maraming baging.",
+        "modern_context": "Ang mahiwagang puno kung saan namatay si Sisa."
+    },
+    {
+        "id": 182,
+        "chapter_id": 64,
+        "word": "Puminid",
+        "definition": "pagsara ng pinto; sa konteksto ng kamatayan, ang huling pagpikit ng mga mata.",
+        "modern_context": "Ang pagtulak ni Sisa sa pinto upang hindi makapasok si Basilio."
+    },
+    {
+        "id": 183,
+        "chapter_id": 64,
+        "word": "Niyapos",
+        "definition": "Niyakap nang buong higpit at pagmamahal",
+        "modern_context": "Ang huling yakap ni Basilio sa kaniyang ina."
+    },
+    {
+        "id": 184,
+        "chapter_id": 64,
+        "word": "Rehas",
+        "definition": "mga bakal na nakaharang sa bintana",
+        "modern_context": "Dito nakadungaw ang mga dalaga habang nag-uusap."
+    },
+    {
+        "id": 185,
+        "chapter_id": 64,
+        "word": "Kuwartel",
+        "definition": "tirahan ng mga sundalo o guwardiya sibil",
+        "modern_context": "Ang lugar na iniwasan ni Sisa."
+    },
+    {
+        "id": 186,
+        "chapter_id": 64,
+        "word": "Pinupog",
+        "definition": "Paulit-ulit na ginawa ang isang bagay",
+        "modern_context": "Ang paghalik ni Basilio sa kaniyang ina."
+    },
+    {
+        "id": 187,
+        "chapter_id": 64,
+        "word": "Alipato",
+        "definition": "maliliit na bagang inililipad ng hangin mula sa nasusunog na bagay",
+        "modern_context": "Ang kislap ng alaala sa isip ni Sisa bago siya mamatay."
+    },
+    {
+        "id": 188,
+        "chapter_id": 64,
+        "word": "Kamaksi",
+        "definition": "Isang uri ng ibon (nightjar) na karaniwang naririnig ang huni sa gabi.",
+        "modern_context": "Ang naririnig na huni sa gitna ng katahimikan ng gabi."
+    },
+    {
+        "id": 189,
+        "chapter_id": 64,
+        "word": "Batalan",
+        "definition": "Bahagi ng bahay-kubo kung saan naghuhugas at naglilinis.",
+        "modern_context": "Dito nakita ni Hermana Rufa ang usok mula sa gubat."
+    },
+    {
+        "id": 63,
+        "chapter_id": "saserdote",
+        "word": "Lumang tawag sa pari, karaniwang sa Bibliya.",
+        "definition": "Ginamit ito upang ilarawan ang katungkulan ni Padre Damaso bilang isang pari."
+    },
+    {
+        "id": 63,
+        "chapter_id": "napoot",
+        "word": "labis na nagalit o nagkaroon ng matinding galit",
+        "definition": "Tumutukoy sa galit ni Padre Damaso sa mga taong kumokontra sa kaniyang nais."
+    },
+    {
+        "id": 63,
+        "chapter_id": "disgustilyo",
+        "word": "mga hinanakit o maliliit na sama ng loob",
+        "definition": "Ang mga maliliit na tampo ni Maria Clara noong siya ay bata pa."
+    },
+    {
+        "id": 63,
+        "chapter_id": "pelus",
+        "word": "Telang mabalahibo na yarì sa seda, nylon, rayon, atbp. na pawang masinsin ang pagkakahábi at may makapal na rabáw.",
+        "definition": "Inilalarawan ang marangyang lalagyan ng mga alahas ni Maria Clara."
+    },
+    {
+        "id": 63,
+        "chapter_id": "mongha",
+        "word": "Babaeng naninirahan sa kumbento upang iukol ang kaniyang búhay sa pagsamba at pagdalangin sa Diyos.",
+        "definition": "Ito ang piniling landas ni Maria Clara matapos mabalitang patay na si Ibarra."
+    },
+    {
+        "id": 63,
+        "chapter_id": "daing",
+        "word": "Pagpapahayag ng lungkot, sakít, hindi kasiyahan, samâ-ng-loob, at katulad na damdámin.",
+        "definition": "Ang mga hiling at panalangin sa loob ng kumbento."
+    },
+    {
+        "id": 63,
+        "chapter_id": "esposa",
+        "word": "Asawang babae.",
+        "definition": "Ginamit ni Padre Damaso upang ilarawan ang magiging buhay ni Maria Clara kung magpapakasal."
+    },
+    {
+        "id": 63,
+        "chapter_id": "binubusabos",
+        "word": "inaapi, pinapahirapan, o minamaliit",
+        "definition": "Ang kinatatakutang tadhana ni Padre Damaso para sa mga magiging anak ni Maria Clara."
+    },
+    {
+        "id": 63,
+        "chapter_id": "napaigtad",
+        "word": "Biglang napakilos o napatayo dahil sa gulat",
+        "definition": "Ang reaksyon ni Maria Clara nang gulatin siya ni Padre Damaso."
+    },
+    {
+        "id": 63,
+        "chapter_id": "estutseng",
+        "word": "kahon ng alahas, lalagyan ng mamahaling bagay.",
+        "definition": "Ang mga lalagyan ng regalong pangkasal na hindi pinapansin ni Maria Clara."
+    },
+    {
+        "id": 63,
+        "chapter_id": "bulalas",
+        "word": "Anumang biglang pagsasalita o pag-iingay (lalo na dahil sa matinding damdámin).",
+        "definition": "Ang biglang sigaw o pahayag ni Padre Damaso sa gitna ng pag-uusap."
+    },
+    {
+        "id": 63,
+        "chapter_id": "ligalig",
+        "word": "Magulo ang isipan kayâ hindi mapirme.",
+        "definition": "Inilalarawan ang nararamdaman ni Maria Clara dahil sa kaniyang mga problema."
+    },
+    {
+        "id": 63,
+        "chapter_id": "sawiin",
+        "word": "biguin o sirain ang inaasam na kaligayahan",
+        "definition": "Ang pakiusap ni Maria Clara sa kaniyang ninong."
+    },
+    {
+        "id": 63,
+        "chapter_id": "manyikang sahing",
+        "word": "simpleng manikang gawa sa abo o uling",
+        "definition": "Isang alaala ng pagkabata ni Maria Clara."
+    },
+    {
+        "id": 63,
+        "chapter_id": "tigmak",
+        "word": "Lubhang basâ ng anumang likido, lalo na kung tubig-ulan, páwis, o dugo.",
+        "definition": "Inilalarawan ang mga matang basang-basa sa luha."
+    },
+    {
+        "id": 63,
+        "chapter_id": "kapritso",
+        "word": "Paggawa o paghingi ng anuman nang walang kadahilanan o batayan kundi para sa sariling kasiyahan.",
+        "definition": "Ang mga hiling ni Maria Clara na laging sinusunod ni Padre Damaso."
+    },
+    {
+        "id": 63,
+        "chapter_id": "seda",
+        "word": "Pino at makintab na hiblang mula sa pugad ng isang uri ng uod.",
+        "definition": "Isa sa mga mamahaling tela na bahagi ng mga regalo para sa kasal."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Libis",
+        "word": "Makitid na kapatagang nasa pagitan ng isang bundok at iba pang mataas na lupa.",
+        "definition": "Ang lokasyon ng dampa nina Basilio sa kagubatan."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Ingkong",
+        "word": "Magalang na pagtawag sa lolo o isang matandang lalaki.",
+        "definition": "Ang matandang kumupkop kay Basilio matapos siyang sugatan."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Tumitimo",
+        "word": "tumusok, tumagos, bumaon, o nagmarka",
+        "definition": "Inilalarawan ang malalim na tingin ni Basilio dahil sa hapis."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Hawas",
+        "word": "Anyo ng mukha na mahaba at patulis ang baba (hugis itlog).",
+        "definition": "Ang anyo ng mukha ni Basilio na namana niya sa kaniyang ina."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Dayap",
+        "word": "Isang uri ng sitrus; ginagamit na pampabango o sangkap.",
+        "definition": "Ginamit bilang bahagi ng panggamot sa sugat ni Basilio."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Dampa",
+        "word": "maliit na tahanang tinitirhan ng mga maralita.",
+        "definition": "Ang payak na tahanan sa gitna ng gubat."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Pikô",
+        "word": "Laro na may batóng initsa sa ginuhitang lapag.",
+        "definition": "Ang larong nais laruin ng mga bata kasama si Basilio."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Magaralgal",
+        "word": "Nanginginig o garalgal na boses, karaniwang dahil sa pagpipigil ng iyak.",
+        "definition": "Ang tinig ng mga bata habang nagpapaalam."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Hapis",
+        "word": "Matinding dusa, lungkot, o pait na nararanasan ng kalooban.",
+        "definition": "Ang nararamdaman ni Basilio sa pagkawala ng kaniyang pamilya."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Sinawata",
+        "word": "Pinigil, sinaway, o hinadlangan ang isang kilos o pangyayari.",
+        "definition": "Ang pagpigil ni Basilio sa kaniyang sariling panginginig."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Sawimpalad",
+        "word": "nasa masamang kalagayan o nagdurusa; taong bigo o nakaranas ng malaking trahedya.",
+        "definition": "Tumutukoy sa kalagayan ni Basilio at ng kaniyang ina."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Kasibulan",
+        "word": "Panahon ng kabataan o kasariwaan.",
+        "definition": "Ang anyo ng babaeng nakita ni Sisa sa bintana."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Lipos",
+        "word": "pagiging puno ng espasyo o sisidlan",
+        "definition": "Lipos ng takot na tumakbo si Sisa nang makita ang sundalo."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Nangangaligkig",
+        "word": "matinding panginginig ng buong katawan sanhi ng labis na ginaw.",
+        "definition": "Ang nararamdaman ng mga tao sa San Diego dahil sa hanging Hilaga."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Binalisunsong",
+        "word": "ginawa o ititnupi sa hugis balisunsong o apa",
+        "definition": "Ginamit ni Basilio ang dahon ng saging upang kumuha ng tubig."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Rebentador",
+        "word": "uri ng paputok na may malakas na pagsabog",
+        "definition": "Ang hiling ng batang lalaki para sa Pasko."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Nochebuena",
+        "word": "gabi ng bisperas ng Pasko",
+        "definition": "Ang gabi kung kailan naganap ang huling pagkikita nina Basilio at Sisa."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Entresuwelo",
+        "word": "maliit o mababang silid/palapag",
+        "definition": "Dito nag-uusap sina Kapitan Basilio at Don Filipo."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Kompete",
+        "word": "uri ng paputok na pumapailanlang sa itaas bago sumabog; kwitis",
+        "definition": "Bahagi ng tradisyunal na pagdiriwang ng Pasko."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Palara",
+        "word": "manipis, makintab, at metalikong papel na ginagamit pambalot o pandekorasyon",
+        "definition": "Dekorasyon para sa Pasko."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Sukal",
+        "word": "Mga dumi o damong hindi kailangan; maaari ring tumukoy sa gulo ng nararamdaman.",
+        "definition": "Ang mga balakid sa pagtakbo nina Basilio sa gubat."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Palumpong",
+        "word": "Lupon ng maliliit na puno o halaman na tumutubong magkakasama.",
+        "definition": "Mga halaman sa loob ng mahiwagang gubat."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Dawag",
+        "word": "matinik at malakahoy na halamang-baging",
+        "definition": "Mga balakid sa kagubatan."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Nilawag",
+        "word": "Niliwanagan o nilakbay nang may dalang ilaw upang makita ang dinadaanan.",
+        "definition": "Ang mga bahagi ng gubat na natatamaan ng sinag ng buwan."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Tumutugaygay",
+        "word": "Nagmamasid o sumusubaybay nang masusi sa bawat kilos.",
+        "definition": "Ang pagbabantay ni Basilio sa kaniyang ina."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Balete",
+        "word": "malaking punongkahoy na may maraming baging.",
+        "definition": "Ang mahiwagang puno kung saan namatay si Sisa."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Puminid",
+        "word": "pagsara ng pinto; sa konteksto ng kamatayan, ang huling pagpikit ng mga mata.",
+        "definition": "Ang pagtulak ni Sisa sa pinto upang hindi makapasok si Basilio."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Niyapos",
+        "word": "Niyakap nang buong higpit at pagmamahal",
+        "definition": "Ang huling yakap ni Basilio sa kaniyang ina."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Rehas",
+        "word": "mga bakal na nakaharang sa bintana",
+        "definition": "Dito nakadungaw ang mga dalaga habang nag-uusap."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Kuwartel",
+        "word": "tirahan ng mga sundalo o guwardiya sibil",
+        "definition": "Ang lugar na iniwasan ni Sisa."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Pinupog",
+        "word": "Paulit-ulit na ginawa ang isang bagay",
+        "definition": "Ang paghalik ni Basilio sa kaniyang ina."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Alipato",
+        "word": "maliliit na bagang inililipad ng hangin mula sa nasusunog na bagay",
+        "definition": "Ang kislap ng alaala sa isip ni Sisa bago siya mamatay."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Kamaksi",
+        "word": "Isang uri ng ibon (nightjar) na karaniwang naririnig ang huni sa gabi.",
+        "definition": "Ang naririnig na huni sa gitna ng katahimikan ng gabi."
+    },
+    {
+        "id": 64,
+        "chapter_id": "Batalan",
+        "word": "Bahagi ng bahay-kubo kung saan naghuhugas at naglilinis.",
+        "definition": "Dito nakita ni Hermana Rufa ang usok mula sa gubat."
+    }
+]

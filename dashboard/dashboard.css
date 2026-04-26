@@ -1,0 +1,64 @@
+.book-card-horizontal {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    cursor: pointer;
+    background: #ffffff !important;
+    border: 2px solid rgba(128, 0, 0, 0.5) !important; /* Intensified fixed outline */
+    border-radius: 30px;
+}
+
+.book-card-horizontal:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(128, 0, 0, 0.1) !important;
+    border-color: var(--maroon) !important;
+}
+
+.book-cover-container-horizontal {
+    width: 320px;
+    height: 480px;
+    position: relative;
+    flex-shrink: 0;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.1);
+}
+
+.book-cover-container-horizontal.fili-cover {
+    background: linear-gradient(45deg, #4a0000, #2c241e);
+}
+
+.book-details-side {
+    flex-grow: 1;
+    background: #ffffff;
+}
+
+.author-name-dashboard {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--maroon);
+    opacity: 0.8;
+}
+
+.book-description {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+.neu-divider-sm {
+    height: 3px;
+    width: 50px;
+    background: var(--accent);
+    border-radius: 10px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .book-cover-container-horizontal {
+        width: 100%;
+        height: 400px;
+    }
+}

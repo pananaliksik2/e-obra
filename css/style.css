@@ -1,0 +1,390 @@
+:root {
+    --neu-bg: #f4f0e6;
+    --neu-light: #ffffff;
+    --neu-dark: #d1cbc0;
+    --maroon: #800000;
+    --dark-maroon: #4a0000;
+    --accent: #c5a059;
+    --text: #2c241e;
+}
+
+/* Global Background System */
+.bg-neu {
+    background-color: #ffffff;
+    position: relative;
+    min-height: 100vh;
+}
+
+.bg-dotted-noise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-image: radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.35) 1px, transparent 0);
+    background-size: 20px 20px;
+    pointer-events: none;
+}
+
+body.bg-neu {
+    background-color: var(--neu-bg);
+    color: var(--text);
+    font-family: 'Faustina', serif;
+    min-height: 100vh;
+}
+
+.title-font {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+}
+
+.text-maroon {
+    color: var(--maroon);
+}
+
+/* Neumorphic Components */
+.neu-card {
+    background: var(--neu-bg);
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px var(--neu-dark),
+        -10px -10px 20px var(--neu-light);
+    border: none;
+}
+
+.neu-container {
+    background: var(--neu-bg);
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px var(--neu-dark),
+        -8px -8px 16px var(--neu-light);
+}
+
+.neu-nav {
+    background: var(--neu-bg);
+    padding: 1rem 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.neu-btn {
+    background: var(--neu-bg);
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    color: var(--maroon);
+    font-weight: 600;
+    box-shadow: 5px 5px 10px var(--neu-dark),
+        -5px -5px 10px var(--neu-light);
+    transition: all 0.3s ease;
+}
+
+.neu-btn:hover {
+    box-shadow: 2px 2px 5px var(--neu-dark),
+        -2px -2px 5px var(--neu-light);
+    transform: translateY(2px);
+    color: var(--dark-maroon);
+}
+
+.neu-btn:active {
+    box-shadow: inset 5px 5px 10px var(--neu-dark),
+        inset -5px -5px 10px var(--neu-light);
+}
+
+.neu-btn-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: var(--neu-bg);
+    box-shadow: 4px 4px 8px var(--neu-dark),
+        -4px -4px 8px var(--neu-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--maroon);
+    transition: all 0.2s;
+}
+
+.neu-btn-icon:hover {
+    box-shadow: 2px 2px 4px var(--neu-dark),
+        -2px -2px 4px var(--neu-light);
+}
+
+.neu-btn-icon:active {
+    box-shadow: inset 4px 4px 8px var(--neu-dark),
+        inset -4px -4px 8px var(--neu-light);
+}
+
+.neu-icon-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--neu-bg);
+    box-shadow: inset 5px 5px 10px var(--neu-dark),
+        inset -5px -5px 10px var(--neu-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.neu-icon-box-sm {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--neu-bg);
+    box-shadow: inset 3px 3px 6px var(--neu-dark),
+        inset -3px -3px 6px var(--neu-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Navigation Links */
+.neu-nav-link {
+    border-radius: 10px;
+    padding: 8px 16px !important;
+    transition: all 0.3s;
+    color: var(--text) !important;
+}
+
+/* Glossary Terms */
+.glossary-term {
+    border-bottom: 2px dashed var(--maroon);
+    cursor: help;
+    transition: all 0.2s ease;
+    padding: 0 2px;
+    font-weight: 500;
+}
+
+.glossary-term:hover {
+    background-color: rgba(128, 0, 0, 0.05);
+    border-bottom-style: solid;
+}
+
+.neu-nav-link.active {
+    box-shadow: inset 3px 3px 6px var(--neu-dark),
+        inset -3px -3px 6px var(--neu-light);
+    color: var(--maroon) !important;
+}
+
+/* Ensure branding logo remains clean and background-free */
+.navbar-brand,
+#brand-home,
+#brand-home.active {
+    background: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Book Cards */
+.book-card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-10px);
+}
+
+.book-cover-container {
+    height: 350px;
+    background: linear-gradient(45deg, #c5a059, #800000);
+    border-radius: 10px 20px 20px 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.book-cover-container.fili-cover {
+    background: linear-gradient(45deg, #4a0000, #2c241e);
+}
+
+.book-spine {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 25px;
+    background: rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.book-title-overlay {
+    padding: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Reader Specifics */
+.chapter-title-neu {
+    font-family: 'Cinzel', serif;
+    color: var(--maroon);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.neu-divider {
+    height: 3px;
+    width: 60px;
+    background: var(--accent);
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 2px var(--neu-dark);
+}
+
+.chapter-content-neu {
+    font-size: 1.25rem;
+    line-height: 2;
+    text-align: justify;
+    color: var(--text);
+}
+
+.neu-page-indicator {
+    padding: 8px 20px;
+    background: var(--neu-bg);
+    border-radius: 20px;
+    box-shadow: inset 4px 4px 8px var(--neu-dark),
+        inset -4px -4px 8px var(--neu-light);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Tooltip */
+.neu-tooltip {
+    position: fixed;
+    background: var(--neu-bg);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+        -5px -5px 10px var(--neu-light);
+    z-index: 1050;
+    max-width: 320px;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    pointer-events: none;
+    border: 3px solid var(--neu-bg);
+}
+
+.neu-tooltip.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Quiz Specifics */
+.neu-q-box {
+    background: var(--neu-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: inset 6px 6px 12px var(--neu-dark),
+        inset -6px -6px 12px var(--neu-light);
+}
+
+.quiz-question-neu {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--maroon);
+}
+
+.neu-opt-btn {
+    background: var(--neu-bg);
+    border: none;
+    padding: 1.2rem;
+    border-radius: 12px;
+    width: 100%;
+    text-align: left;
+    box-shadow: 4px 4px 8px var(--neu-dark),
+        -4px -4px 8px var(--neu-light);
+    transition: all 0.2s;
+    font-size: 1.1rem;
+}
+
+.neu-opt-btn:hover {
+    box-shadow: 2px 2px 4px var(--neu-dark),
+        -2px -2px 4px var(--neu-light);
+}
+
+.neu-opt-btn.selected {
+    box-shadow: inset 4px 4px 8px rgba(128, 0, 0, 0.2),
+        inset -4px -4px 8px var(--neu-light);
+    color: var(--maroon);
+    font-weight: 700;
+}
+
+.neu-opt-btn.correct {
+    background: #d4edda;
+    box-shadow: inset 4px 4px 8px #c3e6cb,
+        inset -4px -4px 8px #ffffff;
+    color: #155724;
+}
+
+.neu-opt-btn.wrong {
+    background: #f8d7da;
+    box-shadow: inset 4px 4px 8px #f5c6cb,
+        inset -4px -4px 8px #ffffff;
+    color: #721c24;
+}
+
+.neu-badge {
+    padding: 10px 25px;
+    background: var(--neu-bg);
+    border-radius: 30px;
+    box-shadow: 4px 4px 8px var(--neu-dark),
+        -4px -4px 8px var(--neu-light);
+    font-weight: 600;
+}
+
+/* Auth Overlay */
+.auth-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--neu-bg);
+    z-index: 2000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .chapter-content-neu {
+        font-size: 1.1rem;
+    }
+
+    .neu-card {
+        padding: 2rem !important;
+    }
+
+    /* HARD RESET: Remove all background/glass effects from branding on mobile */
+    .navbar-brand#brand-home, 
+    .navbar-brand#brand-home.active {
+        background: transparent !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+    }
+}

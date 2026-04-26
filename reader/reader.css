@@ -1,0 +1,113 @@
+/* Reader Specific Styles */
+.chapter-title-neu {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--maroon);
+    margin-bottom: 0.5rem;
+}
+
+.chapter-content-neu {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: var(--text);
+    text-align: justify;
+}
+
+/* Glossary Terms Highlighting */
+.glossary-term {
+    border-bottom: 2px dashed var(--maroon);
+    cursor: help;
+    transition: all 0.2s ease;
+    padding: 0 2px;
+    font-weight: 500;
+}
+
+.glossary-term:hover {
+    background-color: rgba(128, 0, 0, 0.05);
+    border-bottom-style: solid;
+}
+
+.neu-page-indicator {
+    font-weight: 600;
+    color: var(--text-muted);
+    min-width: 120px;
+    text-align: center;
+}
+
+@media print {
+    @page {
+        size: 8.5in 13in;
+        margin: 1in;
+    }
+
+    /* Hide all UI elements */
+    #header-placeholder, 
+    #footer-placeholder, 
+    .bg-dotted-noise, 
+    .bg-soft-glow,
+    #back-to-chapters,
+    #prev-btn, 
+    #next-btn, 
+    #page-indicator,
+    #download-pdf, 
+    #start-quiz, 
+    #next-chapter-btn,
+    .neu-divider,
+    .neu-nav,
+    .navbar {
+        display: none !important;
+    }
+
+    /* Reset container styles for printing */
+    body {
+        background-color: white !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        font-family: "Times New Roman", Times, serif !important;
+    }
+    
+    .container {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .neu-container {
+        box-shadow: none !important;
+        border: none !important;
+        background: transparent !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Remove glossary highlighting */
+    .glossary-term {
+        border-bottom: none !important;
+        color: black !important;
+        font-weight: normal !important;
+        padding: 0 !important;
+        cursor: default !important;
+        text-decoration: none !important;
+    }
+
+    /* Format chapter text for document */
+    .reader-page-content {
+        font-size: 12pt !important;
+        line-height: 1.5 !important;
+        color: black !important;
+        text-align: justify !important;
+    }
+
+    .chapter-title-neu {
+        font-size: 16pt !important;
+        text-align: center !important;
+        margin-bottom: 2rem !important;
+        text-transform: uppercase !important;
+        color: black !important;
+    }
+
+    #chapter-title {
+        color: black !important;
+    }
+}

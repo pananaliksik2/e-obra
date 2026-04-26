@@ -1,0 +1,111 @@
+{
+    "quizzes": [
+        {
+            "id": 1,
+            "chapter_id": 1,
+            "title": "Pagsusulit sa Kabanata 1: Isang Pagtitipon"
+        }
+    ],
+    "questions": [
+        {
+            "id": 1,
+            "quiz_id": 1,
+            "question_text": "Sino ang nagdaos ng isang malaking hapunan sa kaniyang bahay?",
+            "option_a": "Padre Damaso",
+            "option_b": "Kapitan Tiago",
+            "option_c": "Don Rafael Ibarra",
+            "option_d": "Padre Sibyla",
+            "correct_answer": "B"
+        },
+        {
+            "id": 2,
+            "quiz_id": 1,
+            "question_text": "Saang kalye matatagpuan ang bahay kung saan idinaos ang pagtitipon?",
+            "option_a": "Kalye Anloague",
+            "option_b": "Kalye Escolta",
+            "option_c": "Kalye Azcarraga",
+            "option_d": "Kalye Magallanes",
+            "correct_answer": "A"
+        },
+        {
+            "id": 3,
+            "quiz_id": 1,
+            "question_text": "Anong buwan idinaos ang nasabing pagtitipon?",
+            "option_a": "Enero",
+            "option_b": "Mayo",
+            "option_c": "Oktubre",
+            "option_d": "Disyembre",
+            "correct_answer": "C"
+        },
+        {
+            "id": 4,
+            "quiz_id": 1,
+            "question_text": "Sino ang Pransiskanong pari na naging kura sa San Diego sa loob ng 20 taon?",
+            "option_a": "Padre Sibyla",
+            "option_b": "Padre Salvi",
+            "option_c": "Padre Damaso",
+            "option_d": "Padre Irene",
+            "correct_answer": "C"
+        },
+        {
+            "id": 5,
+            "quiz_id": 1,
+            "question_text": "Ano ang tawag sa bulwagang tinutuluyan ng orkestra at komedor sa gabing iyon?",
+            "option_a": "Azotea",
+            "option_b": "Caida",
+            "option_c": "Zaguan",
+            "option_d": "Batalan",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6,
+            "quiz_id": 1,
+            "question_text": "Sino ang militar na nagkaroon ng mainit na pakikipagtalo kay Fray Damaso?",
+            "option_a": "Tenyente Guevarra",
+            "option_b": "Kapitan Heneral",
+            "option_c": "Alperes",
+            "option_d": "Isang Tenyente",
+            "correct_answer": "D"
+        },
+        {
+            "id": 7,
+            "quiz_id": 1,
+            "question_text": "Ano ang pangunahing dahilan ng galit ni Fray Damaso sa gobyerno?",
+            "option_a": "Kakulangan ng pagkain",
+            "option_b": "Pagpapatalsik sa kaniya sa San Diego",
+            "option_c": "Hindi pagkilala sa kaniyang awtoridad",
+            "option_d": "Lahat ng nabanggit",
+            "correct_answer": "B"
+        },
+        {
+            "id": 8,
+            "quiz_id": 1,
+            "question_text": "Anong ulam ang binanggit ni Fray Damaso na kinakain ng mga Indio?",
+            "option_a": "Adobo",
+            "option_b": "Sinigang",
+            "option_c": "Tinola",
+            "option_d": "Kare-kare",
+            "correct_answer": "C"
+        },
+        {
+            "id": 9,
+            "quiz_id": 1,
+            "question_text": "Sino ang asawa ni Doktor de Espadana na mahilig magkolorete?",
+            "option_a": "Donya Consolacion",
+            "option_b": "Donya Victorina",
+            "option_c": "Donya Pia Alba",
+            "option_d": "Donya Teodora",
+            "correct_answer": "B"
+        },
+        {
+            "id": 10,
+            "quiz_id": 1,
+            "question_text": "Ano ang naging paksa ng mainit na usapan nina Fray Damaso at ng militar?",
+            "option_a": "Pagpapaalis ng bangkay ng isang erehe",
+            "option_b": "Ang pagdating ni Crisostomo Ibarra",
+            "option_c": "Ang mga reporma sa edukasyon",
+            "option_d": "Ang buwis sa tabako",
+            "correct_answer": "A"
+        }
+    ]
+}
