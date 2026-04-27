@@ -218,40 +218,51 @@ function hideTooltip() {
     if (tooltip) tooltip.classList.remove('active');
 }
 
-// PDF Export - (Modified for Static Site: export full chapter text)
+// PDF Export - Using html2pdf for better mobile and filename support
 document.getElementById('download-pdf').addEventListener('click', function () {
     const contentDiv = document.getElementById('chapter-content');
     const originalContent = contentDiv.innerHTML;
 
-    // Create clean full text without glossary spans
-    // rawChapterContent is already available in the global scope
-    const cleanFullText = rawChapterContent.split('\n\n').map(p => `<p class="mb-4">${p}</p>`).join('');
+    // Create a clean container for the PDF content
+    const element = document.createElement('div');
+    element.className = 'p-5 bg-white text-dark';
+    element.style.fontFamily = "'Times New Roman', serif";
 
-    // Scroll to top to prevent browsers from clipping the top of the document during print
-    window.scrollTo(0, 0);
+    const now = new Date();
+    const dateStr = `${String(now.getDate()).padStart(2, '0')}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getFullYear()).slice(-2)}`;
+    const filename = `Kabanata_${currentChapterNum}_E-Obra_${dateStr}.pdf`;
 
-    // Temporarily swap content for printing
-    contentDiv.innerHTML = `<div class="reader-page-content">${cleanFullText}</div>`;
+    const cleanFullText = rawChapterContent.split('\n\n').map(p => `<p style="margin-bottom: 1.5rem; text-align: justify; line-height: 1.6; font-size: 12pt;">${p}</p>`).join('');
+    
+    element.innerHTML = `
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <h1 style="font-size: 18pt; margin-bottom: 5px; color: #800000;">Noli Me Tangere</h1>
+            <h2 style="font-size: 14pt; font-weight: normal;">Kabanata ${currentChapterNum}</h2>
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+        </div>
+        <div>${cleanFullText}</div>
+        <div style="margin-top: 3rem; text-align: center; font-size: 10pt; color: #888;">
+            Inilathala ng E-Obra Educational Platform
+        </div>
+    `;
 
-    // Use a small timeout to ensure the DOM has updated before the print dialog opens
-    setTimeout(() => {
-        // Set dynamic filename via document.title
-        const originalTitle = document.title;
-        const now = new Date();
-        const dd = String(now.getDate()).padStart(2, '0');
-        const mm = String(now.getMonth() + 1).padStart(2, '0');
-        const yy = String(now.getFullYear()).slice(-2);
-        const dateStr = `${dd}-${mm}-${yy}`; // Using dashes because slashes are illegal in filenames
+    const opt = {
+        margin: [1, 1],
+        filename: filename,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+    };
 
-        document.title = `Kabanata ${currentChapterNum}_E-Obra_${dateStr}`;
+    // Show loading state
+    const originalBtnText = this.innerHTML;
+    this.innerHTML = `<span class="spinner-border spinner-border-sm me-2"></span>Inihahanda...`;
+    this.disabled = true;
 
-        window.print();
-
-        // Restore state
-        document.title = originalTitle;
-        contentDiv.innerHTML = originalContent;
-        setupGlossaryEvents(); // Re-bind glossary events
-    }, 250);
+    html2pdf().set(opt).from(element).save().then(() => {
+        this.innerHTML = originalBtnText;
+        this.disabled = false;
+    });
 });
 
 

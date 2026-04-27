@@ -121,4 +121,46 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+    // Researchers Pop-up Logic
+    document.addEventListener('click', (e) => {
+        const btn = e.target.closest('#researchers-btn');
+        const existing = document.getElementById('researchers-popup');
+        
+        if (btn) {
+            e.preventDefault();
+            if (existing) {
+                existing.remove();
+            } else {
+                showResearchersPopup(btn);
+            }
+        } else if (existing && !e.target.closest('#researchers-popup')) {
+            existing.remove();
+        }
+    });
+
+    function showResearchersPopup(btn) {
+        const rect = btn.getBoundingClientRect();
+        const isMobile = window.innerWidth < 992; // Match Bootstrap LG breakpoint
+        
+        const popupStyle = isMobile 
+            ? `position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; max-width: 300px;`
+            : `position: fixed; top: ${rect.bottom + 10}px; left: ${rect.left - 50}px; width: 250px;`;
+
+        const popupHtml = `
+            <div id="researchers-popup" class="fade-in neu-card p-4 shadow-lg" style="${popupStyle} z-index: 1060; border: 2px solid rgba(128, 0, 0, 0.2);">
+                <div class="text-center">
+                    <h6 class="title-font text-maroon mb-2" style="font-size: 0.9rem;">Mga Mananaliksik</h6>
+                    <div class="neu-divider-sm mx-auto mb-2" style="height: 1px;"></div>
+                    <div class="researchers-list text-start ps-2" style="font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; line-height: 1.6; color: #444;">
+                        Abong, Shanel Kate A.<br>
+                        Delante, Rona G.<br>
+                        Flor, Aicha Mae L.<br>
+                        Hulleza, Nadine D.<br>
+                        Santiago, Daniela T.
+                    </div>
+                </div>
+            </div>
+        `;
+        document.body.insertAdjacentHTML('beforeend', popupHtml);
+    }
 });

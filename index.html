@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fil">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,9 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
         .landing-wrapper {
@@ -17,21 +20,26 @@
             display: flex;
             align-items: center;
             background: transparent;
-            padding: 3rem 1rem; /* Increased vertical padding for mobile */
+            padding: 3rem 1rem;
+            /* Increased vertical padding for mobile */
             position: relative;
             z-index: 1;
         }
+
         .hero-text {
             padding-right: 3rem;
         }
+
         .hero-title {
             font-family: 'Cinzel', serif;
-            font-size: clamp(2.5rem, 8vw, 4rem); /* Dynamic font size */
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            /* Dynamic font size */
             color: #800000;
             margin-bottom: 1.5rem;
             letter-spacing: 2px;
             font-weight: 700;
         }
+
         .hero-description {
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.4rem;
@@ -40,11 +48,13 @@
             margin-bottom: 2rem;
             text-align: justify;
         }
+
         .feature-list {
             list-style: none;
             padding: 0;
             margin-bottom: 2rem;
         }
+
         .feature-item {
             display: flex;
             align-items: center;
@@ -54,40 +64,49 @@
             font-size: 1.1rem;
             color: #555;
         }
+
         .feature-item i {
             color: #800000;
             font-size: 1.2rem;
         }
+
         @media (max-width: 991.98px) {
             .landing-wrapper {
                 padding-top: 5rem;
                 padding-bottom: 5rem;
             }
+
             .hero-text {
                 padding-right: 0;
                 text-align: center;
                 margin-bottom: 4rem;
             }
+
             .hero-description {
                 text-align: center;
                 font-size: 1.2rem;
                 padding: 0 10px;
             }
+
             .feature-list {
                 display: inline-block;
                 text-align: left;
                 margin: 0 auto 2rem;
             }
+
             .feature-item {
                 font-size: 1rem;
             }
+
             .neu-card {
                 padding: 2.5rem 1.5rem !important;
                 /* Add subtle glass effect for mobile readability */
                 background: rgba(255, 255, 255, 0.8) !important;
                 backdrop-filter: blur(10px);
-                display: none; /* Hidden by default on mobile */
+                display: none;
+                /* Hidden by default on mobile */
             }
+
             .neu-card.show-mobile {
                 display: block !important;
                 animation: fadeInUp 0.5s ease forwards;
@@ -95,9 +114,17 @@
         }
 
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+
         .ink-frame {
             position: fixed;
             top: 0;
@@ -110,17 +137,20 @@
             opacity: 0.15;
             mix-blend-mode: multiply;
         }
+
         .ink-side {
             position: absolute;
             width: 600px;
             height: 800px;
             background: url('assets/ink_splash.png') no-repeat center/contain;
         }
+
         .ink-side-l {
             top: -100px;
             left: -200px;
             transform: rotate(-15deg);
         }
+
         .ink-side-r {
             bottom: -100px;
             right: -200px;
@@ -128,105 +158,105 @@
         }
     </style>
 </head>
+
 <body class="bg-neu">
 
-<div class="ink-frame">
-    <div class="ink-side ink-side-l"></div>
-    <div class="ink-side ink-side-r"></div>
-    <div class="ink-side" style="top: 50%; left: -300px; transform: translateY(-50%) rotate(45deg);"></div>
-    <div class="ink-side" style="top: 40%; right: -300px; transform: translateY(-50%) rotate(-45deg);"></div>
-</div>
+    <div class="ink-frame">
+        <div class="ink-side ink-side-l"></div>
+        <div class="ink-side ink-side-r"></div>
+        <div class="ink-side" style="top: 50%; left: -300px; transform: translateY(-50%) rotate(45deg);"></div>
+        <div class="ink-side" style="top: 40%; right: -300px; transform: translateY(-50%) rotate(-45deg);"></div>
+    </div>
 
-<div class="landing-wrapper">
-    <div class="container">
-        <div class="row align-items-center">
-            <!-- Description Side -->
-            <div class="col-lg-7 hero-text fade-in">
-                <h1 class="hero-title">E-OBRA</h1>
-                <div class="neu-divider mb-4 d-lg-block d-none"></div>
-                <p class="hero-description">
-                    Ang <strong>E-Obra</strong> ay isang interaktibong plataporma na idinisenyo upang gawing mas makabuluhan at mas madali ang pag-aaral ng mga dakilang akda ni Jose Rizal, partikular ang <em>Noli Me Tangere</em>.
-                </p>
-                <p class="hero-description">
-                    Sa pamamagitan ng aming modernong teknolohiya, layunin naming buhayin ang panitikan sa puso ng bawat mag-aaral. Hindi lamang ito basta pagbabasa; ito ay isang paglalakbay pabalik sa kasaysayan upang mas maunawaan ang ating pagkakakilanlan bilang mga Pilipino.
-                </p>
-                
-                <ul class="feature-list">
-                    <li class="feature-item"><i class="bi bi-check2-circle"></i> Interaktibong Paged Reader para sa mas komportableng pagbabasa.</li>
-                    <li class="feature-item"><i class="bi bi-check2-circle"></i> Instant Glossary Tooltip para sa mga malalalim na salitang Tagalog.</li>
-                    <li class="feature-item"><i class="bi bi-check2-circle"></i> Dynamic Quizzes upang subukin ang iyong pag-unawa sa bawat kabanata.</li>
-                </ul>
-
-                <!-- Mobile Only Get Started Button -->
-                <div class="d-lg-none mt-4">
-                    <button id="mobile-get-started" class="neu-btn px-5 py-3">Magsimula <i class="bi bi-arrow-right ms-2"></i></button>
-                </div>
-            </div>
-            
-            <!-- Login Side -->
-            <div class="col-lg-5" id="login-section">
-                <div class="neu-card p-5 text-center fade-in" id="login-card">
-                    <div class="neu-icon-box mb-4 mx-auto">
-                        <i class="bi bi-person-circle display-4 text-maroon"></i>
-                    </div>
-                    <h3 class="title-font text-maroon mb-4">Magsimula Na</h3>
-                    <p class="mb-4 text-muted">Mangyaring mag-login upang ma-access ang iyong dashboard at masubaybayan ang iyong progreso.</p>
-                    
-                    <button id="google-login-btn" class="neu-btn w-100 d-flex align-items-center justify-content-center gap-2 mb-3">
-                        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" width="20" alt="Google">
-                        Mag-login gamit ang Google
-                    </button>
-                    
-                    <p class="mt-4 text-muted small">
-                        Sa pagpapatuloy, sumasang-ayon ka sa aming mga patakaran sa paggamit ng E-Obra Educational Platform.
+    <div class="landing-wrapper">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Description Side -->
+                <div class="col-lg-7 hero-text fade-in">
+                    <h1 class="hero-title">E-OBRA</h1>
+                    <div class="neu-divider mb-4 d-lg-block d-none"></div>
+                    <p class="hero-description">
+                        Ang <strong>E-Obra</strong> ay isang interaktibong plataporma na idinisenyo upang gawing mas
+                        makabuluhan at mas madali ang pag-aaral ng mga dakilang akda ni Jose Rizal, partikular ang
+                        <em>Noli Me Tangere</em>.
                     </p>
+
+                    <!-- Mobile Only Get Started Button -->
+                    <div class="d-lg-none mt-4">
+                        <button id="mobile-get-started" class="neu-btn px-5 py-3">Magsimula <i
+                                class="bi bi-arrow-right ms-2"></i></button>
+                    </div>
+                </div>
+
+                <!-- Login Side -->
+                <div class="col-lg-5" id="login-section">
+                    <div class="neu-card p-5 text-center fade-in" id="login-card">
+                        <div class="neu-icon-box mb-4 mx-auto">
+                            <i class="bi bi-person-circle display-4 text-maroon"></i>
+                        </div>
+                        <h3 class="title-font text-maroon mb-4">Magsimula Na</h3>
+                        <p class="mb-4 text-muted">Mangyaring mag-login upang ma-access ang iyong dashboard at
+                            masubaybayan ang iyong progreso.</p>
+
+                        <button id="google-login-btn"
+                            class="neu-btn w-100 d-flex align-items-center justify-content-center gap-2 mb-3">
+                            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" width="20"
+                                alt="Google">
+                            Mag-login gamit ang Google
+                        </button>
+
+                        <p class="mt-4 text-muted small">
+                            Sa pagpapatuloy, sumasang-ayon ka sa aming mga patakaran sa paggamit ng E-Obra Educational
+                            Platform.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Firebase App -->
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <!-- Firebase App -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
 
-<!-- Global Scripts -->
-<script src="js/config.js"></script>
-<script src="js/auth.js"></script>
+    <!-- Global Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
 
-<script>
-    // Logic for index login
-    document.addEventListener('DOMContentLoaded', () => {
-        const loginBtn = document.getElementById('google-login-btn');
-        const mobileStartBtn = document.getElementById('mobile-get-started');
-        const loginCard = document.getElementById('login-card');
-        const loginSection = document.getElementById('login-section');
+    <script>
+        // Logic for index login
+        document.addEventListener('DOMContentLoaded', () => {
+            const loginBtn = document.getElementById('google-login-btn');
+            const mobileStartBtn = document.getElementById('mobile-get-started');
+            const loginCard = document.getElementById('login-card');
+            const loginSection = document.getElementById('login-section');
 
-        if (mobileStartBtn) {
-            mobileStartBtn.addEventListener('click', () => {
-                loginCard.classList.add('show-mobile');
-                setTimeout(() => {
-                    loginSection.scrollIntoView({ behavior: 'smooth' });
-                }, 100);
-                mobileStartBtn.parentElement.style.display = 'none';
-            });
-        }
+            if (mobileStartBtn) {
+                mobileStartBtn.addEventListener('click', () => {
+                    loginCard.classList.add('show-mobile');
+                    setTimeout(() => {
+                        loginSection.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                    mobileStartBtn.parentElement.style.display = 'none';
+                });
+            }
 
-        if (loginBtn) {
-            loginBtn.addEventListener('click', () => {
-                const provider = new firebase.auth.GoogleAuthProvider();
-                firebase.auth().signInWithPopup(provider)
-                    .then((result) => {
-                        window.location.href = window.BASE_URL + 'dashboard/';
-                    })
-                    .catch((error) => {
-                        console.error("Login failed:", error);
-                        alert("Hindi matuloy ang pag-login: " + error.message);
-                    });
-            });
-        }
-    });
-</script>
+            if (loginBtn) {
+                loginBtn.addEventListener('click', () => {
+                    const provider = new firebase.auth.GoogleAuthProvider();
+                    firebase.auth().signInWithPopup(provider)
+                        .then((result) => {
+                            window.location.href = window.BASE_URL + 'dashboard/';
+                        })
+                        .catch((error) => {
+                            console.error("Login failed:", error);
+                            alert("Hindi matuloy ang pag-login: " + error.message);
+                        });
+                });
+            }
+        });
+    </script>
 
 </body>
+
 </html>

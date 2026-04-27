@@ -1,6 +1,8 @@
 /* Quiz Specific Styles */
 #quiz-content, #quiz-result {
-    background: #ffffff !important;
+    background: url('../assets/minimal_crumpled_paper.png') center / cover no-repeat !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 .bg-maroon {

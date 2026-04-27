@@ -1,12 +1,12 @@
 #chapter-list-view {
-    background: #ffffff !important;
+    background: url('../assets/minimal_crumpled_paper.png') center / 150% auto no-repeat fixed !important;
     border: none;
     position: relative;
     overflow: visible;
     box-shadow: 8px 8px 16px var(--neu-dark),
         -8px -8px 16px var(--neu-light) !important;
     border-radius: 20px;
-    height: calc(100vh - 120px);
+    height: 650px; /* Specific fixed height for desktop */
     display: flex;
     flex-direction: column;
 }
@@ -71,7 +71,7 @@
 }
 
 .sticky-header-section {
-    background: #ffffff;
+    background: transparent;
     border-bottom: 2px solid rgba(128, 0, 0, 0.05);
     z-index: 10;
 }
@@ -98,7 +98,8 @@
 }
 
 .neu-search-wrapper {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     display: flex;
@@ -129,7 +130,8 @@
 }
 
 .chapter-item-neu {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.03);
     padding: 8px 16px;
@@ -183,6 +185,46 @@
     letter-spacing: 0.5px;
     color: #5d4037 !important;
     margin-top: -5px;
+}
+
+@media (max-width: 768px) {
+    #chapter-list-view {
+        height: calc(100vh - 60px); /* Maintain fixed height for internal scrolling */
+        margin-top: 10px;
+        background-attachment: scroll !important;
+        background-size: cover !important; /* Use cover for better visibility on mobile */
+    }
+
+    .sticky-header-section {
+        padding: 1.2rem !important;
+        position: sticky;
+        top: 0;
+        background: url('../assets/minimal_crumpled_paper.png') center / 150% auto no-repeat !important;
+    }
+
+    .scrollable-chapters-list {
+        padding: 1.2rem !important;
+        padding-bottom: 100px !important; /* Added extra space at the bottom */
+    }
+
+    .chapter-title {
+        white-space: normal;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .chapter-item-neu {
+        padding: 12px;
+        background: rgba(255, 255, 255, 0.6) !important; /* Slightly more opaque for better contrast */
+    }
+
+    .author-name {
+        font-size: 0.9rem;
+    }
+
+    .title-font {
+        font-size: 1.4rem !important;
+    }
 }
 
 .italic {

@@ -1,6 +1,8 @@
-/* Chapter & Reader container - white background match */
+/* Chapter & Reader container - Crumpled Paper Background */
 #chapter-reader {
-    background: #ffffff !important;
+    background: url('../assets/minimal_crumpled_paper.png') center / cover no-repeat !important;
+    border: none !important;
+    box-shadow: none !important; /* Remove shadow to make edges look natural */
 }
 
 /* Reading Progress Bar */
@@ -47,7 +49,7 @@
     line-height: 1.8;
     color: var(--text);
     text-align: justify;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3F%3E%3Cfilter id='noiseFilter'%3F%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3F%3E%3C/filter%3F%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3F%3E%3C/svg%3F%3E");
+    background: transparent !important;
     opacity: 0.95;
 }
 
@@ -126,18 +128,23 @@
         overflow: visible !important;
     }
 
-    .neu-container {
+    .neu-container, #chapter-reader, #reader-view, main.container {
         box-shadow: none !important;
         border: none !important;
         background: transparent !important;
         padding: 0 !important;
         margin: 0 !important;
         overflow: visible !important;
+        height: auto !important;
+        max-height: none !important;
+        position: static !important;
     }
 
-    .chapter-content-neu {
+    .chapter-content-neu, #chapter-content {
         overflow: visible !important;
         height: auto !important;
+        max-height: none !important;
+        display: block !important;
     }
 
     /* Remove glossary highlighting */
@@ -156,6 +163,9 @@
         color: black !important;
         text-align: justify !important;
         display: block !important;
+        animation: none !important; /* Disable animation for printing */
+        filter: none !important;    /* Ensure no blur filter is applied */
+        transition: none !important;
     }
 
     .chapter-title-neu {

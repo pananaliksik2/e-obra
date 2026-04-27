@@ -3,7 +3,8 @@
     width: 400px !important;
     height: 400px !important;
     opacity: 0.25 !important;
-    mix-blend-mode: multiply; /* Removes white background */
+    mix-blend-mode: multiply;
+    /* Removes white background */
 }
 
 .scroll-divider {
@@ -44,8 +45,8 @@ main.container {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     overflow: hidden;
     cursor: pointer;
-    background: #ffffff !important;
-    border: 2px solid rgba(128, 0, 0, 0.5) !important; /* Intensified fixed outline */
+    border: 2px solid rgba(128, 0, 0, 0.5) !important;
+    /* Intensified fixed outline */
     border-radius: 30px;
 }
 
@@ -60,16 +61,75 @@ main.container {
     height: 480px;
     position: relative;
     flex-shrink: 0;
-    box-shadow: 5px 0 15px rgba(0,0,0,0.1);
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.book-cover-container-horizontal::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/ink_splash.png') no-repeat center/cover;
+    opacity: 0.15;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .book-cover-container-horizontal.fili-cover {
     background: linear-gradient(45deg, #4a0000, #2c241e);
 }
 
+/* ── Ink Splash Background (Restored) ── */
 .book-details-side {
     flex-grow: 1;
-    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+    background: var(--surface, #e8e0d5);
+}
+
+/* Top-left splash (ink-side-l) + left-mid splash */
+.book-details-side::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.15;
+    mix-blend-mode: multiply;
+    background:
+        url('../assets/ink_splash.png') no-repeat -200px -100px / 600px 800px,
+        url('../assets/ink_splash.png') no-repeat -300px 50% / 600px 800px;
+}
+
+/* Bottom-right splash (ink-side-r) + right-mid splash */
+.book-details-side::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.15;
+    mix-blend-mode: multiply;
+    background-image: url('../assets/ink_splash.png'), url('../assets/ink_splash.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 600px 800px, 600px 800px;
+    background-position: calc(100% + 200px) calc(100% + 100px), calc(100% + 300px) 40%;
+}
+
+/* Ensure content is readable and sits above splashes */
+.book-details-side > * {
+    position: relative;
+    z-index: 1;
 }
 
 .author-name-dashboard {
