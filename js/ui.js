@@ -140,27 +140,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function showResearchersPopup(btn) {
         const rect = btn.getBoundingClientRect();
-        const isMobile = window.innerWidth < 992; // Match Bootstrap LG breakpoint
+        const isMobile = window.innerWidth < 992;
         
-        const popupStyle = isMobile 
-            ? `position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; max-width: 300px;`
-            : `position: fixed; top: ${rect.bottom + 10}px; left: ${rect.left - 50}px; width: 250px;`;
-
-        const popupHtml = `
-            <div id="researchers-popup" class="fade-in neu-card p-4 shadow-lg" style="${popupStyle} z-index: 1060; border: 2px solid rgba(128, 0, 0, 0.2);">
-                <div class="text-center">
-                    <h6 class="title-font text-maroon mb-2" style="font-size: 0.9rem;">Mga Mananaliksik</h6>
-                    <div class="neu-divider-sm mx-auto mb-2" style="height: 1px;"></div>
-                    <div class="researchers-list text-start ps-2" style="font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; line-height: 1.6; color: #444;">
-                        Abong, Shanel Kate A.<br>
-                        Delante, Rona G.<br>
-                        Flor, Aicha Mae L.<br>
-                        Hulleza, Nadine D.<br>
-                        Santiago, Daniela T.
+        if (isMobile) {
+            const popupHtml = `
+                <div id="researchers-popup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1060; display: flex; align-items: center; justify-content: center; pointer-events: none;">
+                    <div class="neu-card p-4 shadow-lg animate-fade-in" style="width: 90%; max-width: 300px; border: 2px solid rgba(128, 0, 0, 0.2); pointer-events: auto;">
+                        <div class="text-center">
+                            <h6 class="title-font text-maroon mb-2" style="font-size: 1rem;">Mga Mananaliksik</h6>
+                            <div class="neu-divider-sm mx-auto mb-2" style="height: 1px;"></div>
+                            <div class="researchers-list text-start ps-2" style="font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; line-height: 1.6; color: #444;">
+                                Abong, Shanel Kate A.<br>
+                                Delante, Rona G.<br>
+                                Flor, Aicha Mae L.<br>
+                                Hulleza, Nadine D.<br>
+                                Santiago, Daniela T.
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        `;
-        document.body.insertAdjacentHTML('beforeend', popupHtml);
+            `;
+            document.body.insertAdjacentHTML('beforeend', popupHtml);
+        } else {
+            const popupHtml = `
+                <div id="researchers-popup" class="fade-in neu-card p-4 shadow-lg" style="position: fixed; top: ${rect.bottom + 10}px; left: ${rect.left - 50}px; width: 250px; z-index: 1060; border: 2px solid rgba(128, 0, 0, 0.2);">
+                    <div class="text-center">
+                        <h6 class="title-font text-maroon mb-2" style="font-size: 0.9rem;">Mga Mananaliksik</h6>
+                        <div class="neu-divider-sm mx-auto mb-2" style="height: 1px;"></div>
+                        <div class="researchers-list text-start ps-2" style="font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; line-height: 1.6; color: #444;">
+                            Abong, Shanel Kate A.<br>
+                            Delante, Rona G.<br>
+                            Flor, Aicha Mae L.<br>
+                            Hulleza, Nadine D.<br>
+                            Santiago, Daniela T.
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.insertAdjacentHTML('beforeend', popupHtml);
+        }
     }
 });
