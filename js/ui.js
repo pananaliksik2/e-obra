@@ -17,7 +17,7 @@ async function loadComponent(elementId, componentPath) {
 function updateNavLinks() {
     const currentPath = window.location.pathname;
     const navLinks = document.querySelectorAll('.neu-nav-link');
-    
+
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
         if (href && currentPath.includes(href.replace('../', ''))) {
@@ -26,7 +26,7 @@ function updateNavLinks() {
             link.classList.remove('active');
         }
     });
-    
+
     // Brand link logic
     const brandLink = document.getElementById('brand-home');
     if (brandLink && (currentPath.includes('dashboard.html') || currentPath.endsWith('/') || currentPath.endsWith('index.html'))) {
@@ -45,13 +45,13 @@ const Persistence = {
         const page = window.location.pathname.split('/').filter(Boolean).pop() || 'index';
         const storageKey = `eobra_${page}_${key}`;
         const data = localStorage.getItem(storageKey);
-        try { return data ? JSON.parse(data) : null; } catch(e) { return null; }
+        try { return data ? JSON.parse(data) : null; } catch (e) { return null; }
     },
     initAutoSave: (selectors) => {
         selectors.forEach(selector => {
             const el = document.querySelector(selector);
             if (!el) return;
-            
+
             // Restore
             const savedValue = Persistence.load(selector);
             if (savedValue !== null) {
@@ -91,13 +91,13 @@ const Persistence = {
 document.addEventListener('DOMContentLoaded', () => {
     const headerPlaceholder = document.getElementById('header-placeholder');
     const footerPlaceholder = document.getElementById('footer-placeholder');
-    
+
     if (headerPlaceholder) loadComponent('header-placeholder', 'includes/header.html');
     if (footerPlaceholder) loadComponent('footer-placeholder', 'includes/footer.html');
 
     // Initialize Global Persistence
     Persistence.initScrollPersistence();
-    
+
     // Auto-save search inputs across all pages
     Persistence.initAutoSave(['#chapter-search', '.filter-input']);
 
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', (e) => {
         const btn = e.target.closest('#researchers-btn');
         const existing = document.getElementById('researchers-popup');
-        
+
         if (btn) {
             e.preventDefault();
             if (existing) {
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function showResearchersPopup(btn) {
         const rect = btn.getBoundingClientRect();
         const isMobile = window.innerWidth < 992;
-        
+
         if (isMobile) {
             const popupHtml = `
                 <div id="researchers-popup" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1060; display: flex; align-items: center; justify-content: center; pointer-events: none;">
