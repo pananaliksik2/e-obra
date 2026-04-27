@@ -15,10 +15,19 @@
 </head>
 <body class="bg-neu">
     <div class="bg-dotted-noise"></div>
+    <div class="bg-soft-glow" id="soft-glow"></div>
+    <div id="ink-transition"></div>
+    
+    <div class="floating-elements">
+        <div class="float-item corner-tr"></div>
+        <div class="float-item corner-tl"></div>
+        <div class="float-item corner-br"></div>
+        <div class="float-item corner-bl"></div>
+    </div>
 
     <div id="header-placeholder"></div>
 
-    <main class="container mb-5">
+    <main class="container mt-4 mb-5">
         <div id="reader-view" class="fade-in">
             <div class="d-flex justify-content-between align-items-center mb-4 px-2">
                 <button class="neu-btn-sm text-maroon border-0 bg-transparent" id="back-to-chapters">
@@ -26,9 +35,19 @@
                 </button>
             </div>
 
-            <div class="neu-container p-4 p-md-5 mb-4" id="chapter-reader">
+            <div class="neu-container neu-container-3d p-0 overflow-hidden mb-4 position-relative" id="chapter-reader">
+                <div class="side-ornament ornament-left"></div>
+                <div class="side-ornament ornament-right"></div>
+                
+                <div class="reading-progress-container">
+                    <div id="reading-progress-bar" class="reading-progress-bar"></div>
+                </div>
+                <div class="p-4 p-md-5">
                 <div class="text-center mb-5">
-                    <h2 class="chapter-title-neu" id="chapter-title">Ikinakarga...</h2>
+                    <h2 class="chapter-title-neu" id="chapter-title">
+                        <span class="chapter-number-label d-block">Kabanata ...</span>
+                        <span class="chapter-title-main">Loading...</span>
+                    </h2>
                     <div class="neu-divider mx-auto"></div>
                 </div>
                 
@@ -36,7 +55,7 @@
                     <!-- Content goes here -->
                     <div class="text-center p-5">
                         <div class="spinner-border text-maroon" role="status">
-                            <span class="visually-hidden">Ikinakarga...</span>
+                            <span class="visually-hidden">Loading...</span>
                         </div>
                     </div>
                 </div>
@@ -49,6 +68,7 @@
                     <button class="neu-btn-icon" id="next-btn" title="Susunod na Pahina">
                         <i class="bi bi-chevron-right"></i>
                     </button>
+                </div>
                 </div>
             </div>
 

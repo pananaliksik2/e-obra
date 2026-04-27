@@ -51,13 +51,18 @@ async function loadChapter(num) {
 
             currentChapterId = chapter.id;
             rawChapterContent = chapter.content;
-            document.getElementById('chapter-title').innerText = `Kabanata ${chapter.chapter_number}: ${chapter.title}`;
+            document.getElementById('chapter-title').innerHTML = `
+                <span class="chapter-number-label d-block">Kabanata ${chapter.chapter_number}</span>
+                <span class="chapter-title-main">${chapter.title}</span>
+            `;
 
             const rawContent = chapter.content.replace(/\n\n/g, " ");
             chapterSentences = rawContent.match(/[^\.!\?]+[\.!\?]+/g) || [rawContent];
             chapterSentences = chapterSentences.map(s => s.trim()).filter(s => s.length > 0);
 
-            currentPage = 0;
+            const savedPage = Persistence.load('current_page');
+            currentPage = (savedPage !== null) ? savedPage : 0;
+            
             document.getElementById('next-chapter-btn').classList.add('d-none');
             displayPage();
         } else {
@@ -85,11 +90,28 @@ function displayPage() {
     contentDiv.innerHTML = `<div class="reader-page-content">${highlightedContent}</div>`;
 
     setupGlossaryEvents();
-    document.getElementById('page-indicator').innerText = `Pahina ${currentPage + 1} ng ${Math.ceil(chapterSentences.length / sentencesPerPage)}`;
+    const totalPages = Math.ceil(chapterSentences.length / sentencesPerPage);
+    document.getElementById('page-indicator').innerText = `Pahina ${currentPage + 1} ng ${totalPages}`;
+    
+    // Update progress bar
+    const progress = ((currentPage + 1) / totalPages) * 100;
+    document.getElementById('reading-progress-bar').style.width = `${progress}%`;
 
-    document.getElementById('prev-btn').disabled = (currentPage === 0);
+    // Save progress
+    Persistence.save('current_page', currentPage);
+
+    if (currentPage === 0) {
+        document.getElementById('prev-btn').classList.add('invisible');
+    } else {
+        document.getElementById('prev-btn').classList.remove('invisible');
+    }
+
     const isLastPage = (end >= chapterSentences.length);
-    document.getElementById('next-btn').disabled = isLastPage;
+    if (isLastPage) {
+        document.getElementById('next-btn').classList.add('invisible');
+    } else {
+        document.getElementById('next-btn').classList.remove('invisible');
+    }
 
     // Show next chapter button on every page, except if it's the last chapter
     if (currentChapterNum < 64) {
@@ -105,19 +127,32 @@ function startReading(chapterNum) {
 }
 
 // Pagination
+function triggerInkTransition(callback) {
+    const ink = document.getElementById('ink-transition');
+    if (!ink) return callback();
+    ink.classList.remove('ink-active');
+    void ink.offsetWidth;
+    ink.classList.add('ink-active');
+    setTimeout(callback, 400);
+}
+
 document.getElementById('prev-btn').addEventListener('click', () => {
     if (currentPage > 0) {
-        currentPage--;
-        displayPage();
-        window.scrollTo({ top: 100, behavior: 'smooth' });
+        triggerInkTransition(() => {
+            currentPage--;
+            displayPage();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
     }
 });
 
 document.getElementById('next-btn').addEventListener('click', () => {
     if ((currentPage + 1) * sentencesPerPage < chapterSentences.length) {
-        currentPage++;
-        displayPage();
-        window.scrollTo({ top: 100, behavior: 'smooth' });
+        triggerInkTransition(() => {
+            currentPage++;
+            displayPage();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
     }
 });
 
@@ -218,6 +253,7 @@ document.getElementById('download-pdf').addEventListener('click', function () {
         setupGlossaryEvents(); // Re-bind glossary events
     }, 250);
 });
+
 
 document.getElementById('next-chapter-btn').addEventListener('click', () => {
     if (currentChapterNum < 64) {

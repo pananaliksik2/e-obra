@@ -1,3 +1,45 @@
+.dashboard-corner {
+    background: url('../assets/art_nouveau_vine.png') no-repeat center/contain !important;
+    width: 400px !important;
+    height: 400px !important;
+    opacity: 0.25 !important;
+    mix-blend-mode: multiply; /* Removes white background */
+}
+
+.scroll-divider {
+    width: 250px;
+    height: 60px;
+    background: url('../assets/scroll_ornament.png') no-repeat center/contain;
+    margin: 2rem auto;
+    opacity: 0.6;
+}
+
+.side-vine {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 450px;
+    background: url('../assets/ornament.png') repeat-y center/contain;
+    opacity: 0.25;
+    z-index: 1;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+
+.vine-left {
+    left: -225px;
+    transform: scaleX(-1);
+}
+
+.vine-right {
+    right: -225px;
+}
+
+main.container {
+    position: relative;
+    z-index: 10;
+}
+
 .book-card-horizontal {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     overflow: hidden;

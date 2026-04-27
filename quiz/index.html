@@ -15,6 +15,13 @@
 </head>
 <body class="bg-neu">
     <div class="bg-dotted-noise"></div>
+    <div class="bg-soft-glow" id="soft-glow"></div>
+    <div class="floating-elements">
+        <div class="float-item corner-tr"></div>
+        <div class="float-item corner-tl"></div>
+        <div class="float-item corner-br"></div>
+        <div class="float-item corner-bl"></div>
+    </div>
 
     <div id="header-placeholder"></div>
 
@@ -28,14 +35,17 @@
             </div>
 
             <!-- Quiz Content Section -->
-            <div id="quiz-content" class="neu-container p-4 p-md-5 mb-4">
+            <div id="quiz-content" class="neu-container neu-container-3d p-0 mb-4">
+                <div class="side-ornament ornament-left"></div>
+                <div class="side-ornament ornament-right"></div>
+                <div class="p-4 p-md-5">
                 <div class="text-center mb-5">
                     <h3 class="title-font text-maroon mb-2" id="quiz-chapter-title">Pagsusulit</h3>
                     <div class="neu-divider mx-auto"></div>
                 </div>
 
                 <div class="quiz-question-area mb-5">
-                    <h4 class="quiz-question-neu mb-4" id="question-text">Ikinakarga ang tanong...</h4>
+                    <h4 class="quiz-question-neu mb-4" id="question-text">Loading question...</h4>
                     <div class="row g-3" id="options-container">
                         <!-- Options will be injected here -->
                     </div>
@@ -43,6 +53,7 @@
 
                 <div class="progress mt-4" style="height: 6px; background: rgba(128, 0, 0, 0.1);">
                     <div id="quiz-progress" class="progress-bar bg-maroon" role="progressbar" style="width: 0%"></div>
+                </div>
                 </div>
             </div>
 

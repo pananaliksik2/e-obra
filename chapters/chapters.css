@@ -1,13 +1,73 @@
 #chapter-list-view {
     background: #ffffff !important;
-    border: 2px solid rgba(128, 0, 0, 0.4); /* Intensified fixed outline */
+    border: none;
     position: relative;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+    overflow: visible;
+    box-shadow: 8px 8px 16px var(--neu-dark),
+        -8px -8px 16px var(--neu-light) !important;
     border-radius: 20px;
-    height: calc(100vh - 120px); /* Limit height for internal scroll */
+    height: calc(100vh - 120px);
     display: flex;
     flex-direction: column;
+}
+
+#chapter-list-view .chapter-inner-clip {
+    border-radius: 20px;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#chapter-list-view .side-ornament {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    z-index: 10;
+    opacity: 0.3;
+    background: url('../assets/leaves.png') repeat-y center/contain;
+    pointer-events: none;
+}
+
+#chapter-list-view .ornament-left {
+    left: -20px;
+    transform: scaleX(-1);
+}
+
+#chapter-list-view .ornament-right {
+    right: -20px;
+    transform: none;
+}
+
+@media (max-width: 768px) {
+    #chapter-list-view .side-ornament {
+        width: 40px;
+        opacity: 0.15;
+    }
+    #chapter-list-view .ornament-left { left: -10px; }
+    #chapter-list-view .ornament-right { right: -10px; }
+}
+
+
+#chapter-list-view::before, #chapter-list-view::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    z-index: 5;
+    pointer-events: none;
+}
+
+#chapter-list-view::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.04), transparent);
+}
+
+#chapter-list-view::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.04), transparent);
 }
 
 .sticky-header-section {
@@ -70,9 +130,9 @@
 
 .chapter-item-neu {
     background: #ffffff;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-    padding: 15px 20px;
+    padding: 8px 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,7 +140,7 @@
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     text-decoration: none;
     color: #2c241e;
-    border: 2px solid rgba(128, 0, 0, 0.3); /* More prominent fixed outline */
+    border: 2px solid rgba(128, 0, 0, 0.3);
 }
 
 .chapter-item-neu:hover {
@@ -91,25 +151,26 @@
 }
 
 .chapter-num {
-    background: linear-gradient(135deg, var(--maroon), var(--dark-maroon));
-    color: white;
-    width: 35px;
-    height: 35px;
+    background: #ffffff;
+    color: var(--maroon);
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 11px;
     flex-shrink: 0;
-    box-shadow: 2px 2px 5px rgba(128, 0, 0, 0.3);
+    box-shadow: inset 3px 3px 6px #d1cbc0, inset -3px -3px 6px #ffffff;
+    font-family: 'Cinzel', serif;
 }
 
 .chapter-title {
     flex-grow: 1;
-    margin-left: 15px;
+    margin-left: 12px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

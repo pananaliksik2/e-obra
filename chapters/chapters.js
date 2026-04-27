@@ -67,6 +67,9 @@ document.getElementById('chapter-search')?.addEventListener('input', function(e)
 
 function startReading(chapterNum) {
     localStorage.setItem('current_chapter', chapterNum);
+    // Reset reader progress for new chapter
+    localStorage.removeItem('eobra_reader_current_page');
+    localStorage.removeItem('eobra_reader_scroll_pos');
     window.location.href = window.BASE_URL + `reader/`;
 }
 

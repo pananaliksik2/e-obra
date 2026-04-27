@@ -1,4 +1,8 @@
 /* Quiz Specific Styles */
+#quiz-content, #quiz-result {
+    background: #ffffff !important;
+}
+
 .bg-maroon {
     background-color: var(--maroon) !important;
 }
