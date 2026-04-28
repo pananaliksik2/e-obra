@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fil">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,18 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="reader.css">
 </head>
+
 <body class="bg-neu">
     <div class="bg-dotted-noise"></div>
     <div class="bg-soft-glow" id="soft-glow"></div>
     <div id="ink-transition"></div>
-    
+
     <div class="floating-elements">
         <div class="float-item corner-tr"></div>
         <div class="float-item corner-tl"></div>
@@ -38,54 +42,61 @@
             <div class="neu-container neu-container-3d p-0 overflow-hidden mb-4 position-relative" id="chapter-reader">
                 <div class="side-ornament ornament-left"></div>
                 <div class="side-ornament ornament-right"></div>
-                
+
                 <div class="reading-progress-container">
                     <div id="reading-progress-bar" class="reading-progress-bar"></div>
                 </div>
                 <div class="p-4 p-md-5">
-                <div class="text-center mb-5">
-                    <h2 class="chapter-title-neu" id="chapter-title">
-                        <span class="chapter-number-label d-block">Kabanata ...</span>
-                        <span class="chapter-title-main">Loading...</span>
-                    </h2>
-                    <div class="neu-divider mx-auto"></div>
-                </div>
-                
-                <div class="chapter-content-neu" id="chapter-content">
-                    <!-- Content goes here -->
-                    <div class="text-center p-5">
-                        <div class="spinner-border text-maroon" role="status">
-                            <span class="visually-hidden">Loading...</span>
+                    <div class="text-center mb-5">
+                        <h2 class="chapter-title-neu" id="chapter-title">
+                            <span class="chapter-number-label d-block">Kabanata ...</span>
+                            <span class="chapter-title-main">Loading...</span>
+                        </h2>
+                        <div class="neu-divider mx-auto"></div>
+                    </div>
+
+                    <div class="chapter-content-neu" id="chapter-content">
+                        <!-- Content goes here -->
+                        <div class="text-center p-5">
+                            <div class="spinner-border text-maroon" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="d-flex justify-content-center align-items-center gap-4 mt-5">
-                    <button class="neu-btn-icon" id="prev-btn" title="Nakaraang Pahina">
-                        <i class="bi bi-chevron-left"></i>
-                    </button>
-                    <span class="neu-page-indicator" id="page-indicator">Pahina 1</span>
-                    <button class="neu-btn-icon" id="next-btn" title="Susunod na Pahina">
-                        <i class="bi bi-chevron-right"></i>
-                    </button>
-                </div>
+                    <div class="d-flex justify-content-center align-items-center gap-4 mt-5">
+                        <button class="neu-btn-icon" id="prev-btn" title="Nakaraang Pahina">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+                        <span class="neu-page-indicator" id="page-indicator">Pahina 1</span>
+                        <button class="neu-btn-icon" id="next-btn" title="Susunod na Pahina">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            <div class="d-flex flex-wrap justify-content-center gap-3">
-                <button class="neu-btn d-flex align-items-center gap-2" id="download-pdf">
-                    <i class="bi bi-file-earmark-pdf"></i> I-download bilang PDF
+            <div class="d-flex flex-nowrap justify-content-center gap-2 gap-md-3">
+                <button class="neu-btn d-flex align-items-center gap-1 gap-md-2 d-none" id="prev-chapter-btn"
+                    title="Nakaraang Kabanata">
+                    <i class="bi bi-arrow-left"></i> <span class="d-none d-md-inline">Nakaraan</span>
                 </button>
-                <button class="neu-btn d-flex align-items-center gap-2" id="start-quiz">
-                    <i class="bi bi-pencil-square"></i> Pagsusulit
+                <button class="neu-btn d-flex align-items-center gap-1 gap-md-2" id="download-pdf">
+                    <i class="bi bi-file-earmark-pdf"></i> <span class="d-none d-sm-inline">I-download bilang
+                        PDF</span><span class="d-inline d-sm-none">PDF</span>
                 </button>
-                <button class="neu-btn d-flex align-items-center gap-2 d-none" id="next-chapter-btn">
-                    Susunod <i class="bi bi-arrow-right"></i>
+                <button class="neu-btn d-flex align-items-center gap-1 gap-md-2" id="start-quiz">
+                    <i class="bi bi-pencil-square"></i> <span class="d-none d-sm-inline">Pagsusulit</span><span
+                        class="d-inline d-sm-none">Pagsusulit</span>
+                </button>
+                <button class="neu-btn d-flex align-items-center gap-1 gap-md-2 d-none" id="next-chapter-btn"
+                    title="Susunod na Kabanata">
+                    <span class="d-none d-md-inline">Susunod</span> <i class="bi bi-arrow-right"></i>
                 </button>
             </div>
         </div>
     </main>
-    
+
     <!-- Glossary Tooltip -->
     <div id="glossary-tooltip" class="neu-tooltip">
         <div class="tooltip-content">
@@ -128,4 +139,5 @@
         });
     </script>
 </body>
+
 </html>

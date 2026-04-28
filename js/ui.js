@@ -73,7 +73,7 @@ const Persistence = {
     },
     initScrollPersistence: () => {
         const savedScroll = Persistence.load('scroll_pos');
-        if (savedScroll) {
+        if (savedScroll !== null) {
             setTimeout(() => window.scrollTo(0, savedScroll), 100);
         }
 

@@ -87,7 +87,14 @@ function displayPage() {
     const pageText = sentencesToShow.join(" ");
     const highlightedContent = highlightGlossaryWords(pageText);
 
-    contentDiv.innerHTML = `<div class="reader-page-content">${highlightedContent}</div>`;
+    let imageHtml = '';
+    if (currentPage === 0) {
+        imageHtml = `<div class="text-center mb-4 fade-in">
+            <img src="../assets/chapterimg/chapter${currentChapterNum}img.png" class="img-fluid rounded shadow-sm border border-secondary" alt="Kabanata ${currentChapterNum} Larawan" onerror="this.style.display='none'" style="max-height: 450px; object-fit: cover;">
+        </div>`;
+    }
+
+    contentDiv.innerHTML = `${imageHtml}<div class="reader-page-content">${highlightedContent}</div>`;
 
     setupGlossaryEvents();
     const totalPages = Math.ceil(chapterSentences.length / sentencesPerPage);
@@ -118,6 +125,12 @@ function displayPage() {
         document.getElementById('next-chapter-btn').classList.remove('d-none');
     } else {
         document.getElementById('next-chapter-btn').classList.add('d-none');
+    }
+
+    if (currentChapterNum > 1) {
+        document.getElementById('prev-chapter-btn').classList.remove('d-none');
+    } else {
+        document.getElementById('prev-chapter-btn').classList.add('d-none');
     }
 }
 
@@ -270,6 +283,18 @@ document.getElementById('next-chapter-btn').addEventListener('click', () => {
     if (currentChapterNum < 64) {
         const nextChapter = currentChapterNum + 1;
         localStorage.setItem('current_chapter', nextChapter);
+        Persistence.save('current_page', 0);
+        Persistence.save('scroll_pos', 0);
+        window.location.reload();
+    }
+});
+
+document.getElementById('prev-chapter-btn').addEventListener('click', () => {
+    if (currentChapterNum > 1) {
+        const prevChapter = currentChapterNum - 1;
+        localStorage.setItem('current_chapter', prevChapter);
+        Persistence.save('current_page', 0);
+        Persistence.save('scroll_pos', 0);
         window.location.reload();
     }
 });

@@ -5,6 +5,7 @@
     box-shadow: none !important; /* Remove shadow to make edges look natural */
 }
 
+
 /* Reading Progress Bar */
 .reading-progress-container {
     width: 100%;
@@ -189,4 +190,36 @@
 @keyframes textReveal {
     0% { opacity: 0; transform: translateY(20px); filter: blur(10px); }
     100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+/* Mobile Button Adjustments */
+@media (max-width: 576px) {
+    .neu-btn {
+        padding: 14px 5px !important;
+        font-size: 0.85rem !important;
+        border-radius: 12px !important;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 0; /* Prevents overflow */
+    }
+    
+    #prev-chapter-btn, #next-chapter-btn {
+        flex: 0 0 auto !important;
+        padding: 14px 15px !important;
+    }
+
+    .neu-btn i {
+        font-size: 1.2rem !important;
+        margin: 0 !important;
+    }
+
+    .neu-btn span {
+        margin-left: 4px;
+    }
+
+    .gap-2 {
+        gap: 0.4rem !important;
+    }
 }
