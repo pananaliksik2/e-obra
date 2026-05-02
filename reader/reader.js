@@ -1,6 +1,7 @@
 let glossaryData = [];
 let currentChapterId = null;
 let currentChapterNum = null;
+let currentChapterTitle = "";
 let rawChapterContent = "";
 let chapterPages = [];
 let currentPage = 0;
@@ -52,6 +53,8 @@ async function loadChapter(num) {
             await fetchGlossary(chapter.chapter_number);
 
             currentChapterId = chapter.id;
+            currentChapterNum = chapter.chapter_number;
+            currentChapterTitle = chapter.title;
             rawChapterContent = chapter.content;
             document.getElementById('chapter-title').innerHTML = `
                 <span class="chapter-number-label d-block">Kabanata ${chapter.chapter_number}</span>
@@ -408,7 +411,7 @@ document.getElementById('download-pdf').addEventListener('click', function () {
         doc.setFont("times", "italic");
         doc.setFontSize(15);
         doc.setTextColor(50, 50, 50);
-        doc.text(`Kabanata ${currentChapterNum}`, pageWidth / 2, 48, { align: 'center' });
+        doc.text(`Kabanata ${currentChapterNum}: ${currentChapterTitle}`, pageWidth / 2, 48, { align: 'center' });
         
         doc.setLineWidth(0.5);
         doc.setDrawColor(128, 0, 0);
