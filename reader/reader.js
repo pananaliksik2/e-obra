@@ -2,9 +2,11 @@ let glossaryData = [];
 let currentChapterId = null;
 let currentChapterNum = null;
 let rawChapterContent = "";
-let chapterSentences = [];
+let chapterPages = [];
 let currentPage = 0;
-const sentencesPerPage = 20;
+const TARGET_CHARS_PER_PAGE = 1000;
+const MAX_PARAGRAPHS_PER_PAGE = 8;
+const MIN_PARAGRAPHS_PER_PAGE = 3;
 
 // Load Glossary from JSON
 async function fetchGlossary(chapterId = 1) {
@@ -56,12 +58,35 @@ async function loadChapter(num) {
                 <span class="chapter-title-main">${chapter.title}</span>
             `;
 
-            const rawContent = chapter.content.replace(/\n\n/g, " ");
-            chapterSentences = rawContent.match(/[^\.!\?]+[\.!\?]+/g) || [rawContent];
-            chapterSentences = chapterSentences.map(s => s.trim()).filter(s => s.length > 0);
+            const rawContent = chapter.content.trim();
+            const allParagraphs = rawContent.split(/\n+/).map(p => p.trim()).filter(p => p.length > 0);
+            
+            // Group paragraphs into pages dynamically
+            chapterPages = [];
+            let currentPageContent = [];
+            let currentCharCount = 0;
+
+            allParagraphs.forEach((p, index) => {
+                currentPageContent.push(p);
+                currentCharCount += p.length;
+
+                const isLastParagraph = index === allParagraphs.length - 1;
+                const exceedsTargetChars = currentCharCount >= TARGET_CHARS_PER_PAGE;
+                const exceedsMaxParagraphs = currentPageContent.length >= MAX_PARAGRAPHS_PER_PAGE;
+                const hasMinParagraphs = currentPageContent.length >= MIN_PARAGRAPHS_PER_PAGE;
+
+                if (isLastParagraph || ((exceedsTargetChars || exceedsMaxParagraphs) && hasMinParagraphs)) {
+                    chapterPages.push(currentPageContent.map(para => {
+                        const isLong = para.length > 150;
+                        return `<p class="${isLong ? 'indented' : ''}">${para}</p>`;
+                    }).join(""));
+                    currentPageContent = [];
+                    currentCharCount = 0;
+                }
+            });
 
             const savedPage = Persistence.load('current_page');
-            currentPage = (savedPage !== null) ? savedPage : 0;
+            currentPage = (savedPage !== null && savedPage < chapterPages.length) ? savedPage : 0;
             
             document.getElementById('next-chapter-btn').classList.add('d-none');
             displayPage();
@@ -79,25 +104,31 @@ function displayPage() {
     void contentDiv.offsetWidth;
     contentDiv.classList.add('fade-in');
 
-    const start = currentPage * sentencesPerPage;
-    const end = start + sentencesPerPage;
-    const sentencesToShow = chapterSentences.slice(start, end);
-
-    // Join sentences and highlight words
-    const pageText = sentencesToShow.join(" ");
+    // Join paragraphs and highlight words
+    const pageText = chapterPages[currentPage];
     const highlightedContent = highlightGlossaryWords(pageText);
 
     let imageHtml = '';
     if (currentPage === 0) {
-        imageHtml = `<div class="text-center mb-4 fade-in">
-            <img src="../assets/chapterimg/chapter${currentChapterNum}img.png" class="img-fluid rounded shadow-sm border border-secondary" alt="Kabanata ${currentChapterNum} Larawan" onerror="this.style.display='none'" style="max-height: 450px; object-fit: cover;">
+        imageHtml = `<div class="text-center mb-5 fade-in chapter-image-container">
+            <div class="neu-image-frame p-2 mb-2">
+                <img src="../assets/chapterimg/chapter${currentChapterNum}img.png" 
+                     class="img-fluid rounded shadow-sm" 
+                     alt="Kabanata ${currentChapterNum} Larawan" 
+                     onerror="this.closest('.chapter-image-container').style.display='none'" 
+                     style="max-height: 500px; width: 100%; object-fit: contain; background: rgba(255,255,255,0.5);">
+            </div>
+            <div class="ai-disclaimer text-muted small mb-2" style="font-family: 'Playfair Display', serif; font-style: italic;">
+                Ang larawang ito ay nilikha gamit ang AI.
+            </div>
+            <div class="neu-divider-sm mx-auto opacity-50"></div>
         </div>`;
     }
 
     contentDiv.innerHTML = `${imageHtml}<div class="reader-page-content">${highlightedContent}</div>`;
 
     setupGlossaryEvents();
-    const totalPages = Math.ceil(chapterSentences.length / sentencesPerPage);
+    const totalPages = chapterPages.length;
     document.getElementById('page-indicator').innerText = `Pahina ${currentPage + 1} ng ${totalPages}`;
     
     // Update progress bar
@@ -109,15 +140,19 @@ function displayPage() {
 
     if (currentPage === 0) {
         document.getElementById('prev-btn').classList.add('invisible');
+        document.getElementById('first-page-btn').classList.add('invisible');
     } else {
         document.getElementById('prev-btn').classList.remove('invisible');
+        document.getElementById('first-page-btn').classList.remove('invisible');
     }
 
-    const isLastPage = (end >= chapterSentences.length);
+    const isLastPage = (currentPage === totalPages - 1);
     if (isLastPage) {
         document.getElementById('next-btn').classList.add('invisible');
+        document.getElementById('last-page-btn').classList.add('invisible');
     } else {
         document.getElementById('next-btn').classList.remove('invisible');
+        document.getElementById('last-page-btn').classList.remove('invisible');
     }
 
     // Show next chapter button on every page, except if it's the last chapter
@@ -149,6 +184,16 @@ function triggerInkTransition(callback) {
     setTimeout(callback, 400);
 }
 
+document.getElementById('first-page-btn').addEventListener('click', () => {
+    if (currentPage > 0) {
+        triggerInkTransition(() => {
+            currentPage = 0;
+            displayPage();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+});
+
 document.getElementById('prev-btn').addEventListener('click', () => {
     if (currentPage > 0) {
         triggerInkTransition(() => {
@@ -160,9 +205,19 @@ document.getElementById('prev-btn').addEventListener('click', () => {
 });
 
 document.getElementById('next-btn').addEventListener('click', () => {
-    if ((currentPage + 1) * sentencesPerPage < chapterSentences.length) {
+    if (currentPage < chapterPages.length - 1) {
         triggerInkTransition(() => {
             currentPage++;
+            displayPage();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+});
+
+document.getElementById('last-page-btn').addEventListener('click', () => {
+    if (currentPage < chapterPages.length - 1) {
+        triggerInkTransition(() => {
+            currentPage = chapterPages.length - 1;
             displayPage();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
@@ -233,50 +288,126 @@ function hideTooltip() {
 
 // PDF Export - Using html2pdf for better mobile and filename support
 document.getElementById('download-pdf').addEventListener('click', function () {
-    const contentDiv = document.getElementById('chapter-content');
-    const originalContent = contentDiv.innerHTML;
-
-    // Create a clean container for the PDF content
-    const element = document.createElement('div');
-    element.className = 'p-5 bg-white text-dark';
-    element.style.fontFamily = "'Times New Roman', serif";
-
-    const now = new Date();
-    const dateStr = `${String(now.getDate()).padStart(2, '0')}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getFullYear()).slice(-2)}`;
-    const filename = `Kabanata_${currentChapterNum}_E-Obra_${dateStr}.pdf`;
-
-    const cleanFullText = rawChapterContent.split('\n\n').map(p => `<p style="margin-bottom: 1.5rem; text-align: justify; line-height: 1.6; font-size: 12pt;">${p}</p>`).join('');
+    console.log("Sinisimulan ang pag-export ng PDF gamit ang jsPDF...");
     
-    element.innerHTML = `
-        <div style="text-align: center; margin-bottom: 3rem;">
-            <h1 style="font-size: 18pt; margin-bottom: 5px; color: #800000;">Noli Me Tangere</h1>
-            <h2 style="font-size: 14pt; font-weight: normal;">Kabanata ${currentChapterNum}</h2>
-            <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
-        </div>
-        <div>${cleanFullText}</div>
-        <div style="margin-top: 3rem; text-align: center; font-size: 10pt; color: #888;">
-            Inilathala ng E-Obra Educational Platform
-        </div>
-    `;
+    // Using the explicitly loaded UMD version from index.html
+    const { jsPDF } = window.jspdf;
+    
+    if (!jsPDF) {
+        console.error("Hindi mahanap ang window.jspdf.jsPDF.");
+        alert("Paumanhin, hindi ma-load ang PDF library. Pakisuri ang iyong internet connection.");
+        return;
+    }
 
-    const opt = {
-        margin: [1, 1],
-        filename: filename,
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2, useCORS: true },
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-    };
 
+
+    const doc = new jsPDF('p', 'mm', 'a4');
+    
+    // Configuration
+    const margin = 25.4; 
+    const pageWidth = doc.internal.pageSize.getWidth();
+    const pageHeight = doc.internal.pageSize.getHeight();
+    const maxWidth = pageWidth - (margin * 2);
+    const lineHeight = 7;
+    const paragraphSpacing = 4;
+    
     // Show loading state
     const originalBtnText = this.innerHTML;
     this.innerHTML = `<span class="spinner-border spinner-border-sm me-2"></span>Inihahanda...`;
     this.disabled = true;
 
-    html2pdf().set(opt).from(element).save().then(() => {
+    try {
+        console.log("Ipinoproseso ang kabanata:", currentChapterNum);
+        
+        if (!rawChapterContent) {
+            throw new Error("Walang nilalaman ang kabanata.");
+        }
+
+        // 1. Draw Header
+        doc.setFont("times", "bold");
+        doc.setFontSize(22);
+        doc.setTextColor(128, 0, 0); // Maroon
+        doc.text("NOLI ME TANGERE", pageWidth / 2, 25, { align: 'center' });
+        
+        doc.setFont("times", "normal");
+        doc.setFontSize(12);
+        doc.setTextColor(100, 100, 100);
+        doc.text("ni José Rizal", pageWidth / 2, 32, { align: 'center' });
+        doc.text('salin ni Virgilio "Rio Alma" Almario', pageWidth / 2, 38, { align: 'center' });
+        
+        doc.setFont("times", "italic");
+        doc.setFontSize(15);
+        doc.setTextColor(50, 50, 50);
+        doc.text(`Kabanata ${currentChapterNum}`, pageWidth / 2, 48, { align: 'center' });
+        
+        doc.setLineWidth(0.5);
+        doc.setDrawColor(128, 0, 0);
+        doc.line(margin, 52, pageWidth - margin, 52);
+        
+        // 2. Draw Content
+        doc.setFont("times", "normal");
+        doc.setFontSize(11);
+        doc.setTextColor(30, 30, 30);
+        
+        let y = 62; // Start position on first page adjusted for taller header
+        // Split by one or more newlines to ensure we capture all paragraphs
+        const paragraphs = rawChapterContent.split(/\n+/);
+        console.log(`Natagpuan ang ${paragraphs.length} na talata.`);
+        
+        paragraphs.forEach((para, index) => {
+            const cleanPara = para.trim();
+            if (!cleanPara) return;
+
+            // Indentation logic similar to the reader
+            // In the reader, long paragraphs or those with specific context get indented
+            const isLong = cleanPara.length > 150;
+            const xPos = isLong ? margin + 10 : margin; // Indent if long
+            const currentMaxWidth = isLong ? maxWidth - 10 : maxWidth;
+
+            const lines = doc.splitTextToSize(cleanPara, currentMaxWidth);
+            const blockHeight = lines.length * lineHeight;
+            
+            // Page break check - if paragraph won't fit, move to next page
+            if (y + blockHeight > pageHeight - margin) {
+                console.log("Nagdadagdag ng bagong pahina sa y =", y);
+                doc.addPage();
+                y = margin; // Reset to top margin
+            }
+            
+            // Draw the paragraph
+            doc.text(cleanPara, xPos, y, { 
+                maxWidth: currentMaxWidth, 
+                align: 'justify' 
+            });
+            
+            y += blockHeight + paragraphSpacing;
+        });
+
+        // 3. Add Footer to all pages
+        const pageCount = doc.internal.getNumberOfPages();
+        console.log(`Tapos na! Kabuuang pahina: ${pageCount}`);
+        
+        for (let i = 1; i <= pageCount; i++) {
+            doc.setPage(i);
+            doc.setFontSize(9);
+            doc.setTextColor(150, 150, 150);
+            doc.text(`E-Obra | Pahina ${i} ng ${pageCount}`, pageWidth / 2, pageHeight - 10, { align: 'center' });
+        }
+
+
+        // 4. Save
+        const filename = `Kabanata_${currentChapterNum}_E-Obra.pdf`;
+        doc.save(filename);
+
+    } catch (err) {
+        console.error('PDF Generation Error:', err);
+        alert('Nagkaroon ng problema sa paggawa ng PDF. Mangyaring subukan muli.');
+    } finally {
         this.innerHTML = originalBtnText;
         this.disabled = false;
-    });
+    }
 });
+
 
 
 document.getElementById('next-chapter-btn').addEventListener('click', () => {

@@ -1,0 +1,19 @@
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary and Scratch files
+*.pdf
+scratch/
+*.js.bak
+*.tmp
+check_chapter.js
+check_replace.js
+test_regex.js
+test_regex2.js
+
+# Dependencies
+node_modules/
+vendor/

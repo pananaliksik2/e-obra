@@ -38,6 +38,7 @@ function renderChapters(chapters) {
         <div class="col-12 mb-2 chapter-item-wrapper">
             <div class="chapter-item-neu" onclick="startReading(${chapter.chapter_number})">
                 <div class="d-flex align-items-center">
+                    <div class="chapter-label-text">Kabanata</div>
                     <div class="chapter-num">${chapter.chapter_number}</div>
                     <div class="chapter-title">${chapter.title}</div>
                 </div>

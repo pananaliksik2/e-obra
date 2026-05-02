@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor ng Kabanata | E-Obra</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="editor.css">
+</head>
+<body class="bg-neu">
+    <div class="bg-dotted-noise"></div>
+    <div class="bg-soft-glow" id="soft-glow"></div>
+
+    <div id="header-placeholder"></div>
+
+    <main class="container py-5" style="margin-top: 80px;">
+        <!-- Password Screen -->
+        <div id="password-screen" class="row justify-content-center align-items-center" style="min-height: 60vh;">
+            <div class="col-md-5">
+                <div class="neu-card p-5 text-center fade-in">
+                    <div class="neu-icon-box mb-4 mx-auto">
+                        <i class="bi bi-shield-lock-fill display-4 text-maroon"></i>
+                    </div>
+                    <h3 class="title-font text-maroon mb-4">Admin Access</h3>
+                    <p class="text-muted mb-4">Mangyaring ilagay ang password upang ma-access ang editor.</p>
+                    <div class="mb-4">
+                        <input type="password" id="admin-password" class="form-control neu-input text-center" placeholder="••••••" style="letter-spacing: 0.5rem; font-size: 1.5rem;">
+                    </div>
+                    <button id="login-editor-btn" class="neu-btn w-100 py-3">Ipasok <i class="bi bi-arrow-right ms-2"></i></button>
+                    <p id="password-error" class="text-danger mt-3 small d-none">Maling password. Subukang muli.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Editor Interface (Hidden Initially) -->
+        <div id="editor-interface" class="d-none">
+            <div class="row mb-4 align-items-center">
+                <div class="col-md-6">
+                    <h2 class="title-font text-maroon mb-0">Editor ng mga Kabanata</h2>
+                    <p class="text-muted mb-0">Pamahalaan ang nilalaman ng Noli Me Tangere</p>
+                </div>
+                <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                    <button id="save-all-btn" class="neu-btn px-4">
+                        <i class="bi bi-cloud-arrow-down-fill me-2"></i>I-download ang JSON
+                    </button>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Chapter List Sidebar -->
+                <div class="col-lg-4">
+                    <div class="neu-card p-4 h-100">
+                        <div class="mb-3">
+                            <input type="text" id="search-chapters" class="form-control neu-input" placeholder="Maghanap ng kabanata...">
+                        </div>
+                        <div id="chapter-list" class="chapter-scroll-area">
+                            <!-- Chapters populated by JS -->
+                            <div class="text-center py-5">
+                                <div class="spinner-border text-maroon" role="status"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Editor Panel -->
+                <div class="col-lg-8">
+                    <div class="neu-card p-4 h-100" id="editor-panel">
+                        <div id="no-chapter-selected" class="text-center py-5">
+                            <i class="bi bi-pencil-square display-1 text-muted opacity-25 mb-3 d-block"></i>
+                            <p class="text-muted">Pumili ng kabanata sa kaliwa upang simulan ang pag-edit.</p>
+                        </div>
+                        
+                        <div id="editor-form" class="d-none h-100 d-flex flex-column">
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-maroon">Pamagat ng Kabanata</label>
+                                <input type="text" id="edit-chapter-title" class="form-control neu-input-flat">
+                            </div>
+                            <div class="flex-grow-1 mb-3">
+                                <label class="form-label fw-bold text-maroon">Nilalaman</label>
+                                <textarea id="edit-chapter-content" class="form-control neu-textarea flex-grow-1" style="min-height: 400px; font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; line-height: 1.6;"></textarea>
+                            </div>
+                            <div class="text-end">
+                                <button id="update-chapter-btn" class="neu-btn-sm px-4">
+                                    <i class="bi bi-check-lg me-1"></i>I-update ang Kabanata
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Success Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="success-toast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="bi bi-check-circle-fill me-2"></i>Matagumpay na na-update ang kabanata!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase App -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Global Scripts -->
+    <script src="../js/config.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/ui.js"></script>
+    <script src="editor.js"></script>
+</body>
+</html>

@@ -3,1421 +3,383 @@
         "id": 1,
         "chapter_number": 1,
         "title": "Isang Pagtitipon",
-        "content": "Magtatapos ang Oktubre nang magpahapunan si Don Santiago de los Santos, kilala sa payaw na Kapitan Tiago...",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 2,
         "chapter_number": 2,
         "title": "Si Crisostomo Ibarra",
-        "content": "Dumating si Crisostomo Ibarra kasama si Kapitan Tiago sa gitna ng pagtitipon. Lahat ay nagulat sa kaniyang pagdating mula sa Europa.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 3,
         "chapter_number": 3,
         "title": "Ang Hapunan",
-        "content": "Sa hapunan, nagkaroon ng pagtatalo sa pagitan nina Padre Damaso at ng Tenyente tungkol sa nangyari sa San Diego.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 4,
         "chapter_number": 4,
         "title": "Erehe at Filibustero",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 5,
         "chapter_number": 5,
         "title": "Isang Bituin sa Gabing Madilim",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 6,
         "chapter_number": 6,
         "title": "Si Kapitan Tiago",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 7,
         "chapter_number": 7,
         "title": "Suyuan sa Isang Asotea",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 8,
         "chapter_number": 8,
         "title": "Mga Alaala",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 9,
         "chapter_number": 9,
         "title": "Mga Bagay-bagay sa Paligid",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 10,
         "chapter_number": 10,
         "title": "Bayan ng San Diego",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 11,
         "chapter_number": 11,
         "title": "Mga Hari-harian",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 12,
         "chapter_number": 12,
         "title": "Todos Los Santos",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 13,
         "chapter_number": 13,
         "title": "Mga Banta ng Unos",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 14,
         "chapter_number": 14,
         "title": "Tasiong Baliw o Pilosopo",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 15,
         "chapter_number": 15,
         "title": "Mga Sakristan",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 16,
         "chapter_number": 16,
         "title": "Sisa",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 17,
         "chapter_number": 17,
         "title": "Basilio",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 18,
         "chapter_number": 18,
         "title": "Mga Kaluluwang Naghihirap",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 19,
         "chapter_number": 19,
         "title": "Mga Kapalaran ng Isang Guro",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 20,
         "chapter_number": 20,
         "title": "Ang Pulong sa Tribunal",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 21,
         "chapter_number": 21,
         "title": "Kuwento ng Isang Ina",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 22,
         "chapter_number": 22,
         "title": "Mga Liwanag at mga Anino",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 23,
         "chapter_number": 23,
         "title": "Pangingisda",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 24,
         "chapter_number": 24,
         "title": "Sa Gubat",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 25,
         "chapter_number": 25,
         "title": "Elias at Salome",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 26,
         "chapter_number": 26,
         "title": "Sa Bahay ng Pilosopo",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 27,
         "chapter_number": 27,
         "title": "Bisperas ng Pista",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 28,
         "chapter_number": 28,
         "title": "Sa Takipsilim",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 29,
         "chapter_number": 29,
         "title": "Mga Liham",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 30,
         "chapter_number": 30,
         "title": "Kinaumagahan",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 31,
         "chapter_number": 31,
         "title": "Sa Loob ng Simbahan",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 32,
         "chapter_number": 32,
         "title": "Ang Sermon",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 33,
         "chapter_number": 33,
         "title": "Ang Kabriya",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 34,
         "chapter_number": 34,
         "title": "Malayang Pag-iisip",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 35,
         "chapter_number": 35,
         "title": "Ang Tanghalian",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 36,
         "chapter_number": 36,
         "title": "Usap-usapan",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 37,
         "chapter_number": 37,
         "title": "Unang Ulap",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 38,
         "chapter_number": 38,
         "title": "Ang Kaniyang Kataas-taasan",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 39,
         "chapter_number": 39,
         "title": "Prusisyon",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 40,
         "chapter_number": 40,
         "title": "Donya Consolacion",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 41,
         "chapter_number": 41,
         "title": "Karapatan at Kapangyarihan",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 42,
         "chapter_number": 42,
         "title": "Dalawang Panauhin",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 43,
         "chapter_number": 43,
         "title": "Mag-asawang De Espadaña",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 44,
         "chapter_number": 44,
         "title": "Mga Balak",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 45,
         "chapter_number": 45,
         "title": "Pagsusuri ng Budhi",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 46,
         "chapter_number": 46,
         "title": "Mga Inuusig",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 47,
         "chapter_number": 47,
         "title": "Sabungan",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 48,
         "chapter_number": 48,
         "title": "Dalawang Senyora",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 49,
         "chapter_number": 49,
         "title": "Hiwaga",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 50,
         "chapter_number": 50,
         "title": "Tinig ng mga Inuusig",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 51,
         "chapter_number": 51,
         "title": "Ugat ni Elias",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 52,
         "chapter_number": 52,
         "title": "Mga Palitan at Pagbabago",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 53,
         "chapter_number": 53,
         "title": "Baraha ng mga Patay at mga Anino",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 54,
         "chapter_number": 54,
         "title": "Il Buon Di Si Conosce Da Mattina",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 55,
         "chapter_number": 55,
         "title": "Pagbubunyag",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 56,
         "chapter_number": 56,
         "title": "Malaking Sakuna",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 57,
         "chapter_number": 57,
         "title": "Sabi-Sabi at Kuro-Kuro",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 58,
         "chapter_number": 58,
         "title": "Vae Victis!",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 59,
         "chapter_number": 59,
         "title": "Isinumpa",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 60,
         "chapter_number": 60,
         "title": "Pambayan at mga Pansariling Kapakanan",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 61,
         "chapter_number": 61,
         "title": "Ikakasal si Maria Clara",
-        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang.",
-        "quiz": [
-            {
-                "question": "Sino ang may-akda ng Noli Me Tangere?",
-                "options": [
-                    "Jose Rizal",
-                    "Andres Bonifacio",
-                    "Emilio Aguinaldo",
-                    "Apolinario Mabini"
-                ],
-                "answer": 0
-            }
-        ]
+        "content": "Ang nilalaman ng kabanatang ito ay paparating pa lamang."
     },
     {
         "id": 62,
         "chapter_number": 62,
         "title": "Pagtakas Hanggang Lawa",
-        "content": "\"Pakinggan po ninyo ang balak ko,” ani Elias na nagninilay habang patungo sila sa San Gabriel. “Itatago ko kayo ngayon sa bahay ng isang kaibigan ko sa Mandaluyong.\n\nDadalhin ko sa inyo ang lahat ng salapi ninyong iniligtas ko at itinago sa paanan ng balete, doon sa mahiwagang libingan ng inyong ingkong.\n\nKailangang umalis kayo sa bayang ito...”\n\n“Upang mangibang-bayan?” putol ni Ibarra.\n\n“Upang gamitin nang mapayapa ang mga nalalabing araw sa inyong buhay. May mga kaibigan kayo sa Espanya, mayaman kayo, maaari ninyong lakarin ang inyong kapatawaran. Kung tutuusin, higit pang mabuting Inang Bayan ang ibang bayan kaysa lupang tinubuan.”\n\nHindi sumagot si Crisostomo, tahimik na nagmuni. Sa sandaling iyon nila sinapit ang Pasig at nagsimulang sumalunga sa agos ang bangka. May matuling nangangabayo sa ibabaw ng Puente de España at maririnig ang isang mahaba’t matinis na silbato.\n\n“Elias,” wika ni Ibarra, “dulot ng aking pamilya ang inyong kasawian. Dalawang ulit na ninyong iniligtas ang buhay ko. Kaya bukod sa utang na loob, kailangan ko ring ibalik ang inyong yaman. Ipinapayo ninyong manirahan ako sa ibang bayan, kung gayon, sumama kayo sa akin at mamuhay tayong parang magkapatid. Sawimpalad din kayo rito.”\n\nMalumbay na umiling si Elias at sumagot.\n\n“Hindi maaari! Totoong hindi ako maaaring umibig at lumigaya sa aking bayan. Subalit maaari akong magtiis at mamatay sa piling niya, at marahil, alang-alang sa kaniya—na laging makabuluhan. Bayaang maging kasawian ko ang kasawian ng aking bayan, at kahit na walang isa man lamang na marangal na kaisipang nag-uugnay sa amin, kahit na hindi tumitibok ang aming mga puso sa iisang pangalan, maging kaisa man lamang ako sa kasawian ng aking mga kababayan, maging karamay man lamang ako sa pagtangis sa aming mga paghihirap, upang iisang masamâng kapalaran ang sumiil sa puso naming lahat!”\n\n“Kung gayon, bakit ninyo ipinapayo sa aking umalis?”\n\n“Sapagkat maaari kayong lumigaya sa ibang pook at ako’y hindi, sapagkat hindi kayo isinilang upang magdusa, at sapagkat maaaring kasuklaman ninyo ang Pagtakas Hanggang Lawa inyong bayan kung dumating ang araw na mapahamak kayo dahil sa kaniya. At pinakamalaking kasawian ang masuklam sa inyong bayan.”\n\n“Hinahatulan ninyo ako!” mapait na bulalas ni Ibarra. “Nalimutan yata ninyo na halos pagdating ko rito, itinalaga ko ang sarili sa paghanap ng kaniyang ikabubuti...”\n\n“Huwag po kayong magdamdam, wala akong nais iparatang sa inyo. Harinawang tumulad sa inyo ang lahat! Subalit hindi ko hinihiling ang hindi nangyayari, at huwag kayong magdamdam kung sabihin ko sa inyo na dinadaya kayo ng inyong puso. Mahal ninyo ang inyong bayan dahil itinuro ito ng inyong ama. Mahal ninyo ang inyong bayan dahil narito ang inyong pag-ibig, yaman, kabataan, dahil nakangiti ang lahat sa inyo, dahil walang ginawa sa inyong inhustisya. Mahal ninyo ang inyong bayan tulad ng pagmamahal natin sa lahat ng nagbibigay sa atin ng kaligayahan. Subalit sa araw na makita ninyong naghihirap kayo, nagugutom, inuusig, isinusuplong, at ipinagbibili ng inyo na ring mga kababayan, itatakwil ninyo sa araw na iyon ang inyong sarili, ang inyong bayan, at ang lahat.”\n\n“Nasasaktan ako sa sinasabi mo,” ani Ibarra, naghihinanakit.\n\n“Nais ko pong makita ninyo ang katotohanan, at nang makaiwas kayo sa isang malungkot na hinaharap. Alalahanin ninyo noong kausapin ko kayo sa bangka ring ito at sa liwanag din ng buwang ito, may isang buwan na humigit-kumulang. Maligaya kayo noon. Hindi kayo naantig ng hibik ng mga sawimpalad. Kinutya ninyo ang kanilang karaingan sapagkat karaingan ng mga kriminal. Higit pa ninyong pinakinggan ang kanilang kaaway at, sa kabila ng aking mga katwiran at pakiusap, pumanig kayo sa mga umaapi sa kanila. Sa inyo nakasalalay noon kung magiging kriminal o mapapatay ako bilang pagtupad sa isang banal na sumpa. Hindi ito itinulot ng Diyos dahil namatay ang matandang pinunò ng masasamâng-loob...Nagdaan ang isang buwan, at ngayon, nag-iba na ang inyong isip.”\n\n“May katwiran ka, Elias, ngunit nililikha ang tao ng mga pagkakataon. Bulag ako noon, masamâ ang loob. Ano ba ang malay ko? Ngayon, tinanggal ng kasawian ang aking piring, natuto ako dahil sa pag-iisa’t pagdurusa sa aking piitan. Ngayon, nakikita ko ang nakahihindik na kanser na ngumangatngat sa lipunang ito, nakasakmal sa lahat ng laman, at nangangailangan ng marahas na pagbusbos. Binuksan nila ang aking mata. Ipinakita nila ang sugat at pinilit akong maging kriminal! At kung gayon nga ang ibig nila, magiging filibustero ako. Subalit isang totoong filibustero. Tatawagan ko ang lahat ng sawi, ang lahat ng nakadadama na may pusong tumitibok sa loob ng dibdib, iyong mga nagsugo sa inyo na lapitan ako. Hindi, hinding-hindi ako magiging kriminal kailanman; kabaligtaran ng kriminal ang lumaban alang-alang sa kaniyang bayan! Sa loob ng tatlong siglo, nag-abot tayo Noli Me Tangere sa kanila, humingi sa kanila ng pag-ibig, at umasam na tawagin nilang kapatid. Ano ang kanilang itinugon? Sa pamamagitan ng mga alipusta at paglibak, ipinagkait maging ang katangian ng pagiging tao natin. Walang Diyos, walang-pag-asa, at walang sangkatauhan! Walang natitira kundi ang katwiran ng lakas!”\n\nSaklot ng damdamin si Ibarra, nanginginig ang buong katawan. Dumaraan sila sa tapat ng palasyo ng Heneral at napuna nilang maligalig na kumikilos ang mga guwardiya.\n\n“Natuklasan na kaya ang pagtakas?” bulong ni Elias. “Humiga po kayo, nang matakpan ko kayo ng sakate dahil daraan tayo sa tabi ng Polvorista. Baka maghinala ang tanod dahil dalawa tayo.”\n\nIsang manipis at makitid na lunday ang bangka, waring hindi lumulutang kundi gumuguhit sa ibabaw ng tubig. Tulad ng sapantaha ni Elias, pinatigil siya ng tanod at tinanong kung saan nanggaling.\n\n“Sa Maynila, dinalhan ko ng sakate ang mga oidor at kura,” sagot niyang ginagaya ang punto ng mga taga-Pandakan.\n\nLumabas ang isang sarhento at inalam kung ano ang nangyayari.\n\n“Sulong!” sabi nito. “Binabalaan kita, huwag kang magpapasakay ng kahit sino. Nakatakas ang isang preso. Pag nahuli mo’t dinala sa akin, bibigyan kita ng magandang pabuya.”\n\n“Masusunod po. Ano po ba ang mga palatandaan?”\n\n“Nakasuot ng lebita at nagsasalita ng Espanyol. Kaya, kuwidaw!”\n\nTumuloy palayo ang bangka. Lumingon si Elias at nakita ang anino ng tanod na nakatayo sa tabi ng pampang.\n\n“Mababalam tayo nang isang sandali,” aniyang mahina. “Kailangang pumasok muna tayo sa Ilog Beata upang kunwa’y taga-Peña Francia ako. Makikita ninyo ang ilog na inawit ni Francisco Baltazar.”\n\nNakahimlay ang bayan sa liwanag ng buwan. Tumindig si Crisostomo upang tamasahin ang napakapanglaw na kapayapaan ng Kalikasan. Makitid ang ilog at patag ang pampanging natatamnan ng sakate.\n\nItinapon ni Elias ang kaniyang karga sa pampang, kinuha ang isang tikin at ilang basyong bayong sa ilalim ng damo. Nagpatuloy sila sa pamamangka.\n\n“Hawak po ninyo ang inyong kalooban at ang inyong kinabukasan,” aniya kay Crisostomo, na nanatiling tahimik. “Ngunit kung ipahihintulot ninyo ang ilang puna, nais ko sanang sabihin ang ganito. Isipin ninyong mabuti ang inyong gagawin. Mapasisiklab ninyo ang digma, dahil may salapi kayo, matalino, at madaling makatatagpo ng maraming bisig. Sa kasamâang-palad, maraming hindi nasisiyahan. Ang higit na masamâ, sa labanang ito na isasagawa ninyo, ang lalong Pagtakas Hanggang Lawa magdurusa ay ang mga mahina at walang kinalaman. Ang damdaming nagbunsod sa akin noong isang buwan upang lapitan kayo sa paghingi ng mga reporma ang siya ring nag-uudyok sa akin ngayon upang sabihin inyo na pagmunian ang gagawin. Hindi po nag-iisip humiwalay sa Inang Bayan ang ating bayan. Humihingi lamang ng kaunting kalayaan, katarungan, at pagmamahal. Sasang-ayon sa inyo ang mga hindi nasisiyahan, ang mga kriminal, ang mga walang-pag-asa, subalit hindi sasama sa inyo ang bayan. Namamali kayo kung, dahil madilim ang tingin ninyo sa lahat, inaakala ninyong wala nang pag-asa ang bayan. Nagdurusa ang bayan, oo, subalit umaasa pa, nananalig, at magbabangon lamang kapag said na ang pagtitiis. At mangyayari ito kung ito ang nanaisin ng mga namamahala, at malayo pa ito. Kahit ako ay hindi susunod sa inyo, hindi ako kailanman gagamit ng sukdulang panlunas hanggang nakikita ko pa ang pag-asa sa mga tao.”\n\n“Kung gayon, magtutuloy akong wala kayo!” matatag na tugon ni Crisostomo.\n\n“Iyan ba ang inyong panghuling pasiya?”\n\n“Ang panghuli at tangi kong pasiya. Saksi ang alaala ng aking ama, Hindi na ako papayag agawan ng kapayapaan at kaligayahan nang walang ganti. Naghangad lamang ako ng kabutihan, iginalang ko ang lahat, at nagtiis dahil sa pagmamahal sa isang mapagkunwaring pananampalataya, dahil sa pagmamahal sa isang Inang Bayan. Ano ang iginanti nila sa akin? Itinapon ako sa karumal-dumal na bilangguan at dinusta ang aking magiging kabiyak. Hindi, magiging krimen ito kapag hindi ako naghiganti, magbubunga ng mga bagong inhustisya! Hindi, magiging karuwagan, kahinaan ng loob, ang maghimutok at manangis kapag may dugo’t buhay, kapag nilangkapan ng uyam ang panlalait at paghahamon! Mananawagan ako sa mangmang na taumbayan, ipakikita ko sa kanila ang pagdurusa nila, Sasabihin kong huwag nang mag-isip ng mga kapatid dahil wala na kundi mababangis na hayop na sumisila sa isa’t isa. At sasabihin ko sa kanilang bumabangon at tumututol ang walang maliw na karapatan ng tao laban sa gayong panlulupig upang makamit nila ang kalayaan!”\n\n“Magdurusa ang bayang walang kasalanan!”\n\n“Lalong mabuti! Maihahatid ba ninyo ako hanggang bundok?”\n\n“Hanggang doon sa ligtas kayo!” tugon ni Elias.\n\nMuli silang lumabas sa Ilog Pasig. Nag-usap sila paminsan-minsan hinggil sa iba’t ibang bagay.\n\n“Santa Ana!” anas ni Ibarra. “Nakikilala ba ninyo ang bahay na iyan?”\n\nNagdaraan sila sa tapat ng bahay-pahingahan ng mga Heswita.\n\n“Pinaraan ko riyan ang maraming masasaya’t maliligayang araw!” buntonghininga ni Elias. “Noong panahon ko, pumupunta kami rito buwan-buwan... Tulad ako ng iba noon: may yaman, may mag-anak, at napapangarap at nasisilip ang hinaharap. Dinadalaw ko noon ang aking kapatid sa kalapit na kolehiyo, binibigyan niya ako ng ginagawa niya...Lagi siyang may kasamang kaibigan, isang magandang dalagita. Nagdaan na ang lahat tulad ng isang pangarap.”\n\nNanatili silang tahimik hanggang makarating sa Malapad-na-Bato. Silang mga nakapamangka na sa Pasig, sa isa sa mga gabi ng mahikang inihahandog ng Filipinas, kapag nagsasabog ng malulungkot na tula ang buwan mula sa bughaw na kalinisan, kapag ikinukubli ng dilim ang hapis ng mga tao at pinapaikpik ng katahimikan ang masungit na himig ng kaniyang tinig, kapag ang Kalikasan ang tanging nangungusap, sila lamang ang makauunawa sa minumuni ng dalawang binata.\n\nSa Malapad-na-Bato, inaantok ang karabinero at nang makita na walang laman ang bangka at walang inihahandog na anumang maaaring samsamin alinsunod sa kinamihasnang gawain ng kaniyang hukbo at gamit ng kaniyang puwesto, pinabayaan silang magdaan. Hindi rin naghinala ang guwardiya sibil ng Pasig at hindi sila ginambala. Magbubukang-liwayway nang sapitin nila ang lawa, maamo at payapa tulad ng isang napakalaking salamin. Pumupusyaw ang buwan at pumupula ang Silangan. Sa may kalayuan, napansin nila ang isang bagay na abuhin at unti-unting papalapit.\n\n“Dumarating ang falua,” bulong ni Elias. “Humiga kayo at tatabunan ko kayo ng mga bayong.”\n\nHigit na luminaw at nakikilala ang anyo ng sasakyan.\n\n“Pumapagitna sa atin at sa pampang,” pansin ni Elias na nababahala. At dahan-dahang iniba ni Elias ang tinutungo ng kaniyang bangka. Sumagwan siya pagawing Binangonan. Sa kaniyang malaking gulat, napuna niyang gumawi rin sa kanilang pupuntahan ang patrulya habang may tinig na sumisigaw sa kaniya. Huminto si Elias at nag-isip. Malayo pa ang pampang at maaari na silang maabot ng mga baril sa patrulya. Inisip niyang bumalik sa Pasig, higit na matulin ang bangka niya kaysa kasalubong. Ngunit sawing kapalaran! Isa pang bangka ang lumitaw buhat sa Pasig at kitang-kita ang kumikintab na mga kapasete at bayoneta ng mga guwardiya sibil.\n\n“Naipit tayo!” namumutlang bulong. Minasdan niya ang kaniyang matitipunong bisig at isinagawa ang paraang nalalabi, nagsimulang sumagwan nang buong lakas patungo sa Pulo ng Talim. Samantala, sumusungaw ang araw. Matuling gumuhit sa tubig ang bangka. Nakita ni Elias na sakay ng pumipihit na falua ang ilang lalaking nakatayô at sumesenyas sa kaniya.\n\n“Marunong ba kayong mamangka?” tanong niya kay Ibarra. “Opo, bakit?”\n\n“Mapapahamak tayo kapag hindi ako tumalon at iniligaw sila. Hahabulin nila ako, mahusay akong lumangoy at sumisid. Ilalayo ko sila sa inyo, at pagkatapos, sikapin ninyong makaligtas.”\n\n“Huwag, dumito kayo, at ipagpalit natin nang mahal ang ating buhay!”\n\n“Hindi maaari. Wala tayong sandata at babarilin nila tayong parang mga pipit.”\n\nNoon nila narinig ang isang tsiss sa tubig na waring nilagpakan ng isang mainit na bagay, kasunod ang isang putok. “Nakita na ninyo?” ani Elias at inilapag ang sagwan. “Magkita tayo sa libingan ng inyong ingkong. Iligtas ninyo ang sarili!”\n\n“At ikaw?”\n\n“Iniligtas na ako ng Diyos sa higit na malalaking panganib.”\n\nHinubad ni Elias ang kaniyang baro. Pinunit ito sa kaniyang kamay ng isang punglo, at dalawang pagsabog ang narinig. Panatag na kinamayan niya si Ibarra, na nanatiling nakahiga sa sahig ng bangka, tumayô, at tumalon nang may kasamang sikad sa munting sasakyan. Narinig ang mga sigaw. Sa malayo-layo, mabilis na lumitaw ang ulo ng binata upang huminga wari, at dagling lumubog.\n\n“Doon, naroon!” sigaw ng iba’t ibang tinig at muling sumibad ang mga punglo. Masikap siyang tinugis ng falua at ng bangka. Isang bahagyang guhit ang maghihimatong sa kaniyang pagdaan palayo nang palayo sa bangka ni Ibarra, na lumulutang nang waring walang laman. Sa bawat paglitaw ng ulo ng lumalangoy upang huminga, nagpapaputok ang mga guwardiya sibil at mga nagpapatrulya. Nagtagal ang pagtugis. Malayo na ang munting bangka ni Ibarra. Palapit naman nang palapit sa pampang, mga limampung dipa na lamang, ang lumalangoy. Napapagod na ang mga sumasagwan, ngunit gayundin si Elias, dahil madalas nang lumitaw ang ulo sa iba’t ibang dako, upang lituhin wari ang mga humahabol sa kaniya. Hindi na inihimatong ng taksil na guhit ang dinaraanan ng maninisid. Sa huling pagkakataon, nakita nila itong mga sampung dipa na lamang ang layo sa pampang, at pinaulanan nila ng punglo...Pagkatapos, nagdaan ang mga sandali, wala nang lumitaw muli sa rabaw ng tahimik at ulilang lawa.\n\nMakaraan ang kalahating oras, ipinilit ng isang sumasagwan na nakakita ito sa tubig, malapit sa pampang, ng mga bahid ng dugo. Nagsigalaw ang ulo ng mga kasama sa paraang hindi matiyak kung oo nga o hindi.",
-        "quiz": [
-            {
-                "question": "Saan balak itago ni Elias si Ibarra matapos ang pagtakas?",
-                "options": [
-                    "Sa Bulacan",
-                    "Sa Mandaluyong",
-                    "Sa San Diego",
-                    "Sa Laguna"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Saan itinago ni Elias ang salapi ni Ibarra?",
-                "options": [
-                    "Sa ilalim ng tulay",
-                    "Sa loob ng simbahan",
-                    "Sa paanan ng balete",
-                    "Sa bahay ni Kapitan Tiago"
-                ],
-                "answer": 2
-            },
-            {
-                "question": "Ano ang dahilan ni Elias kung bakit hindi siya makakasama kay Ibarra sa ibang bansa?",
-                "options": [
-                    "Dahil sa kaniyang pamilya",
-                    "Dahil nais niyang mamatay sa piling ng kaniyang bayan",
-                    "Dahil wala siyang pasaporte",
-                    "Dahil mayroon siyang sakit"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Anong ilog ang sinabing inawit ni Francisco Baltazar?",
-                "options": [
-                    "Ilog Pasig",
-                    "Ilog Beata",
-                    "Ilog San Gabriel",
-                    "Ilog Marikina"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Ano ang ginamit ni Elias upang itago si Ibarra sa loob ng bangka?",
-                "options": [
-                    "Damo",
-                    "Sakate",
-                    "Katsa",
-                    "Banig"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Sino ang tumugis sa bangka nina Elias at Ibarra sa lawa?",
-                "options": [
-                    "Ang mga tulisan",
-                    "Ang mga guwardiya sibil at falua",
-                    "Ang mga sakristan",
-                    "Si Padre Salvi"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Ano ang ginawa ni Elias upang iligtas si Ibarra sa mga tumutugis?",
-                "options": [
-                    "Nakipagbarilan siya",
-                    "Tumalon siya sa tubig upang iligaw ang mga ito",
-                    "Nagkunwari siyang patay",
-                    "Nagsindi siya ng apoy"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Saan nagkasundong magkikita sina Elias at Ibarra?",
-                "options": [
-                    "Sa Maynila",
-                    "Sa libingan ng ingkong ni Ibarra",
-                    "Sa bahay ni Maria Clara",
-                    "Sa Europa"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Anong bahid ang nakita ng isang sumasagwan sa tubig matapos ang pagtugis?",
-                "options": [
-                    "Damit",
-                    "Dugo",
-                    "Pera",
-                    "Sumbrero"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Bakit tinawag ni Ibarra ang kaniyang sarili na \"filibustero\"?",
-                "options": [
-                    "Dahil siya ay magnanakaw",
-                    "Dahil nais niyang lumaban alang-alang sa kaniyang bayan",
-                    "Dahil siya ay kaaway ng simbahan",
-                    "Dahil siya ay dayuhan"
-                ],
-                "answer": 1
-            }
-        ]
+        "content": "\"Pakinggan po ninyo ang balak ko,” ani Elias na nagninilay habang patungo sila sa San Gabriel.\n“Itatago ko kayo ngayon sa bahay ng isang kaibigan ko sa Mandaluyong.\nDadalhin ko sa inyo ang lahat ng salapi ninyong iniligtas ko at itinago sa paanan ng balete, doon sa mahiwagang libingan ng inyong ingkong.\nKailangang umalis kayo sa bayang ito...”\n“Upang mangibang-bayan?” putol ni Ibarra.\n“Upang gamitin nang mapayapa ang mga nalalabing araw sa inyong buhay. May mga kaibigan kayo sa Espanya, mayaman kayo, maaari ninyong lakarin ang inyong kapatawaran. Kung tutuusin, higit pang mabuting Inang Bayan ang ibang bayan kaysa lupang tinubuan.”\nHindi sumagot si Crisostomo, tahimik na nagmuni. Sa sandaling iyon nila sinapit ang Pasig at nagsimulang sumalunga sa agos ang bangka. May matuling nangangabayo sa ibabaw ng Puente de España at maririnig ang isang mahaba’t matinis na silbato.\n“Elias,” wika ni Ibarra, “dulot ng aking pamilya ang inyong kasawian. Dalawang ulit na ninyong iniligtas ang buhay ko. Kaya bukod sa utang na loob, kailangan ko ring ibalik ang inyong yaman. Ipinapayo ninyong manirahan ako sa ibang bayan, kung gayon, sumama kayo sa akin at mamuhay tayong parang magkapatid. Sawimpalad din kayo rito.”\nMalumbay na umiling si Elias at sumagot.\n“Hindi maaari! Totoong hindi ako maaaring umibig at lumigaya sa aking bayan. Subalit maaari akong magtiis at mamatay sa piling niya, at marahil, alang-alang sa kaniya—na laging makabuluhan. Bayaang maging kasawian ko ang kasawian ng aking bayan, at kahit na walang isa man lamang na marangal na kaisipang nag-uugnay sa amin, kahit na hindi tumitibok ang aming mga puso sa iisang pangalan, maging kaisa man lamang ako sa kasawian ng aking mga kababayan, maging karamay man lamang ako sa pagtangis sa aming mga paghihirap, upang iisang masamâng kapalaran ang sumiil sa puso naming lahat!”\n“Kung gayon, bakit ninyo ipinapayo sa aking umalis?”\n“Sapagkat maaari kayong lumigaya sa ibang pook at ako’y hindi, sapagkat hindi kayo isinilang upang magdusa, at sapagkat maaaring kasuklaman ninyo ang inyong bayan kung dumating ang araw na mapahamak kayo dahil sa kaniya. At pinakamalaking kasawian ang masuklam sa inyong bayan.”\n“Hinahatulan ninyo ako!” mapait na bulalas ni Ibarra. “Nalimutan yata ninyo na halos pagdating ko rito, itinalaga ko ang sarili sa paghanap ng kaniyang ikabubuti...”\n“Huwag po kayong magdamdam, wala akong nais iparatang sa inyo. Harinawang tumulad sa inyo ang lahat! Subalit hindi ko hinihiling ang hindi nangyayari, at huwag kayong magdamdam kung sabihin ko sa inyo na dinadaya kayo ng inyong puso. Mahal ninyo ang inyong bayan dahil itinuro ito ng inyong ama. Mahal ninyo ang inyong bayan dahil narito ang inyong pag-ibig, yaman, kabataan, dahil nakangiti ang lahat sa inyo, dahil walang ginawa sa inyong inhustisya. Mahal ninyo ang inyong bayan tulad ng pagmamahal natin sa lahat ng nagbibigay sa atin ng kaligayahan. Subalit sa araw na makita ninyong naghihirap kayo, nagugutom, inuusig, isinusuplong, at ipinagbibili ng inyo na ring mga kababayan, itatakwil ninyo sa araw na iyon ang inyong sarili, ang inyong bayan, at ang lahat.”\n“Nasasaktan ako sa sinasabi mo,” ani Ibarra, naghihinanakit.\n“Nais ko pong makita ninyo ang katotohanan, at nang makaiwas kayo sa isang malungkot na hinaharap. Alalahanin ninyo noong kausapin ko kayo sa bangka ring ito at sa liwanag din ng buwang ito, may isang buwan na humigit-kumulang. Maligaya kayo noon. Hindi kayo naantig ng hibik ng mga sawimpalad. Kinutya ninyo ang kanilang karaingan sapagkat karaingan ng mga kriminal. Higit pa ninyong pinakinggan ang kanilang kaaway at, sa kabila ng aking mga katwiran at pakiusap, pumanig kayo sa mga umaapi sa kanila. Sa inyo nakasalalay noon kung magiging kriminal o mapapatay ako bilang pagtupad sa isang banal na sumpa. Hindi ito itinulot ng Diyos dahil namatay ang matandang pinunò ng masasamâng-loob...Nagdaan ang isang buwan, at ngayon, nag-iba na ang inyong isip.”\n“May katwiran ka, Elias, ngunit nililikha ang tao ng mga pagkakataon. Bulag ako noon, masamâ ang loob. Ano ba ang malay ko? Ngayon, tinanggal ng kasawian ang aking piring, natuto ako dahil sa pag-iisa’t pagdurusa sa aking piitan. Ngayon, nakikita ko ang nakahihindik na kanser na ngumangatngat sa lipunang ito, nakasakmal sa lahat ng laman, at nangangailangan ng marahas na pagbusbos. Binuksan nila ang aking mata. Ipinakita nila ang sugat at pinilit akong maging kriminal! At kung gayon nga ang ibig nila, magiging filibustero ako. Subalit isang totoong filibustero. Tatawagan ko ang lahat ng sawi, ang lahat ng nakadadama na may pusong tumitibok sa loob ng dibdib, iyong mga nagsugo sa inyo na lapitan ako. Hindi, hinding-hindi ako magiging kriminal kailanman; kabaligtaran ng kriminal ang lumaban alang-alang sa kaniyang bayan! Sa loob ng tatlong siglo, nag-abot tayo sa kanila, humingi sa kanila ng pag-ibig, at umasam na tawagin nilang kapatid. Ano ang kanilang itinugon? Sa pamamagitan ng mga alipusta at paglibak, ipinagkait maging ang katangian ng pagiging tao natin. Walang Diyos, walang-pag-asa, at walang sangkatauhan! Walang natitira kundi ang katwiran ng lakas!”\nSaklot ng damdamin si Ibarra, nanginginig ang buong katawan. Dumaraan sila sa tapat ng palasyo ng Heneral at napuna nilang maligalig na kumikilos ang mga guwardiya.\n“Natuklasan na kaya ang pagtakas?” bulong ni Elias. “Humiga po kayo, nang matakpan ko kayo ng sakate dahil daraan tayo sa tabi ng Polvorista. Baka maghinala ang tanod dahil dalawa tayo.”\nIsang manipis at makitid na lunday ang bangka, waring hindi lumulutang kundi gumuguhit sa ibabaw ng tubig. Tulad ng sapantaha ni Elias, pinatigil siya ng tanod at tinanong kung saan nanggaling.\n“Sa Maynila, dinalhan ko ng sakate ang mga oidor at kura,” sagot niyang ginagaya ang punto ng mga taga-Pandakan.\nLumabas ang isang sarhento at inalam kung ano ang nangyayari.\n“Sulong!” sabi nito. “Binabalaan kita, huwag kang magpapasakay ng kahit sino. Nakatakas ang isang preso. Pag nahuli mo’t dinala sa akin, bibigyan kita ng magandang pabuya.”\n“Masusunod po. Ano po ba ang mga palatandaan?”\n“Nakasuot ng lebita at nagsasalita ng Espanyol. Kaya, kuwidaw!”\nTumuloy palayo ang bangka. Lumingon si Elias at nakita ang anino ng tanod na nakatayo sa tabi ng pampang.\n“Mababalam tayo nang isang sandali,” aniyang mahina. “Kailangang pumasok muna tayo sa Ilog Beata upang kunwa’y taga-Peña Francia ako. Makikita ninyo ang ilog na inawit ni Francisco Baltazar.”\nNakahimlay ang bayan sa liwanag ng buwan. Tumindig si Crisostomo upang tamasahin ang napakapanglaw na kapayapaan ng Kalikasan. Makitid ang ilog at patag ang pampanging natatamnan ng sakate.\nItinapon ni Elias ang kaniyang karga sa pampang, kinuha ang isang tikin at ilang basyong bayong sa ilalim ng damo. Nagpatuloy sila sa pamamangka.\n“Hawak po ninyo ang inyong kalooban at ang inyong kinabukasan,” aniya kay Crisostomo, na nanatiling tahimik. “Ngunit kung ipahihintulot ninyo ang ilang puna, nais ko sanang sabihin ang ganito. Isipin ninyong mabuti ang inyong gagawin. Mapasisiklab ninyo ang digma, dahil may salapi kayo, matalino, at madaling makatatagpo ng maraming bisig. Sa kasamâang-palad, maraming hindi nasisiyahan. Ang higit na masamâ, sa labanang ito na isasagawa ninyo, ang lalong magdurusa ay ang mga mahina at walang kinalaman. Ang damdaming nagbunsod sa akin noong isang buwan upang lapitan kayo sa paghingi ng mga reporma ang siya ring nag-uudyok sa akin ngayon upang sabihin inyo na pagmunian ang gagawin. Hindi po nag-iisip humiwalay sa Inang Bayan ang ating bayan. Humihingi lamang ng kaunting kalayaan, katarungan, at pagmamahal. Sasang-ayon sa inyo ang mga hindi nasisiyahan, ang mga kriminal, ang mga walang-pag-asa, subalit hindi sasama sa inyo ang bayan. Namamali kayo kung, dahil madilim ang tingin ninyo sa lahat, inaakala ninyong wala nang pag-asa ang bayan. Nagdurusa ang bayan, oo, subalit umaasa pa, nananalig, at magbabangon lamang kapag said na ang pagtitiis. At mangyayari ito kung ito ang nanaisin ng mga namamahala, at malayo pa ito. Kahit ako ay hindi susunod sa inyo, hindi ako kailanman gagamit ng sukdulang panlunas hanggang nakikita ko pa ang pag-asa sa mga tao.”\n“Kung gayon, magtutuloy akong wala kayo!” matatag na tugon ni Crisostomo.\n“Iyan ba ang inyong panghuling pasiya?”\n“Ang panghuli at tangi kong pasiya. Saksi ang alaala ng aking ama, Hindi na ako papayag agawan ng kapayapaan at kaligayahan nang walang ganti. Naghangad lamang ako ng kabutihan, iginalang ko ang lahat, at nagtiis dahil sa pagmamahal sa isang mapagkunwaring pananampalataya, dahil sa pagmamahal sa isang Inang Bayan. Ano ang iginanti nila sa akin? Itinapon ako sa karumal-dumal na bilangguan at dinusta ang aking magiging kabiyak. Hindi, magiging krimen ito kapag hindi ako naghiganti, magbubunga ng mga bagong inhustisya! Hindi, magiging karuwagan, kahinaan ng loob, ang maghimutok at manangis kapag may dugo’t buhay, kapag nilangkapan ng uyam ang panlalait at paghahamon! Mananawagan ako sa mangmang na taumbayan, ipakikita ko sa kanila ang pagdurusa nila, Sasabihin kong huwag nang mag-isip ng mga kapatid dahil wala na kundi mababangis na hayop na sumisila sa isa’t isa. At sasabihin ko sa kanilang bumabangon at tumututol ang walang maliw na karapatan ng tao laban sa gayong panlulupig upang makamit nila ang kalayaan!”\n“Magdurusa ang bayang walang kasalanan!”\n“Lalong mabuti! Maihahatid ba ninyo ako hanggang bundok?”\n“Hanggang doon sa ligtas kayo!” tugon ni Elias.\nMuli silang lumabas sa Ilog Pasig. Nag-usap sila paminsan-minsan hinggil sa iba’t ibang bagay.\n“Santa Ana!” anas ni Ibarra. “Nakikilala ba ninyo ang bahay na iyan?”\nNagdaraan sila sa tapat ng bahay-pahingahan ng mga Heswita.\n“Pinaraan ko riyan ang maraming masasaya’t maliligayang araw!” buntonghininga ni Elias. “Noong panahon ko, pumupunta kami rito buwan-buwan... Tulad ako ng iba noon: may yaman, may mag-anak, at napapangarap at nasisilip ang hinaharap. Dinadalaw ko noon ang aking kapatid sa kalapit na kolehiyo, binibigyan niya ako ng ginagawa niya...Lagi siyang may kasamang kaibigan, isang magandang dalagita. Nagdaan na ang lahat tulad ng isang pangarap.”\nNanatili silang tahimik hanggang makarating sa Malapad-na-Bato. Silang mga nakapamangka na sa Pasig, sa isa sa mga gabi ng mahikang inihahandog ng Filipinas, kapag nagsasabog ng malulungkot na tula ang buwan mula sa bughaw na kalinisan, kapag ikinukubli ng dilim ang hapis ng mga tao at pinapaikpik ng katahimikan ang masungit na himig ng kaniyang tinig, kapag ang Kalikasan ang tanging nangungusap, sila lamang ang makauunawa sa minumuni ng dalawang binata.\nSa Malapad-na-Bato, inaantok ang karabinero at nang makita na walang laman ang bangka at walang inihahandog na anumang maaaring samsamin alinsunod sa kinamihasnang gawain ng kaniyang hukbo at gamit ng kaniyang puwesto, pinabayaan silang magdaan. Hindi rin naghinala ang guwardiya sibil ng Pasig at hindi sila ginambala. Magbubukang-liwayway nang sapitin nila ang lawa, maamo at payapa tulad ng isang napakalaking salamin. Pumupusyaw ang buwan at pumupula ang Silangan. Sa may kalayuan, napansin nila ang isang bagay na abuhin at unti-unting papalapit.\n“Dumarating ang falua,” bulong ni Elias. “Humiga kayo at tatabunan ko kayo ng mga bayong.”\nHigit na luminaw at nakikilala ang anyo ng sasakyan.\n“Pumapagitna sa atin at sa pampang,” pansin ni Elias na nababahala. At dahan-dahang iniba ni Elias ang tinutungo ng kaniyang bangka. Sumagwan siya pagawing Binangonan. Sa kaniyang malaking gulat, napuna niyang gumawi rin sa kanilang pupuntahan ang patrulya habang may tinig na sumisigaw sa kaniya. Huminto si Elias at nag-isip. Malayo pa ang pampang at maaari na silang maabot ng mga baril sa patrulya. Inisip niyang bumalik sa Pasig, higit na matulin ang bangka niya kaysa kasalubong. Ngunit sawing kapalaran! Isa pang bangka ang lumitaw buhat sa Pasig at kitang-kita ang kumikintab na mga kapasete at bayoneta ng mga guwardiya sibil.\n“Naipit tayo!” namumutlang bulong. Minasdan niya ang kaniyang matitipunong bisig at isinagawa ang paraang nalalabi, nagsimulang sumagwan nang buong lakas patungo sa Pulo ng Talim. Samantala, sumusungaw ang araw. Matuling gumuhit sa tubig ang bangka. Nakita ni Elias na sakay ng pumipihit na falua ang ilang lalaking nakatayô at sumesenyas sa kaniya.\n“Marunong ba kayong mamangka?” tanong niya kay Ibarra. “Opo, bakit?”\n“Mapapahamak tayo kapag hindi ako tumalon at iniligaw sila. Hahabulin nila ako, mahusay akong lumangoy at sumisid. Ilalayo ko sila sa inyo, at pagkatapos, sikapin ninyong makaligtas.”\n“Huwag, dumito kayo, at ipagpalit natin nang mahal ang ating buhay!”\n“Hindi maaari. Wala tayong sandata at babarilin nila tayong parang mga pipit.”\nNoon nila narinig ang isang tsiss sa tubig na waring nilagpakan ng isang mainit na bagay, kasunod ang isang putok. “Nakita na ninyo?” ani Elias at inilapag ang sagwan. “Magkita tayo sa libingan ng inyong ingkong. Iligtas ninyo ang sarili!”\n“At ikaw?”\n“Iniligtas na ako ng Diyos sa higit na malalaking panganib.”\nHinubad ni Elias ang kaniyang baro. Pinunit ito sa kaniyang kamay ng isang punglo, at dalawang pagsabog ang narinig. Panatag na kinamayan niya si Ibarra, na nanatiling nakahiga sa sahig ng bangka, tumayô, at tumalon nang may kasamang sikad sa munting sasakyan. Narinig ang mga sigaw. Sa malayo-layo, mabilis na lumitaw ang ulo ng binata upang huminga wari, at dagling lumubog.\n“Doon, naroon!” sigaw ng iba’t ibang tinig at muling sumibad ang mga punglo. Masikap siyang tinugis ng falua at ng bangka. Isang bahagyang guhit ang maghihimatong sa kaniyang pagdaan palayo nang palayo sa bangka ni Ibarra, na lumulutang nang waring walang laman. Sa bawat paglitaw ng ulo ng lumalangoy upang huminga, nagpapaputok ang mga guwardiya sibil at mga nagpapatrulya. Nagtagal ang pagtugis. Malayo na ang munting bangka ni Ibarra. Palapit naman nang palapit sa pampang, mga limampung dipa na lamang, ang lumalangoy. Napapagod na ang mga sumasagwan, ngunit gayundin si Elias, dahil madalas nang lumitaw ang ulo sa iba’t ibang dako, upang lituhin wari ang mga humahabol sa kaniya. Hindi na inihimatong ng taksil na guhit ang dinaraanan ng maninisid. Sa huling pagkakataon, nakita nila itong mga sampung dipa na lamang ang layo sa pampang, at pinaulanan nila ng punglo...Pagkatapos, nagdaan ang mga sandali, wala nang lumitaw muli sa rabaw ng tahimik at ulilang lawa.\nMakaraan ang kalahating oras, ipinilit ng isang sumasagwan na nakakita ito sa tubig, malapit sa pampang, ng mga bahid ng dugo. Nagsigalaw ang ulo ng mga kasama sa paraang hindi matiyak kung oo nga o hindi."
     },
     {
         "chapter_number": 63,
         "title": "Nagpaliwanag si Padre Damaso",
-        "content": "Walang halaga ang mamahaling mga regalong pangkasal na nakatambak sa mesa. Hindi makaakit sa paningin ni Maria Clara kahit ang mga brilyanteng nasa mga estutseng may pelus na asul, kahit ang mga bordadong telang pinya, kahit ang mga malapad na seda. Nakatingin ang dalaga, ngunit hindi nakikita ni nababasa, sa peryodikong nagbabalita sa pagkamatay ni Ibarra—nalunod sa lawan. Bigla, naramdaman niya ang dalawang kamay na tumakip sa kaniyang mga mata, pumigil sa kaniya, saka isang masayáng tinig, kay Padre Damaso, ang nagtanong: “Sino ako? Sino ako? ”Napaigtad patayo si Maria Clara at sindak na tiningnan ang kura. “Tontika, nagulat ka, eh? Di ako inaasahan, eh? Puwes, galing pa ako sa probinsiya para umasiste sa iyong kasal.” At lumapit na nakangiting siyang-siya, inabot ang kamay ng dalaga. Nanginginig na lumapit si Maria Clara at magalang na nagmano. “May dinaramdam ka, Maria?” tanong ng Pransiskano, napawi ang masayáng ngiti, at natigib ng ligalig. “Malamig ang kamay mo, maputla ka...may sakit ka, hijita?” At buong lambing siyang hinatak ni Padre Damaso, isang paglalambing na hindi aakalain ninuman na magagawa niya, hinawakan ang magkabilang kamay ng dalaga, at tinanong sa pamamagitan ng tingin. “Wala ka nang kumpiyansa sa ninong mo?” nagtatampong tanong niya. “Vamos, maupo ka rito at sabihin sa akin ang mga disgustilyo mo, gaya noong batà ka pa, kung gusto ng kandila para gumawa ng mga manyikang sahing. Alam mong lagi ko ikaw mahal...hindi ko ikaw pinagalitan kahit kailan...” Nawala ang gaspang sa tinig ni Padre Damaso at nagkaroon ng mga sangkap na magiliw. Nagsimulang umiyak si Maria Clara. “Umiiyak ka? Anak ko, bakit ka umiiyak? Nagalit ka kay Linares?” Tinakpan ni Maria Clara ang mga tainga. “Ayokong pag-usapan siya, ngayon!” sigaw ng dalaga. Takang-takang minasdan siya ni Padre Damaso. “Ayaw mong ipagtapat sa akin ang mga sekreto mo? Di ko ba sinikap hinanap lagi, para masiyahan ka, ang pinakamaliliit mong kapritso?” Itinaas ng dalaga ang mga matang tigmak sa luha, ilang sandaling tumitig sa kura, at muling umiyak nang buong kapaitan. “Huwag kang umiyak nang ganiyan, anak ko. Masakit sa akin ang mga luha mo. Sabihin sa akin ang mga dusa mo. Makikita mo kung gaano ka kamahal ng ninong mo.” Marahang lumapit sa kaniya si Maria Clara, lumuhod, at iniangat ang mukhang naliligo sa luha. Aniya sa mahinang tinig, halos hindi marinig: “Mahal pa ba ninyo ako?” “Batàng ito!” “Kung gayon...tulungan ninyo ang aking ama at sirain ang aking kasal.” At isinalaysay ng dalaga ang huli nilang pagkikita ni Ibarra, bagaman hindi binanggit ang lihim ng kaniyang pagsilang. Halos hindi mapaniwalaan ni Padre Damaso ang narinig. “Hanggang buháy siya,” patuloy ng dalaga, “inisip kong lumaban, umasa, manalig! Ibig kong mabuhay upang marinig man lamang ang sinasabi tungkol sa kaniya...Ngunit ngayong pinatay nila siya, wala na ngayong dahilan upang mabuhay ako at magtiis.” Banayad na banayad niya itong sinabi, mahina, mahinahon, walang luha. “Pero, tonta, di ba’t mil beses mas mabuti si Linares kay...” “Noong buháy siya, maaari akong magpakasal...inisip kong tumakas pagkatapos...walang ibang nais ang ama ko kundi maging kamag-anak! Ngayong patay na siya, walang lalaking makatatawag sa aking asawa niya...Noong buháy siya, maaari kong pabababàin ang aking sarili, dahil may nalalabi sa aking pampalubag-loob na alam kong buháy siya, at marahil, naaalaala ako. Ngayong patay na siya… ang kumbento o ang libingan.” May tigas ng di-mababaling pasiya ang himig ng dalaga kaya napawi ang kaligayahan ni Padre Damaso at naging labis na naninimdim. “Talaga bang mahal na mahal mo siya?” nauutal niyang tanong. Hindi sumagot si Maria Clara. Yumuko si Padre Damaso at nanahimik. “Anak ko!” Bulalas nito sa tinig na baság. “Patawarin mo ako kung nabigyan ko ikaw ng kasawian nang di ko sinasadya. Inisip ko ang kinabukasan mo, hinangad ko ang kaligayahan mo. Bakit ko ikaw puwedeng payagang ikasal sa isang katutubo para makita ko lang na malungkot na esposa at inang desgrasyada? Hindi maalis sa isip mo ang mahal mo, at kinontra ko ito nang todo, nag-abuso akong todo, para sa iyo, dahil lamang sa iyo. Kung maging esposa ka niya, iiyak ka pagkatapos, dahil sa kaniyang kondisyon, nakalantad sa lahat ng pang-aapi at walang anumang depensa. Kung maging ina ka, iiyak ka sa kapalaran ng mga anak mo. Kung bibigyan sila ng edukasyon, ipreprepara mo sila sa malungkot na kinabukasan, magiging kalaban sila ng Relihiyon at makikita mo silang binitay o itinapon. Kung pababayaan mo silang ignorante, makikita mo silang binubusabos at hinahamak! Hindi ko ito puwedeng payagan. Dahil dito, inihanap ko ikaw ng isang asawa na puwede kang gawing maligayang ina ng mga anak na mag-uutos at hindi inuutusan, na magpaparusa at hindi pinaparusahan...Alam kong mabait ang kaibigan mong kababatà, minahal ko siya gaya ng kaniyang ama, pero napoot ako sa kanila mula nang makita ko na magiging sanhi sila ng kalungkutan mo, dahil mahal ko ikaw, pinakamamahal ko ikaw, mahal ko ikaw tulad ng pagmamahal ng ama sa isang anak. Wala akong ibang mahal. Nakita ko ikaw lumaki, hindi nakaraan ang isang oras nang hindi ko ikaw inisip. Napapanaginip ko ikaw, ikaw lang ang tangi kong ligaya...” At umiyak si Padre Damaso na mistulang isang batà. “Kung gayon, kung mahal ninyo ako, huwag ninyo akong sawiin habang-buhay. Patay na siya, ibig kong magmongha!” Idinukmo ng matanda ang noo sa isang kamay. “Magmongha, magmongha!” ulit nito. “Hindi mo alam, anak ko, ang buhay, ang misteryo, na nakatago sa loob ng mga pader ng kumbento. Hindi mo alam! Mil beses ko pang gustong makita kang malungkot sa mundo kaysa kumbento...Dito puwedeng marinig ang daing mo; doon walang didinig kundi mga pader... Maganda ka, napakaganda, at hindi ka ipinanganak para sa kumbento, para maging esposa ni Kristo! Maniwala ka, anak ko, binubura ng panahon ang lahat. Pagtagal, makalilimot ka, magmamahal, at mamahalin mo ang asawa mo...si Linares.” “Ang kumbento o...ang kamatayan!” ulit ni Maria Clara. “Ang kumbento, ang kumbento, o ang kamatayan!” bulalas ni Padre Damaso. “Maria, matanda na ako, di ko na ikaw puwedeng alagaan nang mas matagal at para sa katiwasayan mo...Pumili ka ng ibang bagay, humanap ka ng ibang pag-ibig, ibang binata, sinuman siya, pero huwag lang ang kumbento.” “Ang kumbento o ang kamatayan!” “Diyos ko, Diyos ko!” sigaw ng saserdote, at tinakpan ng mga kamay ang ulo. “Pinaparusahan Mo ako, masusunod! Pero pagpalain Mo ang anak ko!” At bumaling sa dalaga. “Gusto mong magmongha? Matutupad, ayokong mamatay ka.” Ginagap ni Maria ang dalawang kamay ng kura, inilapit, hinagkan. “Ninong, ninong ko!” ulit niya. Umalis si Padre Damaso pagkaraan, malungkot, nakayuko, at bumubuntonghininga. “Diyos ko, Diyos ko, totoo Ka dahil nagpaparusa Ka! Pero ako ang paghigantihan Mo at huwag sugatan ang inosente, iligtas ang anak ko!”",
-        "quiz": [
-            {
-                "question": "Sino ang dumating upang umasiste sa kasal ni Maria Clara?",
-                "options": [
-                    "Padre Salvi",
-                    "Padre Damaso",
-                    "Padre Sibyla",
-                    "Ang Gobernador"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Ano ang tanging hiling ni Maria Clara kay Padre Damaso?",
-                "options": [
-                    "Na bigyan siya ng pera",
-                    "Na sirain ang kaniyang kasal kay Linares",
-                    "Na hanapin si Ibarra",
-                    "Na pagalingin siya"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Bakit ayaw ni Padre Damaso na ikasal si Maria Clara kay Ibarra?",
-                "options": [
-                    "Dahil mahirap si Ibarra",
-                    "Dahil nais niyang protektahan si Maria Clara sa kapahamakan",
-                    "Dahil galit siya sa pamilya Ibarra",
-                    "Lahat ng nabanggit"
-                ],
-                "answer": 3
-            },
-            {
-                "question": "Ano ang dalawang pagpipilian ni Maria Clara matapos mabalitang patay na si Ibarra?",
-                "options": [
-                    "Mag-asawa o Magtrabaho",
-                    "Kumbento o Kamatayan",
-                    "Mag-aral o Magmongha",
-                    "Tumakas o Lumaban"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Ano ang naging reaksyon ni Padre Damaso nang malamang nais magmongha ni Maria Clara?",
-                "options": [
-                    "Natuwa siya",
-                    "Umiyak siya tulad ng isang batà",
-                    "Nagalit siya nang husto",
-                    "Hindi siya naniwala"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Ano ang balitang nabasa ni Maria Clara sa peryodiko?",
-                "options": [
-                    "Ang kaniyang kasal",
-                    "Ang pagkamatay ni Ibarra sa lawa",
-                    "Ang pag-alis ni Padre Damaso",
-                    "Ang pista sa San Diego"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Sino ang lalaking itinakda ng ama ni Maria Clara na mapangasawa niya?",
-                "options": [
-                    "Ibarra",
-                    "Linares",
-                    "Elias",
-                    "Kapitan Tiago"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Ano ang sinabi ni Padre Damaso tungkol sa kinabukasan ni Maria Clara kung ikakasal siya sa isang katutubo?",
-                "options": [
-                    "Magiging maligaya siya",
-                    "Makikita niya ang kaniyang mga anak na inuutusan at pinaparusahan",
-                    "Magiging mayaman siya",
-                    "Magiging kura rin ang kaniyang mga anak"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Bakit pumayag din sa huli si Padre Damaso na magmongha si Maria Clara?",
-                "options": [
-                    "Dahil ayaw niyang mamatay ang dalaga",
-                    "Dahil gusto niya ang kumbento",
-                    "Dahil iniutos ng kura",
-                    "Dahil sa pera"
-                ],
-                "answer": 0
-            },
-            {
-                "question": "Ano ang huling ginawa ni Maria Clara sa kura bago ito umalis?",
-                "options": [
-                    "Nagalit siya",
-                    "Hinatulan niya ito",
-                    "Hinagkan ang mga kamay nito",
-                    "Umiwas siya"
-                ],
-                "answer": 2
-            }
-        ]
+        "content": "Walang halaga ang mamahaling mga regalong pangkasal na nakatambak sa mesa. Hindi makaakit sa paningin ni Maria Clara kahit ang mga brilyanteng nasa mga estutseng may pelus na asul, kahit ang mga bordadong telang pinya, kahit ang mga malapad na seda. Nakatingin ang dalaga, ngunit hindi nakikita ni nababasa, sa peryodikong nagbabalita sa pagkamatay ni Ibarra—nalunod sa lawa. Bigla, naramdaman niya ang dalawang kamay na tumakip sa kaniyang mga mata, pumigil sa kaniya, saka isang masayáng tinig, kay Padre Damaso, ang nagtanong: “Sino ako? Sino ako?”\nNapaigtad patayo si Maria Clara at sindak na tiningnan ang kura. “Tontika, nagulat ka, eh? Di ako inaasahan, eh? Puwes, galing pa ako sa probinsiya para umasiste sa iyong kasal.” At lumapit na nakangiting siyang-siya, inabot ang kamay ng dalaga. Nanginginig na lumapit si Maria Clara at magalang na nagmano. “May dinaramdam ka, Maria?” tanong ng Pransiskano, napawi ang masayáng ngiti, at natigib ng ligalig. “Malamig ang kamay mo, maputla ka...may sakit ka, hijita?”\nAt buong lambing siyang hinatak ni Padre Damaso, isang paglalambing na hindi aakalain ninuman na magagawa niya, hinawakan ang magkabilang kamay ng dalaga, at tinanong sa pamamagitan ng tingin. “Wala ka nang kumpiyansa sa ninong mo?” nagtatampong tanong niya. “Vamos, maupo ka rito at sabihin sa akin ang mga disgustilyo mo, gaya noong batà ka pa, kung gusto ng kandila para gumawa ng mga manyikang sahing. Alam mong lagi ko ikaw mahal...hindi ko ikaw pinagalitan kahit kailan...”\nNawala ang gaspang sa tinig ni Padre Damaso at nagkaroon ng mga sangkap na magiliw. Nagsimulang umiyak si Maria Clara. “Umiiyak ka? Anak ko, bakit ka umiiyak? Nagalit ka kay Linares?” Tinakpan ni Maria Clara ang mga tainga. “Ayokong pag-usapan siya, ngayon!” sigaw ng dalaga. Takang-takang minasdan siya ni Padre Damaso. “Ayaw mong ipagtapat sa akin ang mga sekreto mo? Di ko ba sinikap hinanap lagi, para masiyahan ka, ang pinakamaliliit mong kapritso?”\nItinaas ng dalaga ang mga matang tigmak sa luha, ilang sandaling tumitig sa kura, at muling umiyak nang buong kapaitan. “Huwag kang umiyak nang ganiyan, anak ko. Masakit sa akin ang mga luha mo. Sabihin sa akin ang mga dusa mo. Makikita mo kung gaano ka kamahal ng ninong mo.”\nMarahang lumapit sa kaniya si Maria Clara, lumuhod, at iniangat ang mukhang naliligo sa luha. Aniya sa mahinang tinig, halos hindi marinig: “Mahal pa ba ninyo ako?”\n“Batàng ito!” “Kung gayon...tulungan ninyo ang aking ama at sirain ang aking kasal.” At isinalaysay ng dalaga ang huli nilang pagkikita ni Ibarra, bagaman hindi binanggit ang lihim ng kaniyang pagsilang. Halos hindi mapaniwalaan ni Padre Damaso ang narinig. “Hanggang buháy siya,” patuloy ng dalaga, “inisip kong lumaban, umasa, manalig! Ibig kong mabuhay upang marinig man lamang ang sinasabi tungkol sa kaniya...Ngunit ngayong pinatay nila siya, wala na ngayong dahilan upang mabuhay ako at magtiis.”\nBanayad na banayad niya itong sinabi, mahina, mahinahon, walang luha. “Pero, tonta, di ba’t mil beses mas mabuti si Linares kay...” “Noong buháy siya, maaari akong magpakasal...inisip kong tumakas pagkatapos...walang ibang nais ang ama ko kundi maging kamag-anak! Ngayong patay na siya, walang lalaking makatatawag sa aking asawa niya...Noong buháy siya, maaari kong pabababàin ang aking sarili, dahil may nalalabi sa aking pampalubag-loob na alam kong buháy siya, at marahil, naaalaala ako. Ngayong patay na siya… ang kumbento o ang libingan.”\nMay tigas ng di-mababaling pasiya ang himig ng dalaga kaya napawi ang kaligayahan ni Padre Damaso at naging labis na naninimdim. “Talaga bang mahal na mahal mo siya?” nauutal niyang tanong. Hindi sumagot si Maria Clara. Yumuko si Padre Damaso at nanahimik. “Anak ko!” Bulalas nito sa tinig na baság. “Patawarin mo ako kung nabigyan ko ikaw ng kasawian nang di ko sinasadya. Inisip ko ang kinabukasan mo, hinangad ko ang kaligayahan mo. Bakit ko ikaw puwedeng payagang ikasal sa isang katutubo para makita ko lang na malungkot na esposa at inang desgrasyada? Hindi maalis sa isip mo ang mahal mo, at kinontra ko ito nang todo, nag-abuso akong todo, para sa iyo, dahil lamang sa iyo. Kung maging esposa ka niya, iiyak ka pagkatapos, dahil sa kaniyang kondisyon, nakalantad sa lahat ng pang-aapi at walang anumang depensa.\nKung maging ina ka, iiyak ka sa kapalaran ng mga anak mo. Kung bibigyan sila ng edukasyon, ipreprepara mo sila sa malungkot na kinabukasan, magiging kalaban sila ng Relihiyon at makikita mo silang binitay o itinapon. Kung pababayaan mo silang ignorante, makikita mo silang binubusabos at hinahamak! Hindi ko ito puwedeng payagan. Dahil dito, inihanap ko ikaw ng isang asawa na puwede kang gawing maligayang ina ng mga anak na mag-uutos at hindi inuutusan, na magpaparusa at hindi pinaparusahan...Alam kong mabait ang kaibigan mong kababatà, minahal ko siya gaya ng kaniyang ama, pero napoot ako sa kanila mula nang makita ko na magiging sanhi sila ng kalungkutan mo, dahil mahal ko ikaw, pinakamamahal ko ikaw, mahal ko ikaw tulad ng pagmamahal ng ama sa isang anak. Wala akong ibang mahal. Nakita ko ikaw lumaki, hindi nakaraan ang isang oras nang hindi ko ikaw inisip. Napapanaginip ko ikaw, ikaw lang ang tangi kong ligaya...”\nAt umiyak si Padre Damaso na mistulang isang batà. “Kung gayon, kung mahal ninyo ako, huwag ninyo akong sawiin habang-buhay. Patay na siya, ibig kong magmongha!” Idinukmo ng matanda ang noo sa isang kamay. “Magmongha, magmongha!” ulit nito. “Hindi mo alam, anak ko, ang buhay, ang misteryo, na nakatago sa loob ng mga pader ng kumbento. Hindi mo alam! Mil beses ko pang gustong makita kang malungkot sa mundo kaysa kumbento...Dito puwedeng marinig ang daing mo; doon walang didinig kundi mga pader... Maganda ka, napakaganda, at hindi ka ipinanganak para sa kumbento, para maging esposa ni Kristo! Maniwala ka, anak ko, binubura ng panahon ang lahat. Pagtagal, makalilimot ka, magmamahal, at mamahalin mo ang asawa mo...si Linares.”\n“Ang kumbento o...ang kamatayan!” ulit ni Maria Clara. “Ang kumbento, ang kumbento, o ang kamatayan!” bulalas ni Padre Damaso. “Maria, matanda na ako, di ko na ikaw puwedeng alagaan nang mas matagal at para sa katiwasayan mo...Pumili ka ng ibang bagay, humanap ka ng ibang pag-ibig, ibang binata, sinuman siya, pero huwag lang ang kumbento.”\n“Ang kumbento o ang kamatayan!” “Diyos ko, Diyos ko!” sigaw ng saserdote, at tinakpan ng mga kamay ang ulo. “Pinaparusahan Mo ako, masusunod! Pero pagpalain Mo ang anak ko!” At bumaling sa dalaga. “Gusto mong magmongha? Matutupad, ayokong mamatay ka.” Ginagap ni Maria ang dalawang kamay ng kura, inilapit, hinagkan. “Ninong, ninong ko!” ulit niya. Umalis si Padre Damaso pagkaraan, malungkot, nakayuko, at bumubuntonghininga. “Diyos ko, Diyos ko, totoo Ka dahil nagpaparusa Ka! Pero ako ang paghigantihan Mo at huwag sugatan ang inosente, iligtas ang anak ko!”"
     },
     {
         "id": 64,
         "chapter_number": 64,
         "title": "Nochebuena",
-        "content": "Sa itaas, sa libis ng bundok, malapit sa isang mabilis na batis, nakapugad sa gitna ng mga punongkahoy ang isang dampa, itinayo sa mga baluktot na troso. Gumagapang sa ibabaw ng bubong na kugon ang malagong kalabasa, hitik sa bunga at bulaklak; nakapalamuti sa payak na tahanan ang mga sungay ng usa at mga ulo ng baboy-damo na may mahahabang pangil ang ilan. Dito nakatira ang isang mag-anak na Tagalog na pangangaso at pangangahoy ang ikinabubuhay.nSa lilim ng isang punongkahoy, gumagawa ng walis na tingting ang ingkong, habang isinisilid ng isang dalaga ang mga itlog ng manok, dayap, at gulay sa isang basket. Dalawang batà, isang babae at isang lalaki, ang naglalaro sa tabi ng isa pang maputla, namimighati, may malalaking mata at tumitimo ang tingin, na nakaupo sa isang buwal na punongkahoy. Makikilala natin sa kaniyang hawas na mukha ang anak ni Sisa, si Basilio, kapatid ni Crispin.n“Pag magaling na ang paa mo,” sabi sa kaniya ng batàng babae, “maglalaro tayo ng pikô na may taguan. Ako ang magiging nanay.”n“Isasama ka naming umakyat sa tuktok ng bundok,” dugtong ng batàng lalaki. “Iinom ka ng dugo ng usa, may katas ng dayap, at tataba ka. At saka tuturuan kitang tumalon-talon sa malalapad na batong nakalitaw sa batis.”nMalumbay na ngumiti si Basilio, minalas ang sugat sa paa, at saka ipinihit ang tingin sa araw na nagniningning.n“Ipagbili mo itong mga walis,” sabi ng ingkong sa dalaga, “at bumili ka ng kahit ano ukol sa mga kapatid mo sapagkat Pasko ngayon.n“Rebentador, ibig ko ng mga rebentador!” sigaw ng batàng lalaki.n“Ako, ulo ng manyika ko!” sigaw ng batàng babae, na kumapit sa tapis ng kapatid.n“At ikaw? Ano ang ibig mo?” tanong ng ingkong kay Basilio.nNaghihirap itong tumindig at lumapit sa matanda.n“Ingkong,” aniya, “nagkasakit nga po ba ako nang mahigit isang buwan?”n“Dalawang buwan na ang dumaan mula nang matagpuan ka naming walang malay at tadtad ng sugat. Akala namin, mamamatay ka...”n“Gantimpalaan po nawa kayo ng Diyos. Napakadukha po namin!” wika ni Basilio. “Ngunit dahil Pasko po ngayon, ibig ko pong pumunta sa bayan upang makita ang aking ina at bunsong kapatid. Baka po hinahanap nila ako.”n“Ngunit, anak, hindi ka pa magaling at malayo ang iyong bayan. Di ka makararating sa hatinggabi.”n“Hindi po iyon mahalaga! Baka lungkot na lungkot na po ang aking ina at bunsong kapatid. Taon-taon po’y magkakasama kami sa pagdiriwang na ito...Noong nakaraang taon, isang isda ang pinagsaluhan naming tatlo... Baka umiiyak po si ina sa paghahanap sa akin.”n“Batà ka, hindi ka makararating nang buháy sa bayan! Mamayang gabi, may inahin tayo at tapang baboy-damo. Hahanapin ka ng mga anak kong lalaki pag-uwi nila mula sa pangangaso.”n“Marami po kayong anak, ngunit ang ina ko po’y wala kundi kaming dalawa lamang. Baka po akalain niyang patay na ako! Nais ko po siyang bigyan ng kaligayahan sa gabing ito, isang aginaldo... isang anak.”nNaramdaman ng matandang nababasâ ang mga mata, ipinatong ang kamay sa ulo ng batà at nahahabag na sinabi: “Para kang matanda! Lumakad ka, sige, hanapin mo ang iyong ina, ibigay mo ang aginaldo...ng Diyos, tulad ng sabi mo. Kung alam ko lamang ang pangalan ng iyong bayan, pumaroon na sana ako noong may sakit ka. Lakad na, anak ko, samahan ka nawa ng Diyos at ng Panginoong Hesukristo. Sasamahan ka ng apo kong si Lucia hanggang sa pinakamalapit na bayan.”n“Bakit? Aalis ka?” tanong ng batàng lalaki. “May mga sundalo sa ibaba, maraming magnanakaw. Ayow mo bang makita ang mga rebentador ko! Pum-purummmpum!”n“Ayaw mo bang maglaro ng bulag na inahing may taguan?” tanong ng batàng babae. “Nakapagtago ka na ba? Talaga, ang sarap-sarap habulin at magtago!”nNgumiti si Basilio, kinuha ang kaniyang tungkod, at tumutulo ang luha: “Babalik ako agad,” aniya, “isasama ko ang kapatid ko. Makikilala ninyo at makakalaro siya, kasinlaki mo.”n“Pipilay-pilay rin ba siya?” tanong ng batàng babae. “Kung gayon, gagawin natin siyang ina sa pikô.”n“Huwag mo kaming lilimutin,” sabi ng matanda. “Dalhin mo itong tapang baboy-damo at ibigay mo sa iyong ina.”nSinamahan siya ng mga batà hanggang sa tulay na kawayang bumabagtas sa magaralgal na batis.nPinakapit siya ni Lucia sa isang bisig at nawala sila sa paningin ng mga batà. Matulin ang lakad ni Basilio sa kabila ng kaniyang binting may benda.nSumusutsot ang hanging Hilaga at nangangaligkig sa ginaw ang mga mamamayan ng San Diego.nNochebuena na, ngunit malungkot ang bayan. Wala ni isang parol na papel na nakabitin sa mga bintana, walang ingay sa loob ng mga bahay na magbabadya ng galak tulad ng mga nagdaang taon.nSa entresuwelo ng bahay ni Kapitan Basilio, sa tabi ng isang rehas, nag-uusap ito at si Don Filipo. Naging magkaibigan sila dahil sa dinanas na kasawian ng huli. Samantala, nakadungaw sa kabila si Sinang, ang pinsan niyang si Victoria, at ang magandang si Iday.nPaliit, nagsisimulang magningning ang buwan sa abot-tanaw at ginintuan ang mga ulap, mga punongkahoy, at mga bahay habang naghahagis ng mahahaba at kagila-gilalas na mga anino.n“Hindi maliit na kapalaran ang tinamo ninyo, nabigyan kayo ng kapatawaran sa ganitong panahon!” wika ni Kapitan Basilio kay Don Filipo. “Sinunog ang mga aklat ninyo, oo, ngunit higit na malaki ang nawala sa iba.”nIsang babae ang lumapit sa rehas at sumilip sa loob. Nagniningning ang mga mata, buto’t balát ang mukha, nakalugay at gusot na gusot ang buhok, binibigyan siya ng katangi-tanging anyo ng buwan.n“Si Sisa!” nagtatakang bulalas ni Don Filipo, at pumihit kay Kapitan Basilio habang lumalayo ang baliw.n“Hindi ba’t nasa bahay siya ng isang doktor?” tanong niya. “Gumaling na ba?”nNgumiting sakdal pait si Kapitan Basilio.n“Natakot ang doktor na mabintangang isang kaibigan ni Don Crisostomo kaya pinaalis si Sisa sa bahay. Pagala-gala muli ngayon, baliw tulad ng dati, pakanta-kanta, hindi nananakit, at nakatira sa gubat.”n“Alam mo ba ang mga nangyari sa bayan mula nang maalis kami? Alam kong may bago tayong kura at alferez...”n“Kakila-kilabot na panahon, umurong ang Sangkatauhan!” anas ni Kapitan Basilio habang iniisip ang nakaraan. “Tingnan mo, kinabukasan ng pag-alis ninyo, natagpuang patay ang sakristan mayor, nakabitin sa kisame ng kaniyang bahay. Lubhang dinamdam ni Padre Salvi ang pagkamatay nito, at kinuha ang lahat ng papeles niya. A! Namatay rin si Pilosopo Tasio at inilibing sa sementeryo ng mga Tsino.”n“Kawawang Don Anastasio!” buntonghininga ni Don Filipo.n“At ang mga aklat niya?”n“Sinunog ng mga mahabagin, sa pag-aakalang ikasisiya iyon ng Diyos. Wala akong nailigtas, kahit ang mga aklat ni Cicero...Wala namang ginawa ang Gobernadorsilyo upang pigilin ito.”nKapuwa sila nanahimik. Noon narinig ang awit na malumbay at namimighati ng baliw.n“Alam mo ba kung kailan ikakasal si Maria Clara?” tanong ni Iday kay Sinang.n“Di ko alam,” sagot nito. “Tumanggap ako ng isang sulat niya, ngunit ayokong buksan dahil sa takot na malaman ito. Kawawang Crisostomo!”n“Sinasabing kundi raw dahil kay Linares, bibitayin si Kapitan Tiago. Ano ang gagawin ni Maria Clara?” wika ni Victoria.nDumaang pipilay-pilay ang isang batàng lalaki, tumatakbo patungo sa plasa na pinanggagalingan ng awit ni Sisa. Si Basilio. Natagpuan ng batà ang bahay nila, walang tao at sira-sira. Nabatid pagkaraan ng maraming pagtatanong na nabaliw ang kaniyang ina at lumalaboy sa buong bayan. Tungkol kay Crispin, wala siyang nakuha kahit isang salita.nPinigil ni Basilio ang luha, nilunod ang hapis, at walang-humpay na hinanap ang kaniyang ina. Nakarating siya sa bayan, ipinagtanong ang baliw, at sinugatan ng awit ang mga tainga. Sinawata ng sawimpalad ang panginginig ng mga binti at hinangad tumakbo upang mayakap ang ina. Nilisan ng baliw ang plasa at nakarating sa tapat ng bahay ng bagong alferez. Ngayon, tulad ng dati, may bantay sa pintuan, at isang ulo ng babae ang sumungaw sa bintana. Ngunit hindi siya si Medusa; isa siyang kasibulan. Hindi laging singkahulugan ng alferez ang sawimpalad.nNagsimulang umawit si Sisa sa tapat ng bahay, nakatanaw sa buwan, na maharlikang bibitin-bitin sa bughaw na langit kapiling ng mga ginintuang ulap. Nakikita siya ni Basilio ngunit hindi nangahas lumapit, hinihintay marahil na umalis ang ina sa kinaroroonan, yao’t dito ngunit iniiwasang mapalapit sa kuwartel.nMatamang nakinig sa baliw ang kasibulan sa bintana, at saka inutusan ang bantay na paakyatin ito.nPagkakita sa palapit na sundalo at pagkarinig sa tinig nito, lipos ng takot na tumakbo si Sisa. At Diyos lamang ang nakaaalam kung paano tumakbo ang baliw. Sinundan siya ni Basilio, at dahil nangangambang makalayo ito, tumakbo at nalimot ang kirot ng paa.n“Tingnan ninyo, hinahabol ng batà ang baliw!” galit na bulalas ng isang katulong na nasa daan.nAt nang makitang patuloy ang batà sa paghabol, dumampot ng bato at pinukol ang batà habang sinasabing: “Tamaan ka sana! Sayang at nakatali ang aso!”nNaramdaman ni Basilio ang tumama sa ulo, ngunit hindi ito pinansin at nagpatuloy sa pagtakbo. Tinahulan siya ng mga aso, kumakak ang mga gansa, nabuksan ang ilang bintana upang pagbigyan ang usyoso, ipininid naman ang iba dahil sa takot na isa na naman itong magulong gabi.n“Ina!” sigaw ni Basilio upang makilala nito.nBahagya nang narinig ng baliw ang tinig at muling tumakbo.n“Ina, ako ito!” nalulumong sigaw ng batà.nHindi makarinig ang baliw; humihingal namang humabol ang anak. Binagtas nila ang mga bukid at malapit na sila sa gubat.nNakita ni Basilio na pumasok ang ina sa gubat at pumasok din siya. Nakasagabal sa kanilang pagtakbo ang mga sukal, ang mga palumpong, dawag, at nakausling mga ugat ng punongkahoy. Sinundan ng anak ang hugis ng ina, na paminsan-minsang natatanglawan ng mga sinag ng buwang naglalagos sa mga nilawag at mga sanga. Iyon ang mahiwagang gubat ng pamilya ni Ibarra.nMalimit matisod at madapa ang batà, subalit nagbabangon, hindi nararamdaman ang kirot. Nakabuhos ang kaniyang buong kaluluwa sa kaniyang mga mata na tumutugaygay sa minamahal na anyo.nTinawid nila ang batis na buong tamis na bumubulong. Natusok ang kaniyang mga paang walang-sapin ng mga tinik ng kawayan na nahulog sa putik ng pampang. Ni hindi tumigil si Basilio upang bunutin ang mga ito.nSa kaniyang malaking pagtataka, nakita niyang sumuot ang ina sa kasukalan at pumasok sa pintuang kahoy na nagtatanod sa puntod ng matandang Espanyol sa paanan ng balete.nTinangka ni Basilio na sumunod ngunit puminid ang pinto. Ipinagtanggol ng baliw ang pasukan sa pamamagitan ng kaniyang yayat na mga bisig at sabukot na buhok, ibinuhos ang lahat ng lakas upang manatili itong nakapinid.n“Ina, ako ito, ako ito, si Basilio, ang anak ninyo!” sigaw ng nanghihinang batà at nahandusay.nSubalit hindi sumuko ang baliw, itinukod ang mga paa sa lupa at ibinuhos ang lakas sa pagtatanggol.nIbinayo ni Basilio sa pinto ang kamao, ang ulong naliligo sa dugo, umiyak, datapwat walang nangyari. Naghihirap siyang tumindig, minasdan ang pader, naisipang akyatin, ngunit wala ring nangyari. Lumigid siya at nakita ang isang sanga ng kinatatakutang balete na nakakawit sa sanga ng isa pang punongkahoy. Umakyat siya. Nagdulot ng himala ang kaniyang pagmamahal sa magulang, at nagpalipat-lipat sa mga sanga hanggang makarating sa balete, at makita ang inang nakatukod pa ang ulo sa pinto.nTumawag sa pansin ni Sisa ang mga lagitik ng sanga, lumingon at umanyong tatakas, subalit niyapos siya at pinupog sa halik ng nagpatihulog na anak, na nawalan ng malay pagkatapos.nNakita ni Sisa ang noong naliligo sa dugo, tinunghayan ito, mistulang luluwa ang mga mata, pinagmasdan ang mukha, at pinukaw ng maputlang anyo nito ang mga natutulog na himaymay ng kaniyang utak. Tulad ng isang alipatong kumislap sa kaniyang isip, nakilala niya ang anak at, pumulas ang isang sigaw. Nalugmok siya sa walang-malay na batà, niyayakap ito at hinahalikan.nMatagal na walang tinag ang mag-ina.nNang matauhan si Basilio, nakita niya ang inang walang-malay. Tinawid niya ito, pinalayaw sa lahat ng malalambing na pangalan. Ngunit nang makitang hindi humihinga ni nagkakamalay, tumayo siya, pumunta sa batis upang kumuha ng tubig sa pamamagitan ng binalisunsong na dahon ng saging, at winisikan ang maputlang mukha ng kaniyang ina. Datapwat ni hindi gumalaw munti man ang baliw; nanatiling nakapinid ang mga mata.nNahihindik siyang minasdan ni Basilio. Idiniit ang tainga sa puso ng ina, subalit malamig na ang yayat at luoy nitong dibdib at hindi tumitibok ang puso. Idinampi niya ang mga labi sa mga labi ng ina at wala siyang nadamang hininga. Niyakap ng sawimpalad ang bangkay at buong pait na tumangis.nMaharlikang nagningning ang buwan sa langit, bumubuntonghiningang lumaboy ang simoy, at humuni sa ilalim ng mga damo ang mga kamaksi.nIto ang gabi ng liwanag at kaligayahan sa napakaraming batà. Ipinagdiriwang nila sa mapagkalingang kandungan ng pamilya ang pista ng pinakamatamis na alaala, ang pistang gumugunita sa unang tingin ng pagmamahal na ipinadala ng langit sa lupa. Sa gabing ito ng lahat ng mag-anak na Kristiyano, kumakain, umiinom, sumasayaw, umaawit, tumatawa, naglalaro, umiibig, humahalik...Sa mga musmos sa mga bansang malamig, mahiwaga ang gabing ito at nanggigilalas na minamasdan ng mabibilog nilang matang sumasalamin sa kaniyang kawalang-malay ang kalakip na tradisyonal na punò ng pino, hitik sa ilaw, mga manyika, kompete at palara. Walang handog ang gabing ito kay Basilio kundi pagiging ulila. Sino ang nakaaalam? Baka sa tinatahanan ng walang-imik na si Padre Salvi ay naglalaro din ang mga batà at umaawit marahil ng:nLa Nochebuena se viene, La Nochebuena se va... (Darating ang Notsebuwena, Lilipas ang Notsebuwena...)nUmiyak at humibik nang labis ang batà. Ngunit nang magtaas ng ulo, nakita niyang kaharap ang isang lalaki at tahimik siyang minamasdan.nTinanong siya ng di-kakilala sa mahinang tinig.n“Anak ka ba niya?”nTumango ang batà.n“Ano’ng iniisip mong gawin?”n“Ilibing siya.”n“Sa sementeryo?”n“Wala akong salapi, at saka hindi iyon papayagan ng kura.”n“Kung gayon?”n“Kung ibig ninyo akong tulungan...”n“Mahinang-mahina na ako,” sagot ng di-kakilala na unti-unting nalugmok at itinukod ang mga kamay sa lupa. “May sugat ako, dalawang araw na akong hindi kumakain at natutulog. Wala bang pumunta rito kagabi?”nMatagal na minasdang naninimdim ng lalaki ang nakaaakit na anyo ng batà.n“Makinig ka!” patuloy ng tinig na higit nang humina. “Maaaring mamatay rin ako bago mag-umaga...Mga dalawampung hakbang mula rito, sa kabilang pampang ng batis, may nakabuntong mga panggatong. Hakutin mo rito, gumawa ka ng talaksan, ipatong mo sa ibabaw ang bangkay namin, takpan mo at sindihan, pagliyabin hanggang maging abo kami.”nNakinig si Basilio.n“Pagkatapos, kung walang dumating... Humukay ka rito, makatatagpo ka ng maraming ginto...at magiging iyo lahat. Mag-aral ka!”nLumalabo nang lumalabo ang tinig ng di-kakilala.n“Sulong at kumuha ng panggatong... Ibig sana kitang tulungan.”nLumakad si Basilio. Humarap sa Silangan ang di-kakilala at bumulong na tila nagdarasal.n“Mamamatay akong hindi nakitang sumilay ang bukang-liwayway sa aking bayan! Kayong makakikita, salubungin siya...Huwag ninyong lilimutin ang mga nabuwal sa dilim ng gabi!”nTumingala ito sa langit, kumibot ang mga labing umuusal wari ng isang dalangin, saka yumuko at dahan-dahang bumagsak sa lupa...nMakaraan ang dalawang oras, nasa batalan si Hermana Rufa at ginagawa ang kaniyang mga pang-umagang paghahanda sa pagsisimba. Napatingin ang butihing babae sa gubat at nakitang papataas ang isang makapal na usok. Napakunot ang noo nito at lipos ng banal na galit na bumulalas: “Sino kayang erehe ang nagkakaingin sa araw ng pangingilin? Kaya dumarating ang maraming kasawian! Subukin mong pumunta sa Purgatoryo at tingnan mo kung hanguin kita roon, salbahe!”",
-        "quiz": [
-            {
-                "question": "Sino ang batà na sugatan at hinahanap ang kaniyang ina sa gubat?",
-                "options": [
-                    "Crispin",
-                    "Basilio",
-                    "Tarsilo",
-                    "Lucas"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Sino ang pamilyang kumalinga kay Basilio habang siya ay sugatan?",
-                "options": [
-                    "Ang mga Ibarra",
-                    "Isang pamilyang Tagalog sa bundok",
-                    "Si Kapitan Basilio",
-                    "Si Sisa"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Ano ang naging kalagayan ni Sisa nang matagpuan siya ni Basilio?",
-                "options": [
-                    "Siya ay patay na",
-                    "Siya ay baliw at pakanta-kanta",
-                    "Siya ay nakakulong",
-                    "Siya ay nasa simbahan"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Anong mahalagang araw ang ipinagdiriwang sa kabanatang ito?",
-                "options": [
-                    "Pista ng San Diego",
-                    "Nochebuena (Pasko)",
-                    "Bagong Taon",
-                    "Mahal na Araw"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Saan huling natagpuan ni Basilio ang kaniyang ina?",
-                "options": [
-                    "Sa simbahan",
-                    "Sa pintuan ng puntod sa gubat ni Ibarra",
-                    "Sa plasa",
-                    "Sa bahay ni Kapitan Basilio"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Ano ang nangyari kay Sisa nang makilala niya si Basilio?",
-                "options": [
-                    "Natuwa siya at gumaling",
-                    "Yumakap siya at saka pumanaw",
-                    "Tumakas siya muli",
-                    "Hindi niya ito nakilala"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Sino ang di-kakilalang lalaking sugatan na nakita ni Basilio sa gubat?",
-                "options": [
-                    "Ibarra",
-                    "Elias",
-                    "Padre Salvi",
-                    "Isang tulisan"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Ano ang huling hiling ng di-kakilalang lalaki kay Basilio?",
-                "options": [
-                    "Na iligtas siya",
-                    "Na sunugin ang kaniyang bangkay kasama ang ina ni Basilio",
-                    "Na hanapin si Maria Clara",
-                    "Na ibigay ang ginto sa kura"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Ano ang ipinagbilin ng lalaki na mahuhukay ni Basilio sa pook na iyon?",
-                "options": [
-                    "Mga aklat",
-                    "Ginto",
-                    "Baril",
-                    "Liham"
-                ],
-                "answer": 1
-            },
-            {
-                "question": "Ano ang huling sinabi ng lalaki tungkol sa mga nabuwal sa dilim ng gabi?",
-                "options": [
-                    "Na sila ay kalimutan na",
-                    "Huwag silang lilimutin ng mga makakakita sa bukang-liwayway",
-                    "Na sila ay mga kriminal",
-                    "Na sila ay maghihiganti"
-                ],
-                "answer": 1
-            }
-        ]
+        "content": "Sa itaas, sa libis ng bundok, malapit sa isang mabilis na batis, nakapugad sa gitna ng mga punongkahoy ang isang dampa, itinayo sa mga baluktot na troso. Gumagapang sa ibabaw ng bubong na kugon ang malagong kalabasa, hitik sa bunga at bulaklak; nakapalamuti sa payak na tahanan ang mga sungay ng usa at mga ulo ng baboy-damo na may mahahabang pangil ang ilan. Dito nakatira ang isang mag-anak na Tagalog na pangangaso at pangangahoy ang ikinabubuhay.\nSa lilim ng isang punongkahoy, gumagawa ng walis na tingting ang ingkong, habang isinisilid ng isang dalaga ang mga itlog ng manok, dayap, at gulay sa isang basket. Dalawang batà, isang babae at isang lalaki, ang naglalaro sa tabi ng isa pang maputla, namimighati, may malalaking mata at tumitimo ang tingin, na nakaupo sa isang buwal na punongkahoy. Makikilala natin sa kaniyang hawas na mukha ang anak ni Sisa, si Basilio, kapatid ni Crispin.\n“Pag magaling na ang paa mo,” sabi sa kaniya ng batàng babae, “maglalaro tayo ng pikô na may taguan. Ako ang magiging nanay.”\n“Isasama ka naming umakyat sa tuktok ng bundok,” dugtong ng batàng lalaki. “Iinom ka ng dugo ng usa, may katas ng dayap, at tataba ka. At saka tuturuan kitang tumalon-talon sa malalapad na batong nakalitaw sa batis.”\nMalumbay na ngumiti si Basilio, minalas ang sugat sa paa, at saka ipinihit ang tingin sa araw na nagniningning.\n“Ipagbili mo itong mga walis,” sabi ng ingkong sa dalaga, “at bumili ka ng kahit ano ukol sa mga kapatid mo sapagkat Pasko ngayon.\n“Rebentador, ibig ko ng mga rebentador!” sigaw ng batàng lalaki.\n“Ako, ulo ng manyika ko!” sigaw ng batàng babae, na kumapit sa tapis ng kapatid.\n“At ikaw? Ano ang ibig mo?” tanong ng ingkong kay Basilio.\nNaghihirap itong tumindig at lumapit sa matanda.\n“Ingkong,” aniya, “nagkasakit nga po ba ako nang mahigit isang buwan?”\n“Dalawang buwan na ang dumaan mula nang matagpuan ka naming walang malay at tadtad ng sugat. Akala namin, mamamatay ka...”\n“Gantimpalaan po nawa kayo ng Diyos. Napakadukha po namin!” wika ni Basilio. “Ngunit dahil Pasko po ngayon, ibig ko pong pumunta sa bayan upang makita ang aking ina at bunsong kapatid. Baka po hinahanap nila ako.”\n“Ngunit, anak, hindi ka pa magaling at malayo ang iyong bayan. Di ka makararating sa hatinggabi.”\n“Hindi po iyon mahalaga! Baka lungkot na lungkot na po ang aking ina at bunsong kapatid. Taon-taon po’y magkakasama kami sa pagdiriwang na ito...Noong nakaraang taon, isang isda ang pinagsaluhan naming tatlo... Baka umiiyak po si ina sa paghahanap sa akin.”\n“Batà ka, hindi ka makararating nang buháy sa bayan! Mamayang gabi, may inahin tayo at tapang baboy-damo. Hahanapin ka ng mga anak kong lalaki pag-uwi nila mula sa pangangaso.”\n“Marami po kayong anak, ngunit ang ina ko po’y wala kundi kaming dalawa lamang. Baka po akalain niyang patay na ako! Nais ko po siyang bigyan ng kaligayahan sa gabing ito, isang aginaldo... isang anak.”\nNaramdaman ng matandang nababasâ ang mga mata, ipinatong ang kamay sa ulo ng batà at nahahabag na sinabi: “Para kang matanda! Lumakad ka, sige, hanapin mo ang iyong ina, ibigay mo ang aginaldo...ng Diyos, tulad ng sabi mo. Kung alam ko lamang ang pangalan ng iyong bayan, pumaroon na sana ako noong may sakit ka. Lakad na, anak ko, samahan ka nawa ng Diyos at ng Panginoong Hesukristo. Sasamahan ka ng apo kong si Lucia hanggang sa pinakamalapit na bayan.”\n“Bakit? Aalis ka?” tanong ng batàng lalaki. “May mga sundalo sa ibaba, maraming magnanakaw. Ayow mo bang makita ang mga rebentador ko! Pum-purummmpum!”\n“Ayaw mo bang maglaro ng bulag na inahing may taguan?” tanong ng batàng babae. “Nakapagtago ka na ba? Talaga, ang sarap-sarap habulin at magtago!”\nNgumiti si Basilio, kinuha ang kaniyang tungkod, at tumutulo ang luha: “Babalik ako agad,” aniya, “isasama ko ang kapatid ko. Makikilala ninyo at makakalaro siya, kasinlaki mo.”\n“Pipilay-pilay rin ba siya?” tanong ng batàng babae. “Kung gayon, gagawin natin siyang ina sa pikô.”\n“Huwag mo kaming lilimutin,” sabi ng matanda. “Dalhin mo itong tapang baboy-damo at ibigay mo sa iyong ina.”\nSinamahan siya ng mga batà hanggang sa tulay na kawayang bumabagtas sa magaralgal na batis.\nPinakapit siya ni Lucia sa isang bisig at nawala sila sa paningin ng mga batà. Matulin ang lakad ni Basilio sa kabila ng kaniyang binting may benda.\nSumusutsot ang hanging Hilaga at nangangaligkig sa ginaw ang mga mamamayan ng San Diego. na, ngunit malungkot ang bayan. Wala ni isang parol na papel na nakabitin sa mga bintana, walang ingay sa loob ng mga bahay na magbabadya ng galak tulad ng mga nagdaang taon.\nSa entresuwelo ng bahay ni Kapitan Basilio, sa tabi ng isang rehas, nag-uusap ito at si Don Filipo. Naging magkaibigan sila dahil sa dinanas na kasawian ng huli. Samantala, nakadungaw sa kabila si Sinang, ang pinsan niyang si Victoria, at ang magandang si Iday.\nPaliit, nagsisimulang magningning ang buwan sa abot-tanaw at ginintuan ang mga ulap, mga punongkahoy, at mga bahay habang naghahagis ng mahahaba at kagila-gilalas na mga anino.\n“Hindi maliit na kapalaran ang tinamo ninyo, nabigyan kayo ng kapatawaran sa ganitong panahon!” wika ni Kapitan Basilio kay Don Filipo. “Sinunog ang mga aklat ninyo, oo, ngunit higit na malaki ang nawala sa iba.”\nIsang babae ang lumapit sa rehas at sumilip sa loob. Nagniningning ang mga mata, buto’t balát ang mukha, nakalugay at gusot na gusot ang buhok, binibigyan siya ng katangi-tanging anyo ng buwan.\n“Si Sisa!” nagtatakang bulalas ni Don Filipo, at pumihit kay Kapitan Basilio habang lumalayo ang baliw.\n“Hindi ba’t nasa bahay siya ng isang doktor?” tanong niya. “Gumaling na ba?”\nNgumiting sakdal pait si Kapitan Basilio.\n“Natakot ang doktor na mabintangang isang kaibigan ni Don Crisostomo kaya pinaalis si Sisa sa bahay. Pagala-gala muli ngayon, baliw tulad ng dati, pakanta-kanta, hindi nananakit, at nakatira sa gubat.”\n“Alam mo ba ang mga nangyari sa bayan mula nang maalis kami? Alam kong may bago tayong kura at alferez...”\n“Kakila-kilabot na panahon, umurong ang Sangkatauhan!” anas ni Kapitan Basilio habang iniisip ang nakaraan. “Tingnan mo, kinabukasan ng pag-alis ninyo, natagpuang patay ang sakristan mayor, nakabitin sa kisame ng kaniyang bahay. Lubhang dinamdam ni Padre Salvi ang pagkamatay nito, at kinuha ang lahat ng papeles niya. A! Namatay rin si Pilosopo Tasio at inilibing sa sementeryo ng mga Tsino.”\n“Kawawang Don Anastasio!” buntonghininga ni Don Filipo.\n“At ang mga aklat niya?”\n“Sinunog ng mga mahabagin, sa pag-aakalang ikasisiya iyon ng Diyos. Wala akong nailigtas, kahit ang mga aklat ni Cicero...Wala namang ginawa ang Gobernadorsilyo upang pigilin ito.”\nKapuwa sila nanahimik. Noon narinig ang awit na malumbay at namimighati ng baliw.\n“Alam mo ba kung kailan ikakasal si Maria Clara?” tanong ni Iday kay Sinang.\n“Di ko alam,” sagot nito. “Tumanggap ako ng isang sulat niya, ngunit ayokong buksan dahil sa takot na malaman ito. Kawawang Crisostomo!”\n“Sinasabing kundi raw dahil kay Linares, bibitayin si Kapitan Tiago. Ano ang gagawin ni Maria Clara?” wika ni Victoria.\nDumaang pipilay-pilay ang isang batàng lalaki, tumatakbo patungo sa plasa na pinanggagalingan ng awit ni Sisa. Si Basilio. Natagpuan ng batà ang bahay nila, walang tao at sira-sira. Nabatid pagkaraan ng maraming pagtatanong na nabaliw ang kaniyang ina at lumalaboy sa buong bayan. Tungkol kay Crispin, wala siyang nakuha kahit isang salita.\nPinigil ni Basilio ang luha, nilunod ang hapis, at walang-humpay na hinanap ang kaniyang ina. Nakarating siya sa bayan, ipinagtanong ang baliw, at sinugatan ng awit ang mga tainga. Sinawata ng sawimpalad ang panginginig ng mga binti at hinangad tumakbo upang mayakap ang ina. Nilisan ng baliw ang plasa at nakarating sa tapat ng bahay ng bagong alferez. Ngayon, tulad ng dati, may bantay sa pintuan, at isang ulo ng babae ang sumungaw sa bintana. Ngunit hindi siya si Medusa; isa siyang kasibulan. Hindi laging singkahulugan ng alferez ang sawimpalad.\nNagsimulang umawit si Sisa sa tapat ng bahay, nakatanaw sa buwan, na maharlikang bibitin-bitin sa bughaw na langit kapiling ng mga ginintuang ulap. Nakikita siya ni Basilio ngunit hindi nangahas lumapit, hinihintay marahil na umalis ang ina sa kinaroroonan, yao’t dito ngunit iniiwasang mapalapit sa kuwartel.\nMatamang nakinig sa baliw ang kasibulan sa bintana, at saka inutusan ang bantay na paakyatin ito.\nPagkakita sa palapit na sundalo at pagkarinig sa tinig nito, lipos ng takot na tumakbo si Sisa. At Diyos lamang ang nakaaalam kung paano tumakbo ang baliw. Sinundan siya ni Basilio, at dahil nangangambang makalayo ito, tumakbo at nalimot ang kirot ng paa.\n“Tingnan ninyo, hinahabol ng batà ang baliw!” galit na bulalas ng isang katulong na nasa daan.\nAt nang makitang patuloy ang batà sa paghabol, dumampot ng bato at pinukol ang batà habang sinasabing: “Tamaan ka sana! Sayang at nakatali ang aso!”\nNaramdaman ni Basilio ang tumama sa ulo, ngunit hindi ito pinansin at nagpatuloy sa pagtakbo. Tinahulan siya ng mga aso, kumakak ang mga gansa, nabuksan ang ilang bintana upang pagbigyan ang usyoso, ipininid naman ang iba dahil sa takot na isa na naman itong magulong gabi.\n“Ina!” sigaw ni Basilio upang makilala nito.\nBahagya nang narinig ng baliw ang tinig at muling tumakbo.\n“Ina, ako ito!” nalulumong sigaw ng batà.\nHindi makarinig ang baliw; humihingal namang humabol ang anak. Binagtas nila ang mga bukid at malapit na sila sa gubat.\nNakita ni Basilio na pumasok ang ina sa gubat at pumasok din siya. Nakasagabal sa kanilang pagtakbo ang mga sukal, ang mga palumpong, dawag, at nakausling mga ugat ng punongkahoy. Sinundan ng anak ang hugis ng ina, na paminsan-minsang natatanglawan ng mga sinag ng buwang naglalagos sa mga nilawag at mga sanga. Iyon ang mahiwagang gubat ng pamilya ni Ibarra.\nMalimit matisod at madapa ang batà, subalit nagbabangon, hindi nararamdaman ang kirot. Nakabuhos ang kaniyang buong kaluluwa sa kaniyang mga mata na tumutugaygay sa minamahal na anyo.\nTinawid nila ang batis na buong tamis na bumubulong. Natusok ang kaniyang mga paang walang-sapin ng mga tinik ng kawayan na nahulog sa putik ng pampang. Ni hindi tumigil si Basilio upang bunutin ang mga ito.\nSa kaniyang malaking pagtataka, nakita niyang sumuot ang ina sa kasukalan at pumasok sa pintuang kahoy na nagtatanod sa puntod ng matandang Espanyol sa paanan ng balete.\nTinangka ni Basilio na sumunod ngunit puminid ang pinto. Ipinagtanggol ng baliw ang pasukan sa pamamagitan ng kaniyang yayat na mga bisig at sabukot na buhok, ibinuhos ang lahat ng lakas upang manatili itong nakapinid.\n“Ina, ako ito, ako ito, si Basilio, ang anak ninyo!” sigaw ng nanghihinang batà at nahandusay.\nSubalit hindi sumuko ang baliw, itinukod ang mga paa sa lupa at ibinuhos ang lakas sa pagtatanggol.\nIbinayo ni Basilio sa pinto ang kamao, ang ulong naliligo sa dugo, umiyak, datapwat walang nangyari. Naghihirap siyang tumindig, minasdan ang pader, naisipang akyatin, ngunit wala ring nangyari. Lumigid siya at nakita ang isang sanga ng kinatatakutang balete na nakakawit sa sanga ng isa pang punongkahoy. Umakyat siya. Nagdulot ng himala ang kaniyang pagmamahal sa magulang, at nagpalipat-lipat sa mga sanga hanggang makarating sa balete, at makita ang inang nakatukod pa ang ulo sa pinto.\nTumawag sa pansin ni Sisa ang mga lagitik ng sanga, lumingon at umanyong tatakas, subalit niyapos siya at pinupog sa halik ng nagpatihulog na anak, na nawalan ng malay pagkatapos.\nNakita ni Sisa ang noong naliligo sa dugo, tinunghayan ito, mistulang luluwa ang mga mata, pinagmasdan ang mukha, at pinukaw ng maputlang anyo nito ang mga natutulog na himaymay ng kaniyang utak. Tulad ng isang alipatong kumislap sa kaniyang isip, nakilala niya ang anak at, pumulas ang isang sigaw. Nalugmok siya sa walang-malay na batà, niyayakap ito at hinahalikan.\nMatagal na walang tinag ang mag-ina.\nNang matauhan si Basilio, nakita niya ang inang walang-malay. Tinawid niya ito, pinalayaw sa lahat ng malalambing na pangalan. Ngunit nang makitang hindi humihinga ni nagkakamalay, tumayo siya, pumunta sa batis upang kumuha ng tubig sa pamamagitan ng binalisunsong na dahon ng saging, at winisikan ang maputlang mukha ng kaniyang ina. Datapwat ni hindi gumalaw munti man ang baliw; nanatiling nakapinid ang mga mata.\nNahihindik siyang minasdan ni Basilio. Idiniit ang tainga sa puso ng ina, subalit malamig na ang yayat at luoy nitong dibdib at hindi tumitibok ang puso. Idinampi niya ang mga labi sa mga labi ng ina at wala siyang nadamang hininga. Niyakap ng sawimpalad ang bangkay at buong pait na tumangis.\nMaharlikang nagningning ang buwan sa langit, bumubuntonghiningang lumaboy ang simoy, at humuni sa ilalim ng mga damo ang mga kamaksi.\nIto ang gabi ng liwanag at kaligayahan sa napakaraming batà. Ipinagdiriwang nila sa mapagkalingang kandungan ng pamilya ang pista ng pinakamatamis na alaala, ang pistang gumugunita sa unang tingin ng pagmamahal na ipinadala ng langit sa lupa. Sa gabing ito ng lahat ng mag-anak na Kristiyano, kumakain, umiinom, sumasayaw, umaawit, tumatawa, naglalaro, umiibig, humahalik...Sa mga musmos sa mga bansang malamig, mahiwaga ang gabing ito at nanggigilalas na minamasdan ng mabibilog nilang matang sumasalamin sa kaniyang kawalang-malay ang kalakip na tradisyonal na punò ng pino, hitik sa ilaw, mga manyika, kompete at palara. Walang handog ang gabing ito kay Basilio kundi pagiging ulila. Sino ang nakaaalam? Baka sa tinatahanan ng walang-imik na si Padre Salvi ay naglalaro din ang mga batà at umaawit marahil ng:\nLa se viene, La se va... (Darating ang Notsebuwena, Lilipas ang Notsebuwena...)\nUmiyak at humibik nang labis ang batà. Ngunit nang magtaas ng ulo, nakita niyang kaharap ang isang lalaki at tahimik siyang minamasdan.\nTinanong siya ng di-kakilala sa mahinang tinig.\n“Anak ka ba niya?”\nTumango ang batà.\n“Ano’ng iniisip mong gawin?”\n“Ilibing siya.”\n“Sa sementeryo?”\n“Wala akong salapi, at saka hindi iyon papayagan ng kura.”\n“Kung gayon?”\n“Kung ibig ninyo akong tulungan...”\n“Mahinang-mahina na ako,” sagot ng di-kakilala na unti-unting nalugmok at itinukod ang mga kamay sa lupa. “May sugat ako, dalawang araw na akong hindi kumakain at natutulog. Wala bang pumunta rito kagabi?”\nMatagal na minasdang naninimdim ng lalaki ang nakaaakit na anyo ng batà.\n“Makinig ka!” patuloy ng tinig na higit nang humina. “Maaaring mamatay rin ako bago mag-umaga...Mga dalawampung hakbang mula rito, sa kabilang pampang ng batis, may nakabuntong mga panggatong. Hakutin mo rito, gumawa ka ng talaksan, ipatong mo sa ibabaw ang bangkay namin, takpan mo at sindihan, pagliyabin hanggang maging abo kami.”\nNakinig si Basilio.\n“Pagkatapos, kung walang dumating... Humukay ka rito, makatatagpo ka ng maraming ginto...at magiging iyo lahat. Mag-aral ka!”\nLumalabo nang lumalabo ang tinig ng di-kakilala.\n“Sulong at kumuha ng panggatong... Ibig sana kitang tulungan.”\nLumakad si Basilio. Humarap sa Silangan ang di-kakilala at bumulong na tila nagdarasal.\n“Mamamatay akong hindi nakitang sumilay ang bukang-liwayway sa aking bayan! Kayong makakikita, salubungin siya...Huwag ninyong lilimutin ang mga nabuwal sa dilim ng gabi!”\nTumingala ito sa langit, kumibot ang mga labing umuusal wari ng isang dalangin, saka yumuko at dahan-dahang bumagsak sa lupa...\nMakaraan ang dalawang oras, nasa batalan si Hermana Rufa at ginagawa ang kaniyang mga pang-umagang paghahanda sa pagsisimba. Napatingin ang butihing babae sa gubat at nakitang papataas ang isang makapal na usok. Napakunot ang noo nito at lipos ng banal na galit na bumulalas: “Sino kayang erehe ang nagkakaingin sa araw ng pangingilin? Kaya dumarating ang maraming kasawian! Subukin mong pumunta sa Purgatoryo at tingnan mo kung hanguin kita roon, salbahe!”"
     }
 ]

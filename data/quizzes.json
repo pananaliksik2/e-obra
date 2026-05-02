@@ -4,6 +4,21 @@
             "id": 1,
             "chapter_id": 1,
             "title": "Pagsusulit sa Kabanata 1: Isang Pagtitipon"
+        },
+        {
+            "id": 62,
+            "chapter_id": 62,
+            "title": "Pagsusulit sa Kabanata 62: Pagtakas Hanggang Lawa"
+        },
+        {
+            "id": 63,
+            "chapter_id": 63,
+            "title": "Pagsusulit sa Kabanata 63: Nagpaliwanag si Padre Damaso"
+        },
+        {
+            "id": 64,
+            "chapter_id": 64,
+            "title": "Pagsusulit sa Kabanata 64: Nochebuena"
         }
     ],
     "questions": [
@@ -106,6 +121,306 @@
             "option_c": "Ang mga reporma sa edukasyon",
             "option_d": "Ang buwis sa tabako",
             "correct_answer": "A"
+        },
+        {
+            "id": 6201,
+            "quiz_id": 62,
+            "question_text": "Sino ang kasama ni Crisostomo Ibarra sa pagtakas gamit ang bangka?",
+            "option_a": "Basilio",
+            "option_b": "Padre Salvi",
+            "option_c": "Elias",
+            "option_d": "Kapitan Tiago",
+            "correct_answer": "C"
+        },
+        {
+            "id": 6202,
+            "quiz_id": 62,
+            "question_text": "Saan balak itago ni Elias si Ibarra bago ito umalis ng bansa?",
+            "option_a": "San Diego",
+            "option_b": "Mandaluyong",
+            "option_c": "Binondo",
+            "option_d": "Antipolo",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6203,
+            "quiz_id": 62,
+            "question_text": "Ano ang ginawa ni Elias upang iligaw ang mga guwardiya sibil na humahabol sa kanila sa lawa?",
+            "option_a": "Nagpaputok ng baril",
+            "option_b": "Tumalon sa tubig upang habulin siya sa halip na ang bangka",
+            "option_c": "Nagkubli sa ilalim ng sakate",
+            "option_d": "Nakiusap sa mga sundalo",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6204,
+            "quiz_id": 62,
+            "question_text": "Anong ilog ang binagtas nina Elias at Ibarra habang tumatakas?",
+            "option_a": "Ilog Beata",
+            "option_b": "Ilog Pasig",
+            "option_c": "Ilog Marikina",
+            "option_d": "Ilog San Juan",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6205,
+            "quiz_id": 62,
+            "question_text": "Saan itinago ni Elias ang mga salapi ni Ibarra na iniligtas niya mula sa sunog?",
+            "option_a": "Sa bahay ni Kapitan Tiago",
+            "option_b": "Sa paanan ng balete sa mahiwagang libingan",
+            "option_c": "Sa loob ng simbahan",
+            "option_d": "Sa ilalim ng bangka",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6206,
+            "quiz_id": 62,
+            "question_text": "Ano ang dala-dalang karga ni Elias sa bangka upang magpanggap na magsasaka?",
+            "option_a": "Isda",
+            "option_b": "Sakate (damo para sa kabayo)",
+            "option_c": "Bigas",
+            "option_d": "Mga kagamitan sa construction",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6207,
+            "quiz_id": 62,
+            "question_text": "Sino ang tanod na nagpatigil sa kanila malapit sa Polvorista?",
+            "option_a": "Isang Alperes",
+            "option_b": "Isang Sarhento",
+            "option_c": "Si Padre Salvi",
+            "option_d": "Si Don Filipo",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6208,
+            "quiz_id": 62,
+            "question_text": "Anong uri ng sasakyan ang humahabol sa kanila sa lawa na may mga sundalo?",
+            "option_a": "Bapor",
+            "option_b": "Falua o patrulya",
+            "option_c": "Lantsa",
+            "option_d": "Kasko",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6209,
+            "quiz_id": 62,
+            "question_text": "Bakit sinabi ni Elias na hindi siya maaaring sumama kay Ibarra sa ibang bansa?",
+            "option_a": "Dahil pagod na siya",
+            "option_b": "Dahil nais niyang mamatay sa piling ng kaniyang bayan at makibahagi sa kasawian nito",
+            "option_c": "Dahil wala siyang pasaporte",
+            "option_d": "Dahil takot siya sa dagat",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6210,
+            "quiz_id": 62,
+            "question_text": "Saan patungo ang bangka nina Elias matapos silang matigil ng tanod?",
+            "option_a": "Binangonan",
+            "option_b": "Ilog Beata at Peña Francia",
+            "option_c": "Laguna de Bay",
+            "option_d": "Manila Bay",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6301,
+            "quiz_id": 63,
+            "question_text": "Ano ang huling hiling ni Maria Clara kay Padre Damaso matapos mabalitang patay na si Ibarra?",
+            "option_a": "Na ipakasal siya kay Linares",
+            "option_b": "Na hayaan siyang mag-mongha o mamatay na lamang",
+            "option_c": "Na humingi ng tawad kay Kapitan Tiago",
+            "option_d": "Na bigyan siya ng mga alahas",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6302,
+            "quiz_id": 63,
+            "question_text": "Bakit tutol si Padre Damaso sa pagpapakasal ni Maria Clara kay Ibarra noong una?",
+            "option_a": "Dahil mahirap si Ibarra",
+            "option_b": "Dahil nais niyang maprotektahan si Maria Clara sa mga kasawiang daranasin bilang asawa ng isang 'indio'",
+            "option_c": "Dahil galit siya sa ama ni Ibarra",
+            "option_d": "Lahat ng nabanggit",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6303,
+            "quiz_id": 63,
+            "question_text": "Sino ang nakita ni Maria Clara sa peryodiko na nabalitang nalunod sa lawa?",
+            "option_a": "Elias",
+            "option_b": "Crisostomo Ibarra",
+            "option_c": "Linares",
+            "option_d": "Kapitan Tiago",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6304,
+            "quiz_id": 63,
+            "question_text": "Ano ang tunay na relasyon ni Padre Damaso kay Maria Clara?",
+            "option_a": "Tiyo",
+            "option_b": "Tunay na ama",
+            "option_c": "Ninong lamang",
+            "option_d": "Lolo",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6305,
+            "quiz_id": 63,
+            "question_text": "Ano ang naging reaksyon ni Padre Damaso nang malamang ayaw ni Maria Clara kay Linares?",
+            "option_a": "Nagalit at sinampal ang dalaga",
+            "option_b": "Umiyak na mistulang isang bata sa harap ni Maria Clara",
+            "option_c": "Tumawa at binalewala ito",
+            "option_d": "Umalis agad ng bahay",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6306,
+            "quiz_id": 63,
+            "question_text": "Ano ang tawag ni Padre Damaso kay Maria Clara bilang tanda ng paglalambing?",
+            "option_a": "Hija",
+            "option_b": "Hijita o Tontika",
+            "option_c": "Niña",
+            "option_d": "Dalagita",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6307,
+            "quiz_id": 63,
+            "question_text": "Bakit sinabi ni Padre Damaso na hindi para sa kumbento si Maria Clara?",
+            "option_a": "Dahil masyado siyang maingay",
+            "option_b": "Dahil siya ay maganda at hindi ipinanganak upang maging esposa ni Kristo",
+            "option_c": "Dahil wala siyang sapat na pera",
+            "option_d": "Dahil hindi siya relihiyoso",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6308,
+            "quiz_id": 63,
+            "question_text": "Ano ang huling ginawa ni Padre Damaso bago siya umalis?",
+            "option_a": "Uminom ng alak",
+            "option_b": "Humingi ng tawad sa Diyos at nanalanging iligtas ang anak",
+            "option_c": "Nakipag-usap kay Kapitan Tiago",
+            "option_d": "Naghanda para sa kasal",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6309,
+            "quiz_id": 63,
+            "question_text": "Ano ang naramdaman ni Maria Clara nang mabalitang patay na si Ibarra?",
+            "option_a": "Tuwa",
+            "option_b": "Labis na pait at kawalan ng dahilan upang mabuhay",
+            "option_c": "Galit",
+            "option_d": "Walang pakiramdam",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6310,
+            "quiz_id": 63,
+            "question_text": "Ano ang sinabi ni Padre Damaso tungkol sa buhay sa loob ng kumbento?",
+            "option_a": "Ito ay masaya at mapayapa",
+            "option_b": "Ito ay puno ng misteryo at mga pader na walang makaririnig sa daing",
+            "option_c": "Ito ay lugar para sa mga mayaman",
+            "option_d": "Ito ay para sa mga gustong mag-aral",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6401,
+            "quiz_id": 64,
+            "question_text": "Sino ang batang sugatan na natagpuan at inalagaan ng isang pamilya sa bundok?",
+            "option_a": "Crispin",
+            "option_b": "Basilio",
+            "option_c": "Ibarra",
+            "option_d": "Elias",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6402,
+            "quiz_id": 64,
+            "question_text": "Sino ang ina ni Basilio na kaniyang hinanap at natagpuang patay sa gubat ng mga Ibarra?",
+            "option_a": "Maria Clara",
+            "option_b": "Tiya Isabel",
+            "option_c": "Sisa",
+            "option_d": "Donya Victorina",
+            "correct_answer": "C"
+        },
+        {
+            "id": 6403,
+            "quiz_id": 64,
+            "question_text": "Sino ang estrangherong sugatan na naghabilin kay Basilio na sunugin ang kaniyang katawan kasama ang ina ng bata?",
+            "option_a": "Crisostomo Ibarra",
+            "option_b": "Elias",
+            "option_c": "Pilosopo Tasio",
+            "option_d": "Padre Salvi",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6404,
+            "quiz_id": 64,
+            "question_text": "Saan matatagpuan ang dampa kung saan tumitira ang pamilyang kumupkop kay Basilio?",
+            "option_a": "Sa gitna ng bayan",
+            "option_b": "Sa itaas ng libis ng bundok, malapit sa batis",
+            "option_c": "Sa likod ng simbahan",
+            "option_d": "Sa tabi ng lawa",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6405,
+            "quiz_id": 64,
+            "question_text": "Gaano katagal bago nagkamalay at nagmuling-lakas si Basilio mula sa kaniyang mga sugat?",
+            "option_a": "Isang linggo",
+            "option_b": "Dalawang buwan",
+            "option_c": "Isang taon",
+            "option_d": "Isang araw",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6406,
+            "quiz_id": 64,
+            "question_text": "Anong balak ibigay ni Basilio sa kaniyang ina bilang aginaldo sa araw ng Pasko?",
+            "option_a": "Ginto at pilak",
+            "option_b": "Ang kaniyang pagbabalik bilang isang anak",
+            "option_c": "Pagkain at damit",
+            "option_d": "Isang bagong bahay",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6407,
+            "quiz_id": 64,
+            "question_text": "Ano ang naging wakas ng buhay ni Pilosopo Tasio ayon sa usapan nina Kapitan Basilio at Don Filipo?",
+            "option_a": "Naging mayaman siya",
+            "option_b": "Namatay at inilibing sa sementeryo ng mga Tsino",
+            "option_c": "Umalis siya papuntang Espanya",
+            "option_d": "Naging kura siya ng San Diego",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6408,
+            "quiz_id": 64,
+            "question_text": "Saang lugar sa gubat naganap ang huling pagkikita nina Sisa at Basilio bago pumanaw ang ina?",
+            "option_a": "Sa tabi ng batis",
+            "option_b": "Sa paanan ng balete sa loob ng pintuang kahoy",
+            "option_c": "Sa itaas ng puno",
+            "option_d": "Sa labas ng gubat",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6409,
+            "quiz_id": 64,
+            "question_text": "Ano ang sinabi ng estrangherong lalaki kay Basilio tungkol sa hinaharap?",
+            "option_a": "Na huwag nang mag-aral",
+            "option_b": "Na mag-aral at gamitin ang gintong mahuhukay sa gubat",
+            "option_c": "Na maghiganti sa mga sundalo",
+            "option_d": "Na kalimutan na ang lahat",
+            "correct_answer": "B"
+        },
+        {
+            "id": 6410,
+            "quiz_id": 64,
+            "question_text": "Ano ang huling winika ng estranghero tungkol sa mga nabuwal sa dilim ng gabi?",
+            "option_a": "Na sila ay dapat mahiya",
+            "option_b": "Na huwag silang lilimutin ng mga makakakita sa bukang-liwayway",
+            "option_c": "Na sila ay mga kriminal",
+            "option_d": "Na sila ay wala nang halaga",
+            "correct_answer": "B"
         }
     ]
 }

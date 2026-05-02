@@ -72,6 +72,10 @@ const Persistence = {
         });
     },
     initScrollPersistence: () => {
+        const page = window.location.pathname.split('/').filter(Boolean).pop() || 'index';
+        // Skip scroll restoration for dashboard to ensure user sees the description first
+        if (page.includes('dashboard')) return;
+
         const savedScroll = Persistence.load('scroll_pos');
         if (savedScroll !== null) {
             setTimeout(() => window.scrollTo(0, savedScroll), 100);
@@ -121,6 +125,15 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+    // Editor Button Logic
+    document.addEventListener('click', (e) => {
+        const btn = e.target.closest('#editor-btn');
+        if (btn) {
+            e.preventDefault();
+            window.location.href = window.BASE_URL + 'editor/';
+        }
+    });
+
     // Researchers Pop-up Logic
     document.addEventListener('click', (e) => {
         const btn = e.target.closest('#researchers-btn');

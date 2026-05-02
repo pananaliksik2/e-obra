@@ -1,8 +1,20 @@
-/* Chapter & Reader container - Crumpled Paper Background */
+.paper-tear-wrapper {
+    filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.12));
+    margin-bottom: 3rem;
+}
+
 #chapter-reader {
     background: url('../assets/minimal_crumpled_paper.png') center / cover no-repeat !important;
     border: none !important;
-    box-shadow: none !important; /* Remove shadow to make edges look natural */
+    box-shadow: none !important;
+    /* Subtle jagged edges to simulate hand-torn paper along straight lines */
+    clip-path: polygon(
+        0% 0.5%, 12% 0%, 25% 0.7%, 38% 0.1%, 50% 0.6%, 62% 0%, 75% 0.8%, 88% 0.2%, 100% 0.5%,
+        99.6% 12%, 100% 25%, 99.3% 38%, 100% 50%, 99.7% 62%, 100% 75%, 99.4% 88%, 100% 100%,
+        88% 99.5%, 75% 100%, 62% 99.2%, 50% 99.8%, 38% 99.4%, 25% 100%, 12% 99.3%, 0% 100%,
+        0.4% 88%, 0% 75%, 0.6% 62%, 0% 50%, 0.3% 38%, 0% 25%, 0.5% 12%
+    );
+    transition: transform 0.3s ease;
 }
 
 
@@ -52,6 +64,19 @@
     text-align: justify;
     background: transparent !important;
     opacity: 0.95;
+}
+
+.reader-page-content p.indented {
+    text-indent: 3rem; /* Approx 1 tab / 48px */
+}
+
+.neu-image-frame {
+    background: var(--neu-bg);
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 10px var(--neu-dark), 
+                inset -5px -5px 10px var(--neu-light);
+    display: inline-block;
+    max-width: 100%;
 }
 
 /* Glossary Terms Highlighting */
@@ -222,4 +247,9 @@
     .gap-2 {
         gap: 0.4rem !important;
     }
+}
+
+.reader-page-content p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
 }

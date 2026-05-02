@@ -4,35 +4,73 @@ let score = 0;
 let currentChapter = null;
 
 async function startQuiz(chapterNumber) {
-    const finalChapterNum = chapterNumber || localStorage.getItem('current_chapter') || 1;
+    // Priority: 1. Argument, 2. LocalStorage, 3. Default to 1
+    const finalChapterNum = parseInt(chapterNumber || localStorage.getItem('current_chapter') || 1);
+    console.log("Starting quiz for chapter:", finalChapterNum);
     
     try {
-        // Fetch chapters.json (using BASE_URL to ensure correct path)
         const baseUrl = window.location.origin + window.location.pathname.split('/quiz/')[0] + '/';
-        const response = await fetch(baseUrl + 'data/chapters.json');
-        const chapters = await response.json();
         
-        // Find the specific chapter
-        currentChapter = chapters.find(c => parseInt(c.chapter_number) === parseInt(finalChapterNum));
+        // 1. Fetch chapters to identify the chapter object (with cache busting)
+        const chaptersResponse = await fetch(baseUrl + 'data/chapters.json?v=' + new Date().getTime());
+        const chapters = await chaptersResponse.json();
+        currentChapter = chapters.find(c => parseInt(c.chapter_number) === finalChapterNum);
         
-        if (currentChapter && currentChapter.quiz) {
-            quizQuestions = currentChapter.quiz;
-            
-            // Update title
-            document.getElementById('quiz-chapter-title').innerText = `Pagsusulit: Kabanata ${currentChapter.chapter_number}`;
-            
-            currentQuestionIndex = 0;
-            score = 0;
-            showQuestion();
-            
-            document.getElementById('quiz-content').style.display = 'block';
-            document.getElementById('quiz-result').style.display = 'none';
-        } else {
-            alert("Paumanhin, wala pang pagsusulit para sa kabanatang ito.");
-            window.location.href = `../reader/`;
+        if (!currentChapter) {
+            console.error("Chapter not found in chapters.json:", finalChapterNum);
+            throw new Error("Kabanata hindi nahanap.");
         }
+
+        const chapterId = parseInt(currentChapter.id);
+
+        // 2. Fetch quizzes.json (with cache busting)
+        const quizResponse = await fetch(baseUrl + 'data/quizzes.json?v=' + new Date().getTime());
+        if (!quizResponse.ok) throw new Error("Hindi maikarga ang quizzes.json");
+        const quizData = await quizResponse.json();
+        
+        // 3. Find the quiz entry. Very loose matching for robustness.
+        const quizMetadata = quizData.quizzes.find(q => {
+            const q_cid = String(q.chapter_id).trim();
+            return q_cid == String(chapterId) || q_cid == String(finalChapterNum);
+        });
+        
+        if (quizMetadata) {
+            console.log("Quiz metadata found:", quizMetadata);
+            // 4. Filter questions belonging to this quiz
+            const targetQuizId = String(quizMetadata.id).trim();
+            const rawQuestions = quizData.questions.filter(q => String(q.quiz_id).trim() == targetQuizId);
+            
+            if (rawQuestions && rawQuestions.length > 0) {
+                console.log(`Found ${rawQuestions.length} questions.`);
+                // Map the data format to what the UI expects
+                quizQuestions = rawQuestions.map(q => ({
+                    question: q.question_text,
+                    options: [q.option_a, q.option_b, q.option_c, q.option_d],
+                    // Robust answer parsing
+                    answer: (q.correct_answer || 'A').trim().toUpperCase().charCodeAt(0) - 65 
+                }));
+                
+                document.getElementById('quiz-chapter-title').innerText = `Pagsusulit: Kabanata ${currentChapter.chapter_number}`;
+                currentQuestionIndex = 0;
+                score = 0;
+                showQuestion();
+                
+                document.getElementById('quiz-content').style.display = 'block';
+                document.getElementById('quiz-result').style.display = 'none';
+                return;
+            } else {
+                console.warn("Quiz found but has no questions for quiz_id:", quizId);
+            }
+        } else {
+            console.warn("No quiz metadata found for chapterId:", chapterId, "or chapterNum:", finalChapterNum);
+        }
+        
+        // If no quiz or questions found
+        alert(`Paumanhin, wala pang pagsusulit para sa kabanatang ito. (Chapter: ${finalChapterNum}, ID: ${chapterId})`);
+        window.location.href = `../reader/`;
+        
     } catch (error) {
-        console.error("Error loading quiz:", error);
+        console.error("Critical error in startQuiz:", error);
         alert("Nagkaroon ng problema sa pag-load ng pagsusulit.");
     }
 }

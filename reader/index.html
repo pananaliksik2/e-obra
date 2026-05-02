@@ -39,13 +39,14 @@
                 </button>
             </div>
 
-            <div class="neu-container neu-container-3d p-0 overflow-hidden mb-4 position-relative" id="chapter-reader">
+            <div class="reading-progress-container mb-3 rounded-pill overflow-hidden" style="height: 6px; box-shadow: inset 1px 1px 3px rgba(0,0,0,0.1);">
+                <div id="reading-progress-bar" class="reading-progress-bar"></div>
+            </div>
+            <div class="paper-tear-wrapper mb-4">
+                <div class="neu-container p-0 overflow-hidden position-relative" id="chapter-reader">
                 <div class="side-ornament ornament-left"></div>
                 <div class="side-ornament ornament-right"></div>
 
-                <div class="reading-progress-container">
-                    <div id="reading-progress-bar" class="reading-progress-bar"></div>
-                </div>
                 <div class="p-4 p-md-5">
                     <div class="text-center mb-5">
                         <h2 class="chapter-title-neu" id="chapter-title">
@@ -64,17 +65,24 @@
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-center align-items-center gap-4 mt-5">
+                    <div class="d-flex justify-content-center align-items-center gap-2 gap-md-3 mt-5">
+                        <button class="neu-btn-icon" id="first-page-btn" title="Unang Pahina">
+                            <i class="bi bi-chevron-double-left"></i>
+                        </button>
                         <button class="neu-btn-icon" id="prev-btn" title="Nakaraang Pahina">
                             <i class="bi bi-chevron-left"></i>
                         </button>
-                        <span class="neu-page-indicator" id="page-indicator">Pahina 1</span>
+                        <span class="neu-page-indicator mx-2" id="page-indicator">Pahina 1</span>
                         <button class="neu-btn-icon" id="next-btn" title="Susunod na Pahina">
                             <i class="bi bi-chevron-right"></i>
+                        </button>
+                        <button class="neu-btn-icon" id="last-page-btn" title="Huling Pahina">
+                            <i class="bi bi-chevron-double-right"></i>
                         </button>
                     </div>
                 </div>
             </div>
+        </div>
 
             <div class="d-flex flex-nowrap justify-content-center gap-2 gap-md-3">
                 <button class="neu-btn d-flex align-items-center gap-1 gap-md-2 d-none" id="prev-chapter-btn"
@@ -107,6 +115,33 @@
         <div class="tooltip-arrow"></div>
     </div>
 
+    <!-- Quiz Instruction Modal -->
+    <div class="modal fade" id="quizInstructionModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content neu-container border-0">
+                <div class="modal-header border-0 pb-0 ps-4 pe-4 pt-4">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="instruction-list">
+                        <h6 class="text-maroon fw-bold mb-2"><i class="bi bi-journal-text me-2"></i>PANUTO</h6>
+                        <p class="mb-4 ps-1">Basahin nang mabuti ang bawat tanong at unawain ang mga pagpipilian. Piliin ang tamang sagot sa bawat bilang.</p>
+
+                        <h6 class="text-maroon fw-bold mb-2"><i class="bi bi-exclamation-circle me-2"></i>PAALALA</h6>
+                        <div class="ps-1">
+                            <p class="mb-2">Hindi na maaaring balikan ang nakaraang tanong kapag nakapili na.</p>
+                            <p class="mb-0">Ang iyong kabuuang iskor ay ipakikita sa dulo ng pagsusulit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 p-4 pt-0">
+                    <button type="button" class="neu-btn secondary px-4" data-bs-dismiss="modal">Bumalik</button>
+                    <button type="button" class="neu-btn px-4" id="confirm-start-quiz">Magsimula Na <i class="bi bi-play-fill ms-1"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="footer-placeholder"></div>
 
     <!-- Firebase App -->
@@ -119,6 +154,7 @@
     <script src="../js/config.js"></script>
     <script src="../js/auth.js"></script>
     <script src="../js/ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script src="reader.js"></script>
     <script>
@@ -128,8 +164,16 @@
                 window.location.href = `../chapters/`;
             };
 
-            // Set quiz button link
-            document.getElementById('start-quiz').onclick = () => {
+            // Set quiz button to show modal
+            const startQuizBtn = document.getElementById('start-quiz');
+            const instructionModal = new bootstrap.Modal(document.getElementById('quizInstructionModal'));
+            
+            startQuizBtn.onclick = () => {
+                instructionModal.show();
+            };
+
+            // Confirm start quiz
+            document.getElementById('confirm-start-quiz').onclick = () => {
                 window.location.href = `../quiz/`;
             };
 
@@ -139,5 +183,4 @@
         });
     </script>
 </body>
-
 </html>

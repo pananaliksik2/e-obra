@@ -29,7 +29,10 @@ function parseValues(raw) {
         while (i < raw.length) {
             const char = raw[i];
             if (escape) {
-                current += char;
+                if (char === 'n') current += '\n';
+                else if (char === 'r') current += '\r';
+                else if (char === 't') current += '\t';
+                else current += char;
                 escape = false;
             } else if (char === '\\') {
                 escape = true;
@@ -72,8 +75,7 @@ function cleanValue(v) {
         text = text.replace(/\\r\\n/g, '\n')
                    .replace(/\\n/g, '\n')
                    .replace(/\\r/g, '\n')
-                   .replace(/\r\n/g, '\n')
-                   .replace(/rn/g, '\n');
+                   .replace(/\r\n/g, '\n');
         
         // Clean up any double newlines caused by the above
         text = text.replace(/\n+/g, '\n\n').trim();
