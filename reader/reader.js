@@ -226,36 +226,90 @@ document.getElementById('last-page-btn').addEventListener('click', () => {
 
 // Glossary logic
 let currentTooltipHandler = null;
+let activeTooltipSource = null; // Can be an Element or a Range
 
 function setupGlossaryEvents() {
     const chapterDiv = document.getElementById('chapter-content');
     const terms = chapterDiv.querySelectorAll('.glossary-term');
     terms.forEach(term => {
         term.addEventListener('click', (e) => {
-            e.stopPropagation(); // Prevent bubbling to document (which closes tooltip)
-            showTooltip(e, term.dataset.word);
+            e.stopPropagation();
+            showTooltip(term, term.dataset.word);
         });
     });
 
     chapterDiv.addEventListener('dblclick', (e) => {
-        // If the target is already a glossary term, let the click handler handle it
         if (e.target.classList.contains('glossary-term')) return;
 
-        const selection = window.getSelection().toString().trim().toLowerCase();
-        if (selection) {
+        const selection = window.getSelection();
+        const text = selection.toString().trim().toLowerCase();
+        if (text) {
             e.stopPropagation();
-            const cleanSelection = selection.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
-            showTooltip(e, cleanSelection);
+            const range = selection.getRangeAt(0);
+            const cleanText = text.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+            showTooltip(range, cleanText);
         }
     });
 }
 
-function showTooltip(e, word) {
+function updateTooltipPosition() {
+    if (!activeTooltipSource) return;
+    
+    const tooltip = document.getElementById('glossary-tooltip');
+    if (!tooltip.classList.contains('active')) return;
+
+    let rect;
+    if (activeTooltipSource instanceof Range) {
+        rect = activeTooltipSource.getBoundingClientRect();
+    } else {
+        rect = activeTooltipSource.getBoundingClientRect();
+    }
+
+    // Close if the source is out of view
+    const isOutOfView = (
+        rect.bottom < 0 || 
+        rect.top > window.innerHeight || 
+        rect.right < 0 || 
+        rect.left > window.innerWidth
+    );
+
+    if (isOutOfView) {
+        hideTooltip();
+        return;
+    }
+
+    // Positioning logic
+    const tooltipWidth = tooltip.offsetWidth || 300;
+    const tooltipHeight = tooltip.offsetHeight || 100;
+    
+    let x = rect.left + (rect.width / 2) - (tooltipWidth / 2);
+    let y = rect.top - tooltipHeight - 15; // Top by default
+
+    // If not enough space at top, show below
+    if (y < 10) {
+        y = rect.bottom + 15;
+    }
+
+    // Screen boundary checks
+    const padding = 10;
+    if (x < padding) x = padding;
+    if (x + tooltipWidth > window.innerWidth - padding) x = window.innerWidth - tooltipWidth - padding;
+
+    tooltip.style.left = `${x}px`;
+    tooltip.style.top = `${y}px`;
+}
+
+// Global listeners for dynamic tooltip
+window.addEventListener('scroll', updateTooltipPosition, { passive: true });
+window.addEventListener('resize', updateTooltipPosition, { passive: true });
+
+function showTooltip(source, word) {
     const tooltip = document.getElementById('glossary-tooltip');
     const match = glossaryData.find(item => item.word.toLowerCase() === word.toLowerCase());
 
     if (match) {
-        // Remove previous listener if it exists to prevent "ghost" closes
+        activeTooltipSource = source;
+        
         if (currentTooltipHandler) {
             document.removeEventListener('click', currentTooltipHandler);
             currentTooltipHandler = null;
@@ -264,27 +318,24 @@ function showTooltip(e, word) {
         document.getElementById('tooltip-word').innerText = match.word;
         document.getElementById('tooltip-definition').innerText = match.definition;
 
-        // Prevent clicking inside the tooltip from closing it
+        // Make tooltip interactive when active
+        tooltip.style.pointerEvents = 'auto';
         tooltip.onclick = (event) => event.stopPropagation();
 
-        let x = e.clientX;
-        let y = e.clientY - 120;
-
-        if (x + 300 > window.innerWidth) x = window.innerWidth - 320;
-        if (y < 0) y = e.clientY + 20;
-
-        tooltip.style.left = `${x}px`;
-        tooltip.style.top = `${y}px`;
+        // Initial position
         tooltip.classList.add('active');
+        
+        // Use requestAnimationFrame for precise initial positioning
+        requestAnimationFrame(() => {
+            updateTooltipPosition();
+        });
 
-        // Define a named handler for this instance
         currentTooltipHandler = (event) => {
             if (!tooltip.contains(event.target)) {
                 hideTooltip();
             }
         };
 
-        // Delay slightly to ensure the current click doesn't trigger it immediately
         setTimeout(() => {
             document.addEventListener('click', currentTooltipHandler, { once: true });
         }, 50);
@@ -295,12 +346,15 @@ function hideTooltip() {
     const tooltip = document.getElementById('glossary-tooltip');
     if (tooltip) {
         tooltip.classList.remove('active');
+        tooltip.style.pointerEvents = 'none';
     }
     if (currentTooltipHandler) {
         document.removeEventListener('click', currentTooltipHandler);
         currentTooltipHandler = null;
     }
+    activeTooltipSource = null;
 }
+
 
 // PDF Export - Using html2pdf for better mobile and filename support
 document.getElementById('download-pdf').addEventListener('click', function () {
