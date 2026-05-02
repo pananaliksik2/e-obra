@@ -225,11 +225,14 @@ document.getElementById('last-page-btn').addEventListener('click', () => {
 });
 
 // Glossary logic
+let currentTooltipHandler = null;
+
 function setupGlossaryEvents() {
     const chapterDiv = document.getElementById('chapter-content');
     const terms = chapterDiv.querySelectorAll('.glossary-term');
     terms.forEach(term => {
         term.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent bubbling to document (which closes tooltip)
             showTooltip(e, term.dataset.word);
         });
     });
@@ -240,6 +243,7 @@ function setupGlossaryEvents() {
 
         const selection = window.getSelection().toString().trim().toLowerCase();
         if (selection) {
+            e.stopPropagation();
             const cleanSelection = selection.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
             showTooltip(e, cleanSelection);
         }
@@ -251,6 +255,12 @@ function showTooltip(e, word) {
     const match = glossaryData.find(item => item.word.toLowerCase() === word.toLowerCase());
 
     if (match) {
+        // Remove previous listener if it exists to prevent "ghost" closes
+        if (currentTooltipHandler) {
+            document.removeEventListener('click', currentTooltipHandler);
+            currentTooltipHandler = null;
+        }
+
         document.getElementById('tooltip-word').innerText = match.word;
         document.getElementById('tooltip-definition').innerText = match.definition;
 
@@ -267,23 +277,29 @@ function showTooltip(e, word) {
         tooltip.style.top = `${y}px`;
         tooltip.classList.add('active');
 
-        // Close when clicking outside
-        const closeHandler = (event) => {
+        // Define a named handler for this instance
+        currentTooltipHandler = (event) => {
             if (!tooltip.contains(event.target)) {
                 hideTooltip();
-                document.removeEventListener('click', closeHandler);
             }
         };
 
+        // Delay slightly to ensure the current click doesn't trigger it immediately
         setTimeout(() => {
-            document.addEventListener('click', closeHandler);
-        }, 100);
+            document.addEventListener('click', currentTooltipHandler, { once: true });
+        }, 50);
     }
 }
 
 function hideTooltip() {
     const tooltip = document.getElementById('glossary-tooltip');
-    if (tooltip) tooltip.classList.remove('active');
+    if (tooltip) {
+        tooltip.classList.remove('active');
+    }
+    if (currentTooltipHandler) {
+        document.removeEventListener('click', currentTooltipHandler);
+        currentTooltipHandler = null;
+    }
 }
 
 // PDF Export - Using html2pdf for better mobile and filename support
