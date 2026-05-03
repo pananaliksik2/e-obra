@@ -125,14 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
-    // Editor Button Logic
-    document.addEventListener('click', (e) => {
-        const btn = e.target.closest('#editor-btn');
-        if (btn) {
-            e.preventDefault();
-            window.location.href = window.BASE_URL + 'editor/';
-        }
-    });
+
 
     // Researchers Pop-up Logic
     document.addEventListener('click', (e) => {
@@ -162,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="text-center">
                             <h6 class="title-font text-maroon mb-2" style="font-size: 1rem;">Mga Mananaliksik</h6>
                             <div class="neu-divider-sm mx-auto mb-2" style="height: 1px;"></div>
-                            <div class="researchers-list text-start ps-2" style="font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; line-height: 1.6; color: #444;">
+                            <div class="researchers-list text-center" style="font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; line-height: 1.6; color: #444;">
                                 Abong, Shanel Kate A.<br>
                                 Delante, Rona G.<br>
                                 Flor, Aicha Mae L.<br>
@@ -180,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="text-center">
                         <h6 class="title-font text-maroon mb-2" style="font-size: 0.9rem;">Mga Mananaliksik</h6>
                         <div class="neu-divider-sm mx-auto mb-2" style="height: 1px;"></div>
-                        <div class="researchers-list text-start ps-2" style="font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; line-height: 1.6; color: #444;">
+                        <div class="researchers-list text-center" style="font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; line-height: 1.6; color: #444;">
                             Abong, Shanel Kate A.<br>
                             Delante, Rona G.<br>
                             Flor, Aicha Mae L.<br>
