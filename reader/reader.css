@@ -8,12 +8,10 @@
     border: none !important;
     box-shadow: none !important;
     /* Subtle jagged edges to simulate hand-torn paper along straight lines */
-    clip-path: polygon(
-        0% 0.5%, 12% 0%, 25% 0.7%, 38% 0.1%, 50% 0.6%, 62% 0%, 75% 0.8%, 88% 0.2%, 100% 0.5%,
-        99.6% 12%, 100% 25%, 99.3% 38%, 100% 50%, 99.7% 62%, 100% 75%, 99.4% 88%, 100% 100%,
-        88% 99.5%, 75% 100%, 62% 99.2%, 50% 99.8%, 38% 99.4%, 25% 100%, 12% 99.3%, 0% 100%,
-        0.4% 88%, 0% 75%, 0.6% 62%, 0% 50%, 0.3% 38%, 0% 25%, 0.5% 12%
-    );
+    clip-path: polygon(0% 0.5%, 12% 0%, 25% 0.7%, 38% 0.1%, 50% 0.6%, 62% 0%, 75% 0.8%, 88% 0.2%, 100% 0.5%,
+            99.6% 12%, 100% 25%, 99.3% 38%, 100% 50%, 99.7% 62%, 100% 75%, 99.4% 88%, 100% 100%,
+            88% 99.5%, 75% 100%, 62% 99.2%, 50% 99.8%, 38% 99.4%, 25% 100%, 12% 99.3%, 0% 100%,
+            0.4% 88%, 0% 75%, 0.6% 62%, 0% 50%, 0.3% 38%, 0% 25%, 0.5% 12%);
     transition: transform 0.3s ease;
 }
 
@@ -67,14 +65,15 @@
 }
 
 .reader-page-content p.indented {
-    text-indent: 3rem; /* Approx 1 tab / 48px */
+    text-indent: 3rem;
+    /* Approx 1 tab / 48px */
 }
 
 .neu-image-frame {
     background: var(--neu-bg);
     border-radius: 15px;
-    box-shadow: inset 5px 5px 10px var(--neu-dark), 
-                inset -5px -5px 10px var(--neu-light);
+    box-shadow: inset 5px 5px 10px var(--neu-dark),
+        inset -5px -5px 10px var(--neu-light);
     display: inline-block;
     max-width: 100%;
 }
@@ -114,23 +113,24 @@
     }
 
     /* Force full height for printing */
-    html, body {
+    html,
+    body {
         height: auto !important;
         overflow: visible !important;
         background-color: white !important;
     }
 
     /* Hide all UI elements */
-    #header-placeholder, 
-    #footer-placeholder, 
-    .bg-dotted-noise, 
+    #header-placeholder,
+    #footer-placeholder,
+    .bg-dotted-noise,
     .bg-soft-glow,
     #back-to-chapters,
-    #prev-btn, 
-    #next-btn, 
+    #prev-btn,
+    #next-btn,
     #page-indicator,
-    #download-pdf, 
-    #start-quiz, 
+    #download-pdf,
+    #start-quiz,
     #next-chapter-btn,
     .neu-divider,
     .neu-nav,
@@ -144,7 +144,7 @@
         margin: 0 !important;
         font-family: "Times New Roman", Times, serif !important;
     }
-    
+
     main.container {
         max-width: 100% !important;
         width: 100% !important;
@@ -154,7 +154,10 @@
         overflow: visible !important;
     }
 
-    .neu-container, #chapter-reader, #reader-view, main.container {
+    .neu-container,
+    #chapter-reader,
+    #reader-view,
+    main.container {
         box-shadow: none !important;
         border: none !important;
         background: transparent !important;
@@ -166,7 +169,8 @@
         position: static !important;
     }
 
-    .chapter-content-neu, #chapter-content {
+    .chapter-content-neu,
+    #chapter-content {
         overflow: visible !important;
         height: auto !important;
         max-height: none !important;
@@ -189,8 +193,10 @@
         color: black !important;
         text-align: justify !important;
         display: block !important;
-        animation: none !important; /* Disable animation for printing */
-        filter: none !important;    /* Ensure no blur filter is applied */
+        animation: none !important;
+        /* Disable animation for printing */
+        filter: none !important;
+        /* Ensure no blur filter is applied */
         transition: none !important;
     }
 
@@ -213,8 +219,17 @@
 }
 
 @keyframes textReveal {
-    0% { opacity: 0; transform: translateY(20px); filter: blur(10px); }
-    100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        filter: blur(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
 }
 
 /* Mobile Button Adjustments */
@@ -227,10 +242,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 0; /* Prevents overflow */
+        min-width: 0;
+        /* Prevents overflow */
     }
-    
-    #prev-chapter-btn, #next-chapter-btn {
+
+    #prev-chapter-btn,
+    #next-chapter-btn {
         flex: 0 0 auto !important;
         padding: 14px 15px !important;
     }
@@ -261,8 +278,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -304,11 +321,21 @@
 }
 
 @keyframes spinPDF {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes fadeInOverlay {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
