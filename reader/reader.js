@@ -384,27 +384,44 @@ document.getElementById('download-pdf').addEventListener('click', function () {
     const lineHeight = 7;
     const paragraphSpacing = 4;
     
-    // Show loading state
+    // 1. Show loading state & initial UI
     const loadingOverlay = document.getElementById('pdf-loading-overlay');
-    if (loadingOverlay) loadingOverlay.classList.add('active');
+    const processingState = document.getElementById('pdf-processing-state');
+    const readyState = document.getElementById('pdf-ready-state');
+    
+    if (loadingOverlay) {
+        loadingOverlay.classList.add('active');
+        processingState.classList.remove('d-none');
+        readyState.classList.add('d-none');
+    }
     
     const originalBtnText = this.innerHTML;
     this.innerHTML = `<span class="spinner-border spinner-border-sm me-2"></span>Inihahanda...`;
     this.disabled = true;
 
-    // Use setTimeout to allow the browser to render the loading overlay
+    // 2. Artificial delay to prioritize animation and feel like "processing"
     setTimeout(() => {
         try {
-            console.log("Ipinoproseso ang kabanata:", currentChapterNum);
+            console.log("Sinisimulan ang pagbuo ng PDF...");
             
             if (!rawChapterContent) {
                 throw new Error("Walang nilalaman ang kabanata.");
             }
 
-            // 1. Draw Header
+            // 3. Perform PDF Generation logic
+            // (Keep this in memory until user confirms)
+            const doc = new jsPDF('p', 'mm', 'a4');
+            const margin = 25.4; 
+            const pageWidth = doc.internal.pageSize.getWidth();
+            const pageHeight = doc.internal.pageSize.getHeight();
+            const maxWidth = pageWidth - (margin * 2);
+            const lineHeight = 7;
+            const paragraphSpacing = 4;
+
+            // Draw Header
             doc.setFont("times", "bold");
             doc.setFontSize(22);
-            doc.setTextColor(128, 0, 0); // Maroon
+            doc.setTextColor(128, 0, 0);
             doc.text("NOLI ME TANGERE", pageWidth / 2, 25, { align: 'center' });
             
             doc.setFont("times", "normal");
@@ -422,37 +439,30 @@ document.getElementById('download-pdf').addEventListener('click', function () {
             doc.setDrawColor(128, 0, 0);
             doc.line(margin, 52, pageWidth - margin, 52);
             
-            // 2. Draw Content
+            // Draw Content
             doc.setFont("times", "normal");
             doc.setFontSize(11);
             doc.setTextColor(30, 30, 30);
             
-            let y = 62; // Start position on first page adjusted for taller header
-            // Split by one or more newlines to ensure we capture all paragraphs
+            let y = 62;
             const paragraphs = rawChapterContent.split(/\n+/);
-            console.log(`Natagpuan ang ${paragraphs.length} na talata.`);
             
-            paragraphs.forEach((para, index) => {
+            paragraphs.forEach((para) => {
                 const cleanPara = para.trim();
                 if (!cleanPara) return;
 
-                // Indentation logic similar to the reader
-                // In the reader, long paragraphs or those with specific context get indented
                 const isLong = cleanPara.length > 150;
-                const xPos = isLong ? margin + 10 : margin; // Indent if long
+                const xPos = isLong ? margin + 10 : margin;
                 const currentMaxWidth = isLong ? maxWidth - 10 : maxWidth;
 
                 const lines = doc.splitTextToSize(cleanPara, currentMaxWidth);
                 const blockHeight = lines.length * lineHeight;
                 
-                // Page break check - if paragraph won't fit, move to next page
                 if (y + blockHeight > pageHeight - margin) {
-                    console.log("Nagdadagdag ng bagong pahina sa y =", y);
                     doc.addPage();
-                    y = margin; // Reset to top margin
+                    y = margin;
                 }
                 
-                // Draw the paragraph
                 doc.text(cleanPara, xPos, y, { 
                     maxWidth: currentMaxWidth, 
                     align: 'justify' 
@@ -461,10 +471,8 @@ document.getElementById('download-pdf').addEventListener('click', function () {
                 y += blockHeight + paragraphSpacing;
             });
 
-            // 3. Add Footer to all pages
+            // Footer
             const pageCount = doc.internal.getNumberOfPages();
-            console.log(`Tapos na! Kabuuang pahina: ${pageCount}`);
-            
             for (let i = 1; i <= pageCount; i++) {
                 doc.setPage(i);
                 doc.setFontSize(9);
@@ -472,20 +480,40 @@ document.getElementById('download-pdf').addEventListener('click', function () {
                 doc.text(`E-Obra | Pahina ${i} ng ${pageCount}`, pageWidth / 2, pageHeight - 10, { align: 'center' });
             }
 
+            // 4. Update UI to "Ready" state
+            processingState.classList.add('d-none');
+            readyState.classList.remove('d-none');
 
-            // 4. Save
-            const filename = `Kabanata_${currentChapterNum}_E-Obra.pdf`;
-            doc.save(filename);
+            // 5. Setup confirmation listeners
+            const confirmBtn = document.getElementById('confirm-download');
+            const cancelBtn = document.getElementById('cancel-pdf');
+
+            const handleDownload = () => {
+                const filename = `Kabanata_${currentChapterNum}_E-Obra.pdf`;
+                doc.save(filename);
+                closeOverlay();
+            };
+
+            const closeOverlay = () => {
+                loadingOverlay.classList.remove('active');
+                this.innerHTML = originalBtnText;
+                this.disabled = false;
+                confirmBtn.removeEventListener('click', handleDownload);
+                cancelBtn.removeEventListener('click', closeOverlay);
+            };
+
+            confirmBtn.addEventListener('click', handleDownload);
+            cancelBtn.addEventListener('click', closeOverlay);
 
         } catch (err) {
             console.error('PDF Generation Error:', err);
             alert('Nagkaroon ng problema sa paggawa ng PDF. Mangyaring subukan muli.');
-        } finally {
-            if (loadingOverlay) loadingOverlay.classList.remove('active');
+            loadingOverlay.classList.remove('active');
             this.innerHTML = originalBtnText;
             this.disabled = false;
         }
-    }, 100);
+    }, 2000); // 2 second processing feel
+});
 });
 
 
