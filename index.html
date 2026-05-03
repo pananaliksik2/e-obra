@@ -217,6 +217,7 @@
     <!-- Firebase App -->
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
 
     <!-- Global Scripts -->
     <script src="js/config.js"></script>
@@ -245,7 +246,19 @@
                     const provider = new firebase.auth.GoogleAuthProvider();
                     firebase.auth().signInWithPopup(provider)
                         .then((result) => {
-                            window.location.href = window.BASE_URL + 'dashboard/';
+                            // Generate unique session ID for single-session check
+                            const sessionId = Date.now().toString() + '_' + Math.random().toString(36).substr(2, 9);
+                            localStorage.setItem('eobra_session_id', sessionId);
+                            
+                            // Store in Firebase Database
+                            const user = result.user;
+                            firebase.database().ref('sessions/' + user.uid).set({
+                                session_id: sessionId,
+                                last_login: firebase.database.ServerValue.TIMESTAMP,
+                                device_info: navigator.userAgent
+                            }).then(() => {
+                                window.location.href = window.BASE_URL + 'dashboard/';
+                            });
                         })
                         .catch((error) => {
                             console.error("Login failed:", error);
