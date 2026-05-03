@@ -392,97 +392,100 @@ document.getElementById('download-pdf').addEventListener('click', function () {
     this.innerHTML = `<span class="spinner-border spinner-border-sm me-2"></span>Inihahanda...`;
     this.disabled = true;
 
-    try {
-        console.log("Ipinoproseso ang kabanata:", currentChapterNum);
-        
-        if (!rawChapterContent) {
-            throw new Error("Walang nilalaman ang kabanata.");
-        }
-
-        // 1. Draw Header
-        doc.setFont("times", "bold");
-        doc.setFontSize(22);
-        doc.setTextColor(128, 0, 0); // Maroon
-        doc.text("NOLI ME TANGERE", pageWidth / 2, 25, { align: 'center' });
-        
-        doc.setFont("times", "normal");
-        doc.setFontSize(12);
-        doc.setTextColor(100, 100, 100);
-        doc.text("ni José Rizal", pageWidth / 2, 32, { align: 'center' });
-        doc.text('salin ni Virgilio "Rio Alma" Almario', pageWidth / 2, 38, { align: 'center' });
-        
-        doc.setFont("times", "italic");
-        doc.setFontSize(15);
-        doc.setTextColor(50, 50, 50);
-        doc.text(`Kabanata ${currentChapterNum}: ${currentChapterTitle}`, pageWidth / 2, 48, { align: 'center' });
-        
-        doc.setLineWidth(0.5);
-        doc.setDrawColor(128, 0, 0);
-        doc.line(margin, 52, pageWidth - margin, 52);
-        
-        // 2. Draw Content
-        doc.setFont("times", "normal");
-        doc.setFontSize(11);
-        doc.setTextColor(30, 30, 30);
-        
-        let y = 62; // Start position on first page adjusted for taller header
-        // Split by one or more newlines to ensure we capture all paragraphs
-        const paragraphs = rawChapterContent.split(/\n+/);
-        console.log(`Natagpuan ang ${paragraphs.length} na talata.`);
-        
-        paragraphs.forEach((para, index) => {
-            const cleanPara = para.trim();
-            if (!cleanPara) return;
-
-            // Indentation logic similar to the reader
-            // In the reader, long paragraphs or those with specific context get indented
-            const isLong = cleanPara.length > 150;
-            const xPos = isLong ? margin + 10 : margin; // Indent if long
-            const currentMaxWidth = isLong ? maxWidth - 10 : maxWidth;
-
-            const lines = doc.splitTextToSize(cleanPara, currentMaxWidth);
-            const blockHeight = lines.length * lineHeight;
+    // Use setTimeout to allow the browser to render the loading overlay
+    setTimeout(() => {
+        try {
+            console.log("Ipinoproseso ang kabanata:", currentChapterNum);
             
-            // Page break check - if paragraph won't fit, move to next page
-            if (y + blockHeight > pageHeight - margin) {
-                console.log("Nagdadagdag ng bagong pahina sa y =", y);
-                doc.addPage();
-                y = margin; // Reset to top margin
+            if (!rawChapterContent) {
+                throw new Error("Walang nilalaman ang kabanata.");
             }
+
+            // 1. Draw Header
+            doc.setFont("times", "bold");
+            doc.setFontSize(22);
+            doc.setTextColor(128, 0, 0); // Maroon
+            doc.text("NOLI ME TANGERE", pageWidth / 2, 25, { align: 'center' });
             
-            // Draw the paragraph
-            doc.text(cleanPara, xPos, y, { 
-                maxWidth: currentMaxWidth, 
-                align: 'justify' 
+            doc.setFont("times", "normal");
+            doc.setFontSize(12);
+            doc.setTextColor(100, 100, 100);
+            doc.text("ni José Rizal", pageWidth / 2, 32, { align: 'center' });
+            doc.text('salin ni Virgilio "Rio Alma" Almario', pageWidth / 2, 38, { align: 'center' });
+            
+            doc.setFont("times", "italic");
+            doc.setFontSize(15);
+            doc.setTextColor(50, 50, 50);
+            doc.text(`Kabanata ${currentChapterNum}: ${currentChapterTitle}`, pageWidth / 2, 48, { align: 'center' });
+            
+            doc.setLineWidth(0.5);
+            doc.setDrawColor(128, 0, 0);
+            doc.line(margin, 52, pageWidth - margin, 52);
+            
+            // 2. Draw Content
+            doc.setFont("times", "normal");
+            doc.setFontSize(11);
+            doc.setTextColor(30, 30, 30);
+            
+            let y = 62; // Start position on first page adjusted for taller header
+            // Split by one or more newlines to ensure we capture all paragraphs
+            const paragraphs = rawChapterContent.split(/\n+/);
+            console.log(`Natagpuan ang ${paragraphs.length} na talata.`);
+            
+            paragraphs.forEach((para, index) => {
+                const cleanPara = para.trim();
+                if (!cleanPara) return;
+
+                // Indentation logic similar to the reader
+                // In the reader, long paragraphs or those with specific context get indented
+                const isLong = cleanPara.length > 150;
+                const xPos = isLong ? margin + 10 : margin; // Indent if long
+                const currentMaxWidth = isLong ? maxWidth - 10 : maxWidth;
+
+                const lines = doc.splitTextToSize(cleanPara, currentMaxWidth);
+                const blockHeight = lines.length * lineHeight;
+                
+                // Page break check - if paragraph won't fit, move to next page
+                if (y + blockHeight > pageHeight - margin) {
+                    console.log("Nagdadagdag ng bagong pahina sa y =", y);
+                    doc.addPage();
+                    y = margin; // Reset to top margin
+                }
+                
+                // Draw the paragraph
+                doc.text(cleanPara, xPos, y, { 
+                    maxWidth: currentMaxWidth, 
+                    align: 'justify' 
+                });
+                
+                y += blockHeight + paragraphSpacing;
             });
+
+            // 3. Add Footer to all pages
+            const pageCount = doc.internal.getNumberOfPages();
+            console.log(`Tapos na! Kabuuang pahina: ${pageCount}`);
             
-            y += blockHeight + paragraphSpacing;
-        });
+            for (let i = 1; i <= pageCount; i++) {
+                doc.setPage(i);
+                doc.setFontSize(9);
+                doc.setTextColor(150, 150, 150);
+                doc.text(`E-Obra | Pahina ${i} ng ${pageCount}`, pageWidth / 2, pageHeight - 10, { align: 'center' });
+            }
 
-        // 3. Add Footer to all pages
-        const pageCount = doc.internal.getNumberOfPages();
-        console.log(`Tapos na! Kabuuang pahina: ${pageCount}`);
-        
-        for (let i = 1; i <= pageCount; i++) {
-            doc.setPage(i);
-            doc.setFontSize(9);
-            doc.setTextColor(150, 150, 150);
-            doc.text(`E-Obra | Pahina ${i} ng ${pageCount}`, pageWidth / 2, pageHeight - 10, { align: 'center' });
+
+            // 4. Save
+            const filename = `Kabanata_${currentChapterNum}_E-Obra.pdf`;
+            doc.save(filename);
+
+        } catch (err) {
+            console.error('PDF Generation Error:', err);
+            alert('Nagkaroon ng problema sa paggawa ng PDF. Mangyaring subukan muli.');
+        } finally {
+            if (loadingOverlay) loadingOverlay.classList.remove('active');
+            this.innerHTML = originalBtnText;
+            this.disabled = false;
         }
-
-
-        // 4. Save
-        const filename = `Kabanata_${currentChapterNum}_E-Obra.pdf`;
-        doc.save(filename);
-
-    } catch (err) {
-        console.error('PDF Generation Error:', err);
-        alert('Nagkaroon ng problema sa paggawa ng PDF. Mangyaring subukan muli.');
-    } finally {
-        if (loadingOverlay) loadingOverlay.classList.remove('active');
-        this.innerHTML = originalBtnText;
-        this.disabled = false;
-    }
+    }, 100);
 });
 
 
