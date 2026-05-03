@@ -385,6 +385,9 @@ document.getElementById('download-pdf').addEventListener('click', function () {
     const paragraphSpacing = 4;
     
     // Show loading state
+    const loadingOverlay = document.getElementById('pdf-loading-overlay');
+    if (loadingOverlay) loadingOverlay.classList.add('active');
+    
     const originalBtnText = this.innerHTML;
     this.innerHTML = `<span class="spinner-border spinner-border-sm me-2"></span>Inihahanda...`;
     this.disabled = true;
@@ -476,6 +479,7 @@ document.getElementById('download-pdf').addEventListener('click', function () {
         console.error('PDF Generation Error:', err);
         alert('Nagkaroon ng problema sa paggawa ng PDF. Mangyaring subukan muli.');
     } finally {
+        if (loadingOverlay) loadingOverlay.classList.remove('active');
         this.innerHTML = originalBtnText;
         this.disabled = false;
     }
