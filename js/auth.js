@@ -26,50 +26,21 @@ function stopSessionMonitor() {
 }
 
 // Global Auth Listener
-let sessionRef = null;
-
 auth.onAuthStateChanged((user) => {
-    // Normalize paths for comparison
+    // Normalize paths for comparison (remove trailing slashes and lowercase)
     const normalizePath = (p) => p.replace(/\/+$/, '').toLowerCase() || '/';
+    
     const currentPath = normalizePath(window.location.pathname);
     const baseUrlPath = normalizePath(new URL(window.BASE_URL).pathname);
+    
+    // The landing page is the base URL path or the base URL path + index.html
     const isLoginPage = currentPath === baseUrlPath || 
                         currentPath === normalizePath(baseUrlPath + '/index.html');
     
     console.log("Auth State Changed. User:", user ? user.email : "None");
+    console.log("Path:", currentPath, "Base:", baseUrlPath, "isLoginPage:", isLoginPage);
 
     if (user) {
-        // --- START SINGLE SESSION MONITOR ---
-        const localSessionId = localStorage.getItem('eobra_session_id');
-        
-        // Clean up previous listener if any
-        if (sessionRef) {
-            sessionRef.off();
-        }
-
-        sessionRef = firebase.database().ref('sessions/' + user.uid);
-        sessionRef.on('value', (snapshot) => {
-            const data = snapshot.val();
-            if (data && data.session_id) {
-                // If we don't have a local session ID (e.g. first time after update), sync it
-                if (!localStorage.getItem('eobra_session_id')) {
-                    localStorage.setItem('eobra_session_id', data.session_id);
-                    return;
-                }
-
-                // If local session ID doesn't match DB, it means a newer login happened elsewhere
-                if (data.session_id !== localStorage.getItem('eobra_session_id')) {
-                    console.warn("New login detected on another device. Logging out...");
-                    alert("May nag-login sa iyong account gamit ang ibang device. Ikaw ay awtomatikong ila-log out para sa iyong seguridad.");
-                    auth.signOut().then(() => {
-                        localStorage.removeItem('eobra_session_id');
-                        window.location.href = window.BASE_URL;
-                    });
-                }
-            }
-        });
-        // --- END SINGLE SESSION MONITOR ---
-
         // Update Profile Info in UI
         const updateProfileUI = () => {
             const nameEl = document.getElementById('user-name-nav');
@@ -88,16 +59,12 @@ auth.onAuthStateChanged((user) => {
         updateProfileUI();
 
         if (isLoginPage) {
+            console.log("Redirecting to dashboard...");
             window.location.href = window.BASE_URL + 'dashboard/';
         }
     } else {
-        if (sessionRef) {
-            sessionRef.off();
-            sessionRef = null;
-        }
-        localStorage.removeItem('eobra_session_id');
-
         if (!isLoginPage) {
+            console.log("Protected page detected, redirecting to home...");
             window.location.href = window.BASE_URL;
         }
     }
