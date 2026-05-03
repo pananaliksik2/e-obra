@@ -514,9 +514,6 @@ document.getElementById('download-pdf').addEventListener('click', function () {
         }
     }, 2000); // 2 second processing feel
 });
-});
-
-
 
 document.getElementById('next-chapter-btn').addEventListener('click', () => {
     if (currentChapterNum < 64) {
