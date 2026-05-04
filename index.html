@@ -242,17 +242,7 @@
             }
 
             if (loginBtn) {
-                loginBtn.addEventListener('click', () => {
-                    const provider = new firebase.auth.GoogleAuthProvider();
-                    firebase.auth().signInWithPopup(provider)
-                        .then((result) => {
-                            window.location.href = window.BASE_URL + 'dashboard/';
-                        })
-                        .catch((error) => {
-                            console.error("Login failed:", error);
-                            alert("Hindi matuloy ang pag-login: " + error.message);
-                        });
-                });
+                loginBtn.addEventListener('click', handleGoogleLogin);
             }
         });
     </script>
